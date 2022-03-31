@@ -1,0 +1,83 @@
+/** base carusel **/
+		.carusel ul {
+		    position:absolute;
+		    overflow:hidden;
+		    margin:0;
+		    padding:0;
+		    list-style:none;
+		}
+
+		.no-js .carusel ul {position:static;}
+
+		.carusel .mask {
+		    position:relative;
+		    overflow:hidden;
+		    border:6px solid #444;
+		}
+
+		.carusel ul li {
+			float:left;
+			width:150px;
+		    height:150px;
+		    color:#fff;
+			font-size:8em;
+			text-align:center;
+			margin:0;
+		}
+
+		.carusel .pagination-links {
+		    list-style:none;
+		    margin:0;
+		    padding:0;
+		}
+		 
+		.carusel .pagination-links li {
+		    display:inline;
+		}
+
+		.carusel .pagination-links li a {
+			padding:2px 6px;	
+		}
+
+		.carusel .pagination-links li a:hover {text-decoration:none;}
+
+		.carusel .pagination-links li.current a {
+			 background:#444;
+			 color:#fff;
+		}
+		 
+		.carusel .disabled {
+		    color:gray;
+		    cursor:default;
+		}
+		
+		/** my carusel 1 **/
+		#section__slider .mask {
+			width:150px;
+			height: 150px;
+			position: relative;
+			overflow: hidden;
+			border: 6px solid #444;
+		}
+
+		/** my carusel 2 **/
+		#my-carusel-2 .mask {
+			width:630px;
+		}
+
+		#my-carusel-2 ul li {
+			margin:0 10px 0 0;
+		}
+
+		/** my carusel 3 **/
+		#my-carusel-3 .mask {
+			width:450px;
+		}
+
+		.color-1 {background:#007cd2;}
+		.color-2 {background:#1788D7;}
+		.color-3 {background:#3798db;}
+		.color-4 {background:#62acdf;}
+		.color-5 {background:#86bbe0;}
+		.color-6 {background:#a7c7de;}
+		.color-7 {background:#d5dbdf;}

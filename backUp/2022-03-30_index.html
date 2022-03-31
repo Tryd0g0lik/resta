@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang='ru'>
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=0" />
+	<meta name="HandheldFriendly" content="true">
+
+	
+	<title>The name site</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+	
+	<link rel="stylesheet" href="/css/nulstyle.css" type='text/css'> <!-- Zero style -->
+	<link rel="stylesheet" href="/css/style.css" type='text/css'> <!-- Common style -->
+	<link rel="stylesheet" href="/css/slider_style.css" type='text/css'> <!-- Slider style -->
+	<link rel="stylesheet" href="/css/screen-style.css" type='text/css'> <!-- the styles for the screen's size -->
+	<link rel="stylesheet" href="/js/carusel/carusel_style.css" type='text/css'> <!-- Carusel style -->
+	
+	
+	 
+	<!--	«IE=EmulateIE8» -->
+	<!--	 «IE» -->
+	<link rel="stylesheet" href="/css/ie-style.css" media="all" > <!--The browswr's IE style -->
+	
+	
+	<meta http-equiv= "X-UA-Compatible" content="IE-edge">  
+	<!-- [if lte IE8] -->
+		
+	<!-- script defer src="/js/slider.js"></script -->
+	<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+</head>
+
+<body>
+	<header>
+		<div class='header__logo header'>
+			<a href='/' title='Магазин Reste мебель'></a>
+		</div>
+		<div class='header__nav nav header'>
+			<div></div>
+			<nav>
+				<ul>
+					<li><a href='/' title='О компании'>О компании</a></li>
+					<li><a href='/' title='Доставка и оплата'>Доставка и оплата</a></li>
+					<li><a href='/' title='Отзывы'>Отзывы</a></li>
+					<li><a href='/' title='Акции'>Акции</a></li>
+					<li><a href='/' title='Вопрос-ответ'>Вопрос-ответ</a></li>
+					<li><a href='/' title='Контакты' class='header__nav__a'>Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class='header__contact header'>
+			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+			<a href='mailto:info@resta.ru' title='E-mail'>info@resta.ru</a>
+		</div>
+		<div class='header__languege header'>
+			<span class='header__languege_active'>ru</span>
+			<span>en</span>		
+		</div>
+		<div class='heder__search header'>
+			<form >
+				<input type="search" id="heder__search" name="q">
+				<button>Найти</button>
+			</form>
+			<div class='heder__searchAccaunt'>
+				<div><a href='/'></a></div>
+				<div><span>14</span></div>
+			</div>
+		</div>
+	</header>
+	<nav id='navCatalog' ><!-- class='navCatalog_active' -->
+		<ul>
+			<li><a href='/' title='Столы'>Столы</a></li>
+			<li><a href='/' title='Стулья'>Стулья</a></li>
+			<li><a href='/' title='Мягкая мебель'>Мягкая мебель</a></li>
+			<li><a href='/' title='Кресла'>Кресла</a></li>
+			<li><a href='/' title='Столешницы'>Столешницы</a></li>
+			<li><a href='/' title='Подстолья'>Подстолья</a></li>
+			<li><a href='/' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a></li>
+			<li><a href='/' title='Банкетная мебель'>Банкетная мебель</a></li>
+			<li><a href='/' title='уличная мебель'>уличная мебель</a></li>
+			<li><a href='/' title='предметная мебель'>предметная мебель</a></li>
+			<li><a href='/' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+			<li><a href='/' title='вешалки, урны'>вешалки, урны</a></li>
+			<li><a href='/' title='арома'>арома</a></li>
+			<li><a href='/' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
+		</ul>
+	</nav>
+	<section>
+		
+		<div id="section__slider" class="carusel module">
+			<div class="mask">
+				<ul style="width: 1050px;">
+					<li class="color-1">1</li>
+					<li class="color-4">2</li>
+					<li class="color-6">3</li>
+					<li class="color-2">4</li>
+					<li class="color-3">5</li>
+					<li class="color-1">6</li>
+					<li class="color-5">7</li>
+				</ul>
+			</div>
+			<ol class="pagination-links"><li class="current"><a href="#item-0">1</a></li><li><a href="#item-1">2</a></li><li><a href="#item-2">3</a></li><li><a href="#item-3">4</a></li><li><a href="#item-4">5</a></li><li><a href="#item-5">6</a></li><li><a href="#item-6">7</a></li></ol>
+			<!--e:\Denis\Free-lance\HELP\БД\БД- Разрабочик\JQ-БД\Плагин карусель carusel-master\jquery-carusel-master\ -->
+		</div>
+		<div class = 'section__menuDedivvery'>
+			<!-- <ul> -->
+				<div><a href='/' title='Бесконечная доставка'>Бесконечная доставка по Сочи</a></div>
+				<div><a href='/' title='Богатый выбор товара'>Богатый выбор товара в наличии</a></div>
+				<div><a href='/' title='Любые расцветки'>Любые расцветки</a></div>
+			<!-- </ul> -->
+		</div>
+		
+	</section>
+	<main id='main'>
+		<section id='main__headerNav'>
+			<div class='header__contact header'>
+				<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+			</div>
+		</section>
+		
+		<section id='main__productCategory'>
+			<h2>Катагории товаров</h2>
+			<div class='main__product'>
+				
+				<div class="slider">
+					<div class="slider__wrapper">
+					  <div class="slider__items">
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div>
+											<img src='/img/mask_Group_24.jpg' alt='Столы' />
+										</div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+					  </div>
+					</div>
+					<a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+					<a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+					<a href='/' class='slider__allProduct'>Все товары этой категории</a>
+				  </div>
+				  
+				  <div class="slider">
+					<div class="slider__wrapper">
+					  <div class="slider__items">
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div>
+											<img src='/img/mask_Group_24.jpg' alt='Столы' />
+										</div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+						<div class="slider__item">
+						  <div class='main__productPosition main__sliderWrapperItemsPosition'>
+									<div>
+										<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
+										<div><h3>Столы</h3>
+										<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
+									</div>
+									<ul>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+										<li><a href='/' title='Круглые столы'>Круглые столы</a></li>
+									</ul>
+								</div>
+						</div>
+					  </div>
+					</div>
+					<a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+					<a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+					<a href='/' class='slider__allProduct'>Все товары этой категории</a>
+				  </div>
+			</div>
+			<a href='/' title='Смотреть все категории'>Смотреть все категории</a>
+		</section>
+		<section id='main__ourOffers'>
+			<h2>Наши спецпредложения</h2>
+			<div class='main__offer'>
+				<div><img src='/img/hanger.jpg' alt='Вешалка наполная металлическая черная Loft №16' /></div>
+				<h3>Вешалка наполная металлическая черная Loft №16</h3>
+				<a href='/'>Арт.040023</a>
+				<div class='main__offerPrice'>
+					<span>5600</span> <span>р</span>
+					<span>6600</span> <span>р</span>
+				</div>
+				<div class='main__offerInCart'>
+					<form name='inCart'>
+						<input type='bottom' value='В корзину'>
+					</form>
+					<a href='/' title='Подробнее'>подробнее</a>					
+				</div>
+				<a href='/' title='Вешалки, урны'>Вешалки, урны</a>
+			</div>
+			<div class='main__offer'>
+				<div><img src='/img/hanger.jpg' alt='Вешалка наполная металлическая черная Loft №16' /></div>
+				<h3>Вешалка наполная металлическая черная Loft №16</h3>
+				<a href='/'>Арт.040023</a>
+				<div class='main__offerPrice'>
+					<span>5600</span> <span>р</span>
+					<span>6600</span> <span>р</span>
+				</div>
+				<div class='main__offerInCart'>
+					<form name='inCart'>
+						<input type='bottom' value='В корзину'>
+					</form>
+					<a href='/' title='Подробнее'>подробнее</a>					
+				</div>
+				<a href='/' title='Вешалки, урны'>Вешалки, урны</a>
+			</div>
+		</section>
+		<section id='main__article'>
+			<article>
+				<h2>Почему стоит приобретать мебель в Resta?</h2>
+				<p><strong>Мы работаем напрямую с фабриками</strong>, поэтому гарантируем низкие цены. Приобретая мебель в компании Resta, вы получаете мебель особой прочности, так как к мебели для объектов общепита предъявляются особые требования к износоустойчивости.  Вы можете приобрести мебель как для бара, кафе или ресторана, так и для дома и офиса.</p>
+				<h3 >Вот почему стоит приобретать мебель именно у нас:</h3>
+				<ul>
+					<li class='whyWe'><a href='/'>Работаем напрямую с производителями, поэтому гарантируем низкую цену</a></li>
+					<li class='whyWe'><a href='/'>Бесплатная доставка по Сочи</a></li>
+					<li class='whyWe'><a href='/'>Большой выбор товара в наличии на складе Сочи</a></li>
+					<li class='whyWe'><a href='/'>Вы можете выбрать любой цвет ткани под ваш интерьер</a></li>
+				</ul>
+				<h2 class='wohWill'>Какой должна быть мебель для баров и ресторанов?</h2>
+				<ul>
+					<li class='wohWill'><a href='/'>износоустойчивой</a></li>
+					<li class='wohWill'><a href='/'>огнеупорной</a></li>
+					<li class='wohWill'><a href='/'>гипоаллергенной</a></li>
+					<li class='wohWill'><a href='/'>функциональной</a></li>
+					<li class='wohWill'><a href='/'>долговечной</a></li>
+					<li class='wohWill'><a href='/'>с оригинальным дизайном</a></li>
+				</ul>
+				<h2>Наши клиенты</h2>
+				<div class='main__articleSliderClient'></div>
+				<h2>Наши выполненные проекты</h2>
+				<div class='main__articleOurProject'>
+					<p>Стулья Eames сиденье  - полипропилен, ножки металл , высота от пола до сиденья 43 см.</p>
+				</div>
+			</article>
+		</section>
+		<section id='main__writeUs'>
+			<h2>Напишите нам! Мы на связи</h2>
+			<form>
+				<input type='text' name='nameClient' volume='Ваше имя' maxlength='15' required='required'>
+				<input type='tel' name='telNumber' volume='Телефон' maxlength='15' required='required'>
+				<input type='email' name='nameEmail' volume='Ваш e-mail (необязательно)' maxlength='20' required='required'>
+				<textarea width='254' height='723' maxlength='150'></textarea>
+				<button>Отправить</button>
+				<input type='checkbox' name='agree' valume='true'>
+				<label for='agree'>Я ознакомлен с Политикой конфиденциальности</label>
+				
+			</form>
+		</section>
+		
+		
+	</main>
+	<footer>
+		<div class='footer__logo'>
+			<a href='/'>
+				<img src='/img/logo_footer.png' />
+			</a>
+		</div>
+		<!-- <div class='footer_menu'> -->
+		<div class='footer__nav nav footer__active'>
+			<div></div>
+			<nav>
+				<ul>
+					<li><a href='/' title='О компании'>О компании</a></li>
+					<li><a href='/' title='Доставка и оплата'>Доставка и оплата</a></li>
+					<li><a href='/' title='Отзывы'>Отзывы</a></li>
+					<li><a href='/' title='Акции'>Акции</a></li>
+					<li><a href='/' title='Вопрос-ответ'>Вопрос-ответ</a></li>
+					<li><a href='/' title='Контакты' class='footer__nav__a'>Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+		<!-- </div> -->
+		<!-- <div class='footer_contacts'> -->
+		<div class='footer__contact'>
+			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+			<a href='mailto:info@resta.ru' title='E-mail'>info@resta.ru</a>
+		</div>
+		
+		<!-- </div> -->
+		<div class='footer__cociaal'>
+			<a href='/' title=''></a>
+			<a href='/' title=''></a>
+			<a href='/' title=''></a>
+		</div>
+		<div class='footer_autor'>
+			<p>Resta, 2021. All rights reserved</p>
+			<a href='/' title='Политика конфиденциальности'>Политика конфиденциальности</a>
+		</div>
+		
+	
+	</footer>
+</body>
+</html>
