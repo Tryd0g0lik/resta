@@ -15,7 +15,9 @@
 17^27 - 18^45
 
 14:50 - 18:11
-18:55 - 
+18:55 - 19:37
+
+14:45 - 16^00
 */
 /* The common-style - start */
 :root{
@@ -157,8 +159,8 @@ section.main__headerNav .header__contact.header a::before{background:no-repeat u
 /* --the maine menu - end */
 /* --the maine product category - start */
 #main__productCategory{ padding-top: 37px; margin-bottom: 37px; }
-#main__productCategory > h2, #main__ourOffers h2{font-size: 1.5em;font-weight: 700;text-align:center;color: #5D5B61;color: var(--color_font);margin-bottom: 11px;}
-.main__product {margin-bottom: 153px;}
+#main__productCategory > .main__sectionTitle h2, #main__ourOffers  h2{font-size: 2em;font-weight: 700;text-align:center;color: #5D5B61;color: var(--color_font);display: inline;}
+.main__product {margin-bottom: 153px;padding-top: 20px;}
 /* --the maine product category - end */
 /* --the the maine product category slider - start */
 .main__sliderWrapperItemsPosition, .main__offer{width: 208px;height: 146px;margin: 0 auto;border-radius: 10px;background-color: #fff;padding: 14px 14px;margin-left: 50px;}
@@ -248,7 +250,7 @@ a.slider__allProduct::after {background: no-repeat url(/img/svg/003.svg);}
 /* --the the maine product category slider - end */
 /* -- The maine our offers - start */
 #main__ourOffers{}
-#main__ourOffers h2{padding: 0 20px 0 50px;-webkit-box-sizing: border-box;box-sizing: border-box;text-align: left;line-height: 1.2;word-spacing: normal;word-spacing: initial;letter-spacing: normal;letter-spacing: initial;}
+#main__ourOffers h2{/* padding: 0 20px 0 50px; *//* box-sizing: border-box; */text-align: left;line-height: 1.2;word-spacing: normal;word-spacing: initial;letter-spacing: normal;letter-spacing: initial;}
 .main__offer{padding: initial;margin: 0 10px 0 50px;padding: 13px;width: 245px;padding: 13px 0px 0 10.48px;height: auto;height: initial;margin-bottom: 39px;background-color: #fff;padding-bottom: 14px;}
 .main__offer::before{content:'%';right: 9px;top: -11px;position: absolute;width: 38px;height: 52.09px;background: no-repeat url(/img/svg/percent.svg);z-index: 5;text-align: center;padding-top: 10px;color: #fff;font-size: 1.9em;font-weight: 700;}
 .main__offer > div:first-child{padding: 1px 3px 5px 4px;width:224px;height:144px;overflow: hidden;margin-bottom: 21px;background: none;}

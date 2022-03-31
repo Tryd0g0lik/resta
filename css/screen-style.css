@@ -125,16 +125,17 @@
 	#main__ourOffers{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 41px 360px;
+    grid-template-rows: 53px 360px;
     justify-content: center;
 }
 
-#main__ourOffers h2 {
+.main__sectionTitle {
     grid-column: 1/3;
     grid-row: 1/2;
-    justify-self: center;
+    text-align: left;
+    width: 100%;
 }
-	.main__offer{grid-row: 2/2;grid-column: 1/2;}
+	.main__offer{grid-row: 2/3;grid-column: 1/2;}
 
 .main__offer + .main__offer {
     grid-row: 2/2;
@@ -223,6 +224,7 @@ footer > div:nth-of-type(2) { grid-row: 2 / 2; grid-column: 3 / 5; }
     /* --the the maine product category slider - end */
     
     /* -- The maine our offers - start */
+	
     /* -- The maine our offers - end */
 
     /* -- The maine article - start */
@@ -379,8 +381,7 @@ footer > div:nth-of-type(2) { grid-row: 2 / 2; grid-column: 3 / 5; }
     justify-content: center;
 }
 
-	#main__productCategory > div:nth-of-type(1n+2) {
-    display: none;
+	#main__productCategory .main__product > div:nth-of-type(1n+2) {
 }
 
 .main__sliderWrapperItemsPosition {
@@ -425,12 +426,14 @@ footer > div:nth-of-type(2) { grid-row: 2 / 2; grid-column: 3 / 5; }
     padding-top: 60px;
     margin-bottom: 62px;
 }
+
+.main__sectionTitle {
+    padding-left: 96px;
+}
 	#main__productCategory > h2, #main__ourOffers h2{
     text-align: left;
     font-size: 2.128em;
-    padding-left: 97px;
     letter-spacing: -0.1px;
-    margin-bottom: 18px;
 }
     /* --the maine product category - end */
     
@@ -446,12 +449,30 @@ footer > div:nth-of-type(2) { grid-row: 2 / 2; grid-column: 3 / 5; }
     /* --the the maine product category slider - end */
     
     /* -- The maine our offers - start */
+	.main__offer{
+    width: 290px;
+    row-gap: 10px;
+    padding: initial;
+    il: center;
+    justify-content: end;
+}
 	
+	#main__ourOffers h2{
+    justify-self: initial;
+}
 	
     /* -- The maine our offers - end */
-	#main > section.main__headerNav:nth-child(3){
-    margin-bottom: 59px;
+	#main > section.main__headerNav:nth-child(3){margin-bottom: 59px; }
+	
+	.main__offer > div:first-child{
+    width: 262px;
+    height: 160px;
+    margin: initial;
+    padding: initial;
+    display: inline-block;
+    margin: 10px;
 }
+												 
     /* -- The maine article - start */
     /* -- The maine article - end */
 

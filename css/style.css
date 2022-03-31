@@ -15,7 +15,9 @@
 17^27 - 18^45
 
 14:50 - 18:11
-18:55 - 
+18:55 - 19:37
+
+14:45 - 16^00
 */
 /* The common-style - start */
 	:root{
@@ -156,9 +158,9 @@
     
     /* --the maine product category - start */
     #main__productCategory{ padding-top: 37px; margin-bottom: 37px; }
-    #main__productCategory > h2, #main__ourOffers h2{font-size: 1.5em;font-weight: 700;text-align:center;color: var(--color_font);margin-bottom: 11px;}
+    #main__productCategory > .main__sectionTitle h2, #main__ourOffers  h2{font-size: 2em;font-weight: 700;text-align:center;color: var(--color_font);display: inline;}
 
-    .main__product {margin-bottom: 153px;}
+    .main__product {margin-bottom: 153px;padding-top: 20px;}
     /* --the maine product category - end */
     
     /* --the the maine product category slider - start */
@@ -241,7 +243,7 @@ a.slider__allProduct{
     
     /* -- The maine our offers - start */
     #main__ourOffers{}
-    #main__ourOffers h2{padding: 0 20px 0 50px;box-sizing: border-box;text-align: left;line-height: 1.2;word-spacing: initial;letter-spacing: initial;}
+    #main__ourOffers h2{/* padding: 0 20px 0 50px; *//* box-sizing: border-box; */text-align: left;line-height: 1.2;word-spacing: initial;letter-spacing: initial;}
 
     .main__offer{padding: initial;margin: 0 10px 0 50px;padding: 13px;width: 245px;padding: 13px 0px 0 10.48px;height: initial;margin-bottom: 39px;background-color: #fff;padding-bottom: 14px;}
     .main__offer::before{content:'%';right: 9px;top: -11px;position: absolute;width: 38px;height: 52.09px;background: no-repeat url(/img/svg/percent.svg);z-index: 5;text-align: center;padding-top: 10px;color: #fff;font-size: 1.9em;font-weight: 700;}
