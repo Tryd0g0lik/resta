@@ -1,385 +1,1293 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml" lang='ru'>
-<head> 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=0" />
-	<meta name="HandheldFriendly" content="true">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns="http://www.w3.org/1999/html" lang='ru'>
+<head>
+	<meta charset='UTF-8'> <!-- Encoding -->
+	<meta name='viewport' content='width=device-width, initial-scale=1.0, max-scale=1.0, user-scalable=0' /> <!--
+	 Adobtive window -->
 
-	
+	<link rel='apple-touch-startup' href='/site/restaimg/menu/interrior.png'/>
+	<meta name='HandheldFriendly' content='true'>
+
+
 	<title>The name site</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
 
-	
-	<link rel="stylesheet" href="/css/nulstyle.css" type='text/css'> <!-- Zero style -->
-	<link rel="stylesheet" href="/css/style.css" type='text/css'> <!-- Common style -->
-	<link rel="stylesheet" href="/css/slider_style.css" type='text/css'> <!-- Slider style -->
-	<link rel="stylesheet" href="/css/screen-style.css" type='text/css'> <!-- the styles for the screen's size -->
-	<link rel="stylesheet" href="/site/cvresume-webjs/css/carusel/carusel_style.css" type='text/css'> <!-- Carusel style -->
-	
-	
-	 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel='stylesheet' href='/site/resta/css/nulstyle.css' type='text/css'> <!-- Zero style -->
+	<link rel='stylesheet' href='/site/resta/css/styleScss.css' type='text/css' media="screen and (min-width:320px)">
+	<link rel='stylesheet' href='/site/resta/css/screen-style.css' type='text/css'> <!-- Zero style -->
+
+	<!--
+	 Common style -->
+
+
+	<!--link rel='stylesheet' href='/site/resta/css/slider_style.css' type='text   --> <!-- Slider style -->
+	<!-- link rel='stylesheet' href='js/css/carusel/carusel_style.css' type='tex    --> <!-- Carusel style -->
+
+
+
 	<!--	«IE=EmulateIE8» -->
 	<!--	 «IE» -->
-	<link rel="stylesheet" href="/css/ie-style.css" media="all" > <!--The browswr's IE style -->
-	
-	
-	<meta http-equiv= "X-UA-Compatible" content="IE-edge">  
+	<!--  link rel='stylesheet' href='/site/resta/css/ie-style.css' media='all'  --> <!--The browswr's IE style -->
+
+
+	<meta http-equiv= 'X-UA-Compatible' content='IE-edge'>
 	<!-- [if lte IE8] -->
-		
-	<!-- script defer src="/js/slider.js"></script -->
-	<script>
-    document.addEventListener('DOMContentLoaded', function () {
-      // инициализация слайдера
-      var slider = new SimpleAdaptiveSlider('.slider', {
-        autoplay: true,
-        interval: 10000,
-      });
-    });
-  </script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+	crossorigin="anonymous"></script>
+	<script type='module' src='/site/resta/js/function.js'></script>
+
 </head>
 
-<body>
-	<header>
-		<div class='header__logo header'>
-			<a href='/site/cvresume-web/index.html' title='Магазин Reste мебель'></a>
-		</div>
-		<div class='header__nav nav header'>
-			<div></div>
-			<nav>
+<body class="">
+	<header class="" >
+		<div class='header'>
+			<div class='header__logo'>
+				<a href='/site/resta/' title='logo'></a>
+			</div>
+			<nav class='header__nav'>
+
 				<ul>
-					<li><a href='/site/cvresume-web/index.html' title='О компании'>О компании</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Доставка и оплата'>Доставка и оплата</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Отзывы'>Отзывы</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Акции'>Акции</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Вопрос-ответ'>Вопрос-ответ</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Контакты' class='header__nav__a'>Контакты</a></li>
+					<li><a href='/site/resta/index.html' title='О компании'>О компании</a></li>
+					<li><a href='/site/resta/index.html' title='Доставка и оплата'>Доставка и оплата</a></li>
+					<li><a href='/site/resta/index.html' title='Отзывы'>Отзывы</a></li>
+					<li><a href='/site/resta/index.html' title='Акции'>Акции</a></li>
+					<li><a href='/site/resta/index.html' title='Вопрос-ответ'>Вопрос-ответ</a></li>
+					<li><a href='/site/resta/index.html' title='Контакты' class='header__nav__a'>Контакты</a></li>
 				</ul>
 			</nav>
-		</div>
-		<div class='header__contact header'>
-			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
-			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
-			<a href='mailto:info@resta.ru' title='E-mail'>info@resta.ru</a>
-		</div>
-		<div class='header__languege header'>
-			<span class='header__languege_active'>ru</span>
-			<span>en</span>		
-		</div>
-		<div class='heder__search header'>
-			<form >
-				<input type="search" id="heder__search" name="q">
-				<button>Найти</button>
-			</form>
-			<div class='heder__searchAccaunt'>
-				<div><a href='/site/cvresume-web/index.html'></a></div>
-				<div><span>14</span></div>
+			<div class='header__contact'>
+				<ul>
+					<li class='header__phone'>
+						<a href='tel:+79820000000'>+7 (982) 000-00-00</a>
+					</li>
+					<li class='header__phone'>
+						<a href='tel:+79820000000'>+7 (982) 000-00-00</a>
+					</li>
+					<li class='header__email'>
+						<a href='milto:info@resta.ru'>info@resta.ru</a>
+					</li>
+				</ul>
+			</div>
+			<div class='header__language'>
+				<div class='header__RU'>
+					<a href='/site/resta/'>RU</a>
+				</div>
+				<div class='header__EN'>
+					<a href='/site/resta/'>EN</a>
+				</div>
+			</div>
+			<div class='header__search'>
+				<form name='headerSearch' target='s'>
+					<input type='search' name='q' id='headerSearch' maxlength='101' minlength='2' size='8'>
+					<button>Найти</button>
+				</form>
+			</div>
+			<div class='header__account'>
+				<a href='/site/resta/' title='Личный кабинет'>Личный кабинет</a>
+				<div><a href='/site/resta/' title='Личный кабинет'></a></div>
+
+				<div><a href='/site/resta/' title='В корзине' id='heardCart'>14</a></div>
 			</div>
 		</div>
 	</header>
-	<nav id='navCatalog' ><!-- class='navCatalog_active' -->
-		<ul>
-			<li><a href='/site/cvresume-web/index.html' title='Столы'>Столы</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Стулья'>Стулья</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Мягкая мебель'>Мягкая мебель</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Кресла'>Кресла</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Столешницы'>Столешницы</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Подстолья'>Подстолья</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='Банкетная мебель'>Банкетная мебель</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='уличная мебель'>уличная мебель</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='предметная мебель'>предметная мебель</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='вешалки, урны'>вешалки, урны</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='арома'>арома</a></li>
-			<li><a href='/site/cvresume-web/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
-		</ul>
-	</nav>
-	<section>
-		
-		<div id="section__slider" class="carusel module">
-			<div class="mask">
-				<ul style="width: 1050px;">
-					<li class="color-1">1</li>
-					<li class="color-4">2</li>
-					<li class="color-6">3</li>
-					<li class="color-2">4</li>
-					<li class="color-3">5</li>
-					<li class="color-1">6</li>
-					<li class="color-5">7</li>
+	<section class='topSection '>
+		<div>
+			<aside class='colLeft '>
+				<nav class='colLeft__navCatalog' ><!-- the leftumn -->
+					<ul>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/table.svg'>
+								<img src='/site/resta/img/menu/table.png' alt='Столы'>
+							</object>
+							<a href='/site/resta/index.html' title='Столы'>Столы</a></li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/street.svg'>
+								<img src='/site/resta/img/menu/street.png' alt='Стулья'>
+							</object>
+							<a href='/site/resta/index.html' title='Стулья'>Стулья</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/soft.svg'>
+								<img src='/site/resta/img/menu/soft.png' alt='Мягкая мебель'>
+							</object>
+							<a href='/site/resta/index.html' title='Мягкая мебель'>Мягкая мебель</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/armchair.svg'>
+								<img src='/site/resta/img/menu/armchair.png' alt='Кресла'>
+							</object>
+							<a href='/site/resta/index.html' title='Кресла'>Кресла</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/top.svg'>
+								<img src='/site/resta/img/menu/top.png' alt='Столешницы'>
+							</object>
+							<a href='/site/resta/index.html' title='Столешницы'>Столешницы</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/under.svg'>
+								<img src='/site/resta/img/menu/under.png' alt='Подстолья'>
+							</object>
+							<a href='/site/resta/index.html' title='Подстолья'>Подстолья</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/loft.svg'>
+								<img src='/site/resta/img/menu/loft.png' alt='Мебель в стиле LOFT'>
+							</object>
+							<a href='/site/resta/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/banket.svg'>
+								<img src='/site/resta/img/menu/banket.png' alt='Банкетная мебель'>
+							</object>
+							<a href='/site/resta/index.html' title='Банкетная мебель'>Банкетная мебель</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/chairs.svg'>
+								<img src='/site/resta/img/menu/chairs.png' alt='Уличная мебель'>
+							</object>
+							<a href='/site/resta/index.html' title='уличная мебель'>Уличная мебель</a></li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/interrior.svg'>
+								<img src='/site/resta/img/menu/interrior.png' alt='Предметная мебель'>
+							</object>
+							<a href='/site/resta/index.html' title='предметная мебель'>предметная мебель</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/design*.svg'>
+								<img src='/site/resta/img/menu/design.png' alt='Дизайнерская мебель'>
+							</object>
+							<a href='/site/resta/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/hanger.svg'>
+								<img src='/site/resta/img/menu/hanger.png' alt='Вешалки, урны'>
+							</object>
+							<a href='/site/resta/index.html' title='Вешалки, урны'>Вешалки, урны</a></li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+								<img src='/site/resta/img/menu/aroma.png' alt='Арома'>
+							</object>
+							<a href='/site/resta/index.html' title='арома'>арома</a>
+						</li>
+						<li>
+							<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+								<img src='/site/resta/img/menu/aroma.png' alt='Посуда для баров и ресторанов'>
+							</object>
+							<a href='/site/resta/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
+					</ul>
+				</nav>
+			</aside>
+			<div class='topSection__slider topSlider'>
+				<ul>
+					<li class='topSlider__img sliderTop'>
+						<div>
+							<img class='sliderTop__slider' src='/site/resta/img/headerSlider.jpg' alt='Доставка по Сочи'/>
+							<div class='sliderTop__title'>
+								<h1>Мебель для баров и ресторанов</h1>
+							</div>
+							<div class='sliderTop__form '>
+								<div class='topSection_button'>
+									Позвоните мне
+								</div>
+								<div class='sliderTop__form_active formTellMe'>
+									<form name='callMe '>
+
+										<label from='text'>Ваше имя:</label>
+										<input type='text' name='userName' minlegth='3' maxlength='19'>
+										<label from='tel'>Ваше номер*:</label>
+										<input type='tel' name='userNumber' requred minlegth='12' maxlength='19'>
+										<button type = 'submit'>Звоните на номер</button>
+										<p><span>*</span><span> - обязательное поле.</span></p>
+									</form>
+								</div>
+							</div>
+							<div class='sliderTop__slider'>
+								<h2>Доставка по городу сочи</h2>
+								<p>Бесплатно</p>
+							</div>
+							<div>
+								<a href='/site/resta/' title='1'></a>
+								<a href='/site/resta/' title='2'></a>
+								<a href='/site/resta/' title='3'></a>
+							</div>
+							<div class='topSlider__social'>
+								<a href='/site/resta/' title='Росграм'></a>
+								<a href='/site/resta/' title='fac'></a>
+								<a href='/site/resta/' title='Was'></a>
+
+							</div>
+						</div>
+					</li>
 				</ul>
 			</div>
-			<ol class="pagination-links">
-				<li class="current"><a href="#item-0">1</a></li>
-				<li><a href="#item-1">2</a></li>
-				<li><a href="#item-2">3</a></li>
-				<li><a href="#item-3">4</a></li>
-				<li><a href="#item-4">5</a></li>
-				<li><a href="#item-5">6</a></li>
-				<li><a href="#item-6">7</a></li>
-			</ol>
-			<!--e:\Denis\Free-lance\HELP\БД\БД- Разрабочик\JQ-БД\Плагин карусель carusel-master\jquery-carusel-master\ -->
 		</div>
-		<div class = 'section__menuDedivvery'>
-			<!-- <ul> -->
-				<div><a href='/site/cvresume-web/index.html' title='Бесконечная доставка'>Бесконечная доставка по Сочи</a></div>
-				<div><a href='/site/cvresume-web/index.html' title='Богатый выбор товара'>Богатый выбор товара в наличии</a></div>
-				<div><a href='/site/cvresume-web/index.html' title='Любые расцветки'>Любые расцветки</a></div>
-			<!-- </ul> -->
+		<div class="row">
+			<div class='topSection__topOffer'>
+				<ul>
+					<li>
+						Бесплатная доставка по Сочи
+					</li>
+					<li>
+						Богатый выбор товара в наличии
+					</li>
+					<li>
+						Любые расцветки
+					</li>
+				</ul>
+			</div>
 		</div>
-		
 	</section>
-	<main id='main'>
-		<section class='main__headerNav' >
-			<div class='header__contact header'>
-				<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+	<main class="" id='main'>
+
+		<section class='categoryMenu'>
+			<nav class='categoryMenu__nav header__nav contNav'>
+				<div class='topBurger'>	</div> <!-- For menu which copied -->
+			</nav>
+			<div class='categoryMenu__phon header__contact'></div> <!-- For phon's number which copied -->
+			<div class='categoryMenu__button category__button_active'>
+				<form actiom='/phone_form' metod='get'>
+					<input type='bottom' value='Заказать звонок'>
+				</form>
 			</div>
 		</section>
-		
-		<section id='main__productCategory'>
-			<div class='main__sectionTitle'><h2>Катагории товаров</h2></div>
-			<div class='main__product'>
-				<div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>
-				<div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>
-				<div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>
-			
-			
-			  <div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>
-			
-			
-			  <div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div>
-							<img src='/img/mask_Group_24.jpg' alt='Столы' />
-						</div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>
-			
-			
-				<div class='main__productPosition main__sliderWrapperItemsPosition'>
-					<div>
-						<div><img src='/img/mask_Group_24.jpg' alt='Столы' /></div>
-						<div><h3>Столы</h3>
-						<p><span id='main__productVolume'>81</span><span>товар</span></p></div>
-					</div>
-					<ul>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-						<li><a href='/site/cvresume-web/index.html' title='Круглые столы'>Круглые столы</a></li>
-					</ul>
-					<div>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-						<a href='/site/cvresume-web/index.html' ></a>
-					</div>
-					<a href='/site/cvresume-web/index.html' class='slider__allProduct'>Все товары этой категории</a>
-				</div>	
+		<section class='category'>
+			<div class='category__title main__title'>
+				<h2>Категории товаров</h2>
 			</div>
 			<div>
-				<a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-				<a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+				<aside class='colLeft '>
+					<nav class='colLeft__navCatalog' ><!-- the leftumn -->
+						<ul>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/table.svg'>
+									<img src='/site/resta/img/menu/table.png' alt='Столы'>
+								</object>
+								<a href='/site/resta/index.html' title='Столы'>Столы</a></li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/street.svg'>
+									<img src='/site/resta/img/menu/street.png' alt='Стулья'>
+								</object>
+								<a href='/site/resta/index.html' title='Стулья'>Стулья</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/soft.svg'>
+									<img src='/site/resta/img/menu/soft.png' alt='Мягкая мебель'>
+								</object>
+								<a href='/site/resta/index.html' title='Мягкая мебель'>Мягкая мебель</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/armchair.svg'>
+									<img src='/site/resta/img/menu/armchair.png' alt='Кресла'>
+								</object>
+								<a href='/site/resta/index.html' title='Кресла'>Кресла</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/top.svg'>
+									<img src='/site/resta/img/menu/top.png' alt='Столешницы'>
+								</object>
+								<a href='/site/resta/index.html' title='Столешницы'>Столешницы</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/under.svg'>
+									<img src='/site/resta/img/menu/under.png' alt='Подстолья'>
+								</object>
+								<a href='/site/resta/index.html' title='Подстолья'>Подстолья</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/loft.svg'>
+									<img src='/site/resta/img/menu/loft.png' alt='Мебель в стиле LOFT'>
+								</object>
+								<a href='/site/resta/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/banket.svg'>
+									<img src='/site/resta/img/menu/banket.png' alt='Банкетная мебель'>
+								</object>
+								<a href='/site/resta/index.html' title='Банкетная мебель'>Банкетная мебель</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/chairs.svg'>
+									<img src='/site/resta/img/menu/chairs.png' alt='Уличная мебель'>
+								</object>
+								<a href='/site/resta/index.html' title='уличная мебель'>Уличная мебель</a></li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/interrior.svg'>
+									<img src='/site/resta/img/menu/interrior.png' alt='Предметная мебель'>
+								</object>
+								<a href='/site/resta/index.html' title='предметная мебель'>предметная мебель</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/design*.svg'>
+									<img src='/site/resta/img/menu/design.png' alt='Дизайнерская мебель'>
+								</object>
+								<a href='/site/resta/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/hanger.svg'>
+									<img src='/site/resta/img/menu/hanger.png' alt='Вешалки, урны'>
+								</object>
+								<a href='/site/resta/index.html' title='Вешалки, урны'>Вешалки, урны</a></li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+									<img src='/site/resta/img/menu/aroma.png' alt='Арома'>
+								</object>
+								<a href='/site/resta/index.html' title='арома'>арома</a>
+							</li>
+							<li>
+								<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+									<img src='/site/resta/img/menu/aroma.png' alt='Посуда для баров и ресторанов'>
+								</object>
+								<a href='/site/resta/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
+						</ul>
+					</nav>
+				</aside>
+				<div class='category__catalog catalog'><!-- catalog -->
+					<div class='catalog__furniture position01'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+
+							</div>
+							<div class="catalog__look look"></div>
+							<div class='catalog__title '>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товар этой категории</a>
+						</div>
+					</div>
+
+					<div class='catalog__furniture position02'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товар этой категории</a>
+						</div>
+					</div>
+					<div class='catalog__furniture position03'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товары этой категории</a>
+						</div>
+					</div>
+					<div class='catalog__furniture position04'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товары этой категории</a>
+						</div>
+					</div>
+					<div class='catalog__furniture position05'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товары этой категории</a>
+						</div>
+					</div>
+					<div class='catalog__furniture position06'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товары этой категории</a>
+						</div>
+					</div>
+					<div class='catalog__furniture position07'>
+						<div>
+							<div class='catalog__foto'>
+								<img src='/site/resta/img/category/mask_Group_24.jpg' alt='Столы'/>
+							</div>
+							<div class='catalog__title'>
+								<div><h3>Столы</h3></div>
+								<span class="catalog__number">81</span><span>товар</span>
+							</div>
+						</div>
+						<div class='catalog__info'>
+							<ul>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+								<li><a href="https://mversta.ru/site/resta/">Круглые столы</a></li>
+							</ul>
+						</div>
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="catalog__inCart">
+							<a href='/site/resta/'>все товары этой категории</a>
+						</div>
+					</div>
+
+				</div>
+				<div class="catalog__allProduct">
+					<a href="https://mversta.ru/site/resta/">смотреть все категории</a>
+				</div>
 			</div>
-			
-			<a href='/site/cvresume-web/index.html' title='Смотреть все категории'>Смотреть все категории</a>
 		</section>
-		<section class='main__headerNav' >
-			<div class='header__contact header'>
-				<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
+		<nav class='categoryMenu__nav header__nav contNav row'>
+				<div class='topBurger'>	</div> <!-- For menu which copied -->
+		</nav>
+		<section class="cpetialOffers">
+			<div class="main__title">
+				<h2 class="cpetial-offers__tittle">Наши спецпредложения</h2>
+			</div>
+			<div>
+				<div class='catalog__furniture position01'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position02'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position03'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position04'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position05'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
+				<div class='catalog__furniture position'>
+					<div>
+						<div class='catalog__foto'>
+							<img src='/site/resta/img/catalog/hanger.jpg' alt='Столы'/>
+						</div>
+						<div class='catalog__title'>
+							<div><h3>Вешалка напольная металлическая черная Loft №16<h3></div>
+							<span>Арт.</span><span class="catalog__number">040023</span>
+						</div>
+					</div>
+					<div class='catalog__price'>
+						<div>
+							<span>5600</span><span>р</span>
+						</div>
+						<div>
+							<span>6600</span><span>р</span>
+						</div>
+						<div>
+							<button name='cart'>в корзину</button>
+						</div>
+						<div>
+							<a href='/site/resta/'>подробнее</a>
+						</div>
+					</div>
+					<div class="catalog__inCart">
+						<a href='/site/resta/'>Вешалки, урны</a>
+					</div>
+				</div>
 			</div>
 		</section>
-		<section id='main__ourOffers'>
-			<div class='main__sectionTitle'><h2>Наши спецпредложения</h2></div>
-			<div class='main__offer'>
-				<div><img src='/img/hanger.jpg' alt='Вешалка наполная металлическая черная Loft №16' /></div>
-				<h3>Вешалка наполная металлическая черная Loft №16</h3>
-				<a href='/site/cvresume-web/index.html'>Арт.040023</a>
-				<div class='main__offerPrice'>
-					<span>5600</span> <span>р</span>
-					<span>6600</span> <span>р</span>
+		<nav class='categoryMenu__nav categoryMenu__nav_midle header__nav contNav row'>
+			<div class='topBurger'>	</div> <!-- For menu which copied -->
+		</nav>
+		<article class="main__text info-text">
+
+			<section class="info-text__about-us container-xxl">
+				<div class="row">
+					<aside class='colLeft .col-md-4'>
+						<nav class='colLeft__navCatalog' ><!-- the leftumn -->
+							<ul>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/table.svg'>
+										<img src='/site/resta/img/menu/table.png' alt='Столы'>
+									</object>
+									<a href='/site/resta/index.html' title='Столы'>Столы</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/street.svg'>
+										<img src='/site/resta/img/menu/street.png' alt='Стулья'>
+									</object>
+									<a href='/site/resta/index.html' title='Стулья'>Стулья</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/soft.svg'>
+										<img src='/site/resta/img/menu/soft.png' alt='Мягкая мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='Мягкая мебель'>Мягкая мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/armchair.svg'>
+										<img src='/site/resta/img/menu/armchair.png' alt='Кресла'>
+									</object>
+									<a href='/site/resta/index.html' title='Кресла'>Кресла</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/top.svg'>
+										<img src='/site/resta/img/menu/top.png' alt='Столешницы'>
+									</object>
+									<a href='/site/resta/index.html' title='Столешницы'>Столешницы</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/under.svg'>
+										<img src='/site/resta/img/menu/under.png' alt='Подстолья'>
+									</object>
+									<a href='/site/resta/index.html' title='Подстолья'>Подстолья</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/loft.svg'>
+										<img src='/site/resta/img/menu/loft.png' alt='Мебель в стиле LOFT'>
+									</object>
+									<a href='/site/resta/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/banket.svg'>
+										<img src='/site/resta/img/menu/banket.png' alt='Банкетная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='Банкетная мебель'>Банкетная мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/chairs.svg'>
+										<img src='/site/resta/img/menu/chairs.png' alt='Уличная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='уличная мебель'>Уличная мебель</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/interrior.svg'>
+										<img src='/site/resta/img/menu/interrior.png' alt='Предметная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='предметная мебель'>предметная мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/design*.svg'>
+										<img src='/site/resta/img/menu/design.png' alt='Дизайнерская мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/hanger.svg'>
+										<img src='/site/resta/img/menu/hanger.png' alt='Вешалки, урны'>
+									</object>
+									<a href='/site/resta/index.html' title='Вешалки, урны'>Вешалки, урны</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+										<img src='/site/resta/img/menu/aroma.png' alt='Арома'>
+									</object>
+									<a href='/site/resta/index.html' title='арома'>арома</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+										<img src='/site/resta/img/menu/aroma.png' alt='Посуда для баров и ресторанов'>
+									</object>
+									<a href='/site/resta/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
+							</ul>
+						</nav>
+					</aside>
+					<div class="Ccol-md-8">
+						<div class="main__title row">
+							<h2 class="cpetial-offers__tittle">Почему стоит приобретать мебель в Resta?</h2>
+						</div>
+
+						<div class="main__info-text row-col-6">
+							<p>
+								<strong>Мы работаем напрямую с фабриками</strong>, поэтому гарантируем низкие цены. Приобретая мебель в
+								компании Resta, вы получаете мебель особой прочности, так как к мебели для объектов общепита
+								предъявляются особые требования к износоустойчивости.  Вы можете приобрести мебель как для бара,
+								кафе или ресторана, так и для дома и офиса.
+							</p>
+						</div>
+						<div class="main__title row">
+							<h3 class="cpetial-offers__tittle">Вот почему стоит приобретать мебель именно у нас:</h3>
+						</div>
+						<div class='main__info-text main__info-text-correct row-col-6'>
+							<ul>
+								<li class="info-text__01_hover info-text__01_bg info-text__01 align-middle">Работаем напрямую с
+									производителями, поэтому
+									гарантируем низкую цену</li>
+								<li class="info-text__01_hover info-text__01_bg info-text__02
+								align-middle">Бесплатная доставка
+									по Сочи</li>
+								<li class="info-text__01_hover info-text__01_bg info-text__03 align-middle">Большой выбор товара
+									в наличии на складе Сочи</li>
+								<li class="info-text__01_hover info-text__01_bg info-text__01 align-middle">Вы можете выбрать
+									любой цвет ткани под ваш интерьер</li>
+							</ul>
+						</div>
+						<div class="main__title main__title-correct">
+							<h2 class="cpetial-offers__tittle">Какой должна быть мебель для баров и ресторанов?</h2>
+						</div>
+						<div class='main__info-text main__info-text-property'>
+							<ul>
+								<li class="info-text__01 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>износоустойчивой</span></li>
+								<li class="info-text__02 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>огнеупорной</span></li>
+								<li class="info-text__01 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>гипоаллергенной</span></li>
+								<li class="info-text__02 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>функциональной</span></li>
+								<li class="info-text__03 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>долговечной</span></li>
+								<li class="info-text__04 align-middle">
+									<object type="image/svg+xml" data="/site/resta/img/svg/li.svg">
+										<img src="https://mversta.ru/site/resta/img/svg/li.png">
+									</object>
+									<span>с оригинальным дизайном</span></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div class='main__offerInCart'>
-					<form name='inCart'>
-						<input type='bottom' value='В корзину'>
-					</form>
-					<a href='/site/cvresume-web/index.html' title='Подробнее'>подробнее</a>					
+			</section>
+			<nav class='categoryMenu__nav header__nav contNav container-xxl'>
+				<div class='topBurger'>	</div> <!-- For menu which copied -->
+			</nav>
+			<section class="main__text info-our-client container-xxl">
+				<div>
+					<aside class='colLeft '>
+						<nav class='colLeft__navCatalog' ><!-- the leftumn -->
+							<ul>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/table.svg'>
+										<img src='/site/resta/img/menu/table.png' alt='Столы'>
+									</object>
+									<a href='/site/resta/index.html' title='Столы'>Столы</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/street.svg'>
+										<img src='/site/resta/img/menu/street.png' alt='Стулья'>
+									</object>
+									<a href='/site/resta/index.html' title='Стулья'>Стулья</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/soft.svg'>
+										<img src='/site/resta/img/menu/soft.png' alt='Мягкая мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='Мягкая мебель'>Мягкая мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/armchair.svg'>
+										<img src='/site/resta/img/menu/armchair.png' alt='Кресла'>
+									</object>
+									<a href='/site/resta/index.html' title='Кресла'>Кресла</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/top.svg'>
+										<img src='/site/resta/img/menu/top.png' alt='Столешницы'>
+									</object>
+									<a href='/site/resta/index.html' title='Столешницы'>Столешницы</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/under.svg'>
+										<img src='/site/resta/img/menu/under.png' alt='Подстолья'>
+									</object>
+									<a href='/site/resta/index.html' title='Подстолья'>Подстолья</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/loft.svg'>
+										<img src='/site/resta/img/menu/loft.png' alt='Мебель в стиле LOFT'>
+									</object>
+									<a href='/site/resta/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/banket.svg'>
+										<img src='/site/resta/img/menu/banket.png' alt='Банкетная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='Банкетная мебель'>Банкетная мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/chairs.svg'>
+										<img src='/site/resta/img/menu/chairs.png' alt='Уличная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='уличная мебель'>Уличная мебель</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/interrior.svg'>
+										<img src='/site/resta/img/menu/interrior.png' alt='Предметная мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='предметная мебель'>предметная мебель</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/design*.svg'>
+										<img src='/site/resta/img/menu/design.png' alt='Дизайнерская мебель'>
+									</object>
+									<a href='/site/resta/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/hanger.svg'>
+										<img src='/site/resta/img/menu/hanger.png' alt='Вешалки, урны'>
+									</object>
+									<a href='/site/resta/index.html' title='Вешалки, урны'>Вешалки, урны</a></li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+										<img src='/site/resta/img/menu/aroma.png' alt='Арома'>
+									</object>
+									<a href='/site/resta/index.html' title='арома'>арома</a>
+								</li>
+								<li>
+									<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+										<img src='/site/resta/img/menu/aroma.png' alt='Посуда для баров и ресторанов'>
+									</object>
+									<a href='/site/resta/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a></li>
+							</ul>
+						</nav>
+					</aside>
+					<div class="main__title">
+						<h2 class="cpetial-offers__tittle">Наши клиенты</h2>
+					</div>
+					<div class='main__info-slider main__client carousel slide' id="carouselExampleControls">
+						<div class="carousel-inner">
+
+							<div class="carousel-item active">
+								<img src="https://mversta.ru/site/resta/img/client3.png" class="d-block w-100" alt="Стулья Eames">
+							</div>
+							<div class="carousel-item">
+								<img src="https://mversta.ru/site/resta/img/client4.png" class="d-block w-100" alt="Стулья Eames">
+							</div>
+							<div class="carousel-item">
+								<img src="https://mversta.ru/site/resta/img/client5.png" class="d-block w-100" alt="Стулья Eames">
+							</div>
+							<div class="carousel-item">
+								<img src="https://mversta.ru/site/resta/img/client6.png" class="d-block w-100" alt="Стулья Eames">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
+					<div class="main__title">
+						<h2 class="cpetial-offers__tittle">Наши выполненные проекты</h2>
+					</div>
+					<div class='main__info-slider main__info-work-our carousel' id="carouselExampleFade" data-bs-ride="carousel">
+						<div class="slick-slider main__project carousel-inner">
+							<div class="carousel-item active slick-slider-project">
+								<div class="main__slider-photo">
+									<img src="https://mversta.ru/site/resta/img/Mask-Group-20.jpg" class="d-block w-100" alt="Стулья Eames">
+								</div>
+								<div>
+									<p>Стулья Eames сиденье  - полипропилен, ножки металл , высота от пола до сиденья 43 см.</p>
+								</div>
+							</div>
+							<div class="carousel-item slick-slider-project">
+								<div class="main__slider-photo">
+									<img src="https://mversta.ru/site/resta/img/Mask_Group-19.jpg" class="d-block w-100" alt="Стулья Eames">
+								</div>
+								<div>
+									<p>Стулья Eames сиденье  - полипропилен, ножки металл , высота от пола до сиденья
+										43  см.</p>
+								</div>
+							</div>
+							<div class="carousel-item slick-slider-project">
+								<div class="main__slider-photo">
+									<img src="https://mversta.ru/site/resta/img/Mask-Group-18.jpg" class="d-block w-100" alt="Стулья Eames">
+								</div>
+								<div>
+									<p>Стулья Eames сиденье  - полипропилен, ножки металл , высота от пола до сиденья 43 см.</p>
+								</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Предыдущий</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Следующий</span>
+						</button>
+					</div>
 				</div>
-				<a href='/site/cvresume-web/index.html' title='Вешалки, урны'>Вешалки, урны</a>
+			</section>
+			<nav class='categoryMenu__nav header__nav contNav container-xxl'>
+				<div class='topBurger'>	</div> <!-- For menu which copied -->
+			</nav>
+			<section class="main__text main__send-letters container-xxl">
+					<div class="main__title row-col">
+						<h2 class="cpetial-offers__tittle">Напишите нам! Мы на связи</h2>
+					</div>
+					<div class="main__form-send-letters row-col">
+						<div class="main__form-first-name mb-8">
+							<input type="text" maxlength="10" name="user-first-name" placeholder="Ваше имя" required class="form-control">
+						</div>
+						<div class="main__form-tel mb-8">
+							<input type="tel" minlength="6" maxlength="20" name="user-tel" placeholder="Телефон"
+								   required class="form-control">
+						</div>
+						<div class="main__form-email mb-8">
+							<input type="email" maxlength="15" name="user-email"
+								   placeholder="Ваш e-mail (не обязательно)" class="form-control">
+						</div>
+						<div class="mail__texterea input-group mb-8" >
+							<textarea autocorrect="on" name="user-letter" spelicheck="true class="form-control mb-8"
+									  value="Ваше сообщение (не обязательно)" aria-label="With textarea"></textarea>
+						</div>
+						<div class="mail__button mb-3">
+							<input type="button" class="btn btn-outline-secondary text-lowercase"
+								   value="Отправить">
+						</div>
+						<div class="mail__sheckbox">
+						  <input class="form-check-input" type="checkbox" id="checkboxNoLabel"
+								 value=""  aria-label="...">
+							<p>Я ознакомлен с политикой конфеденциальности.</p>
+						</div>
+					</div>
+
+
+			</section>
+
+
+			<div >
+
 			</div>
-			<div class='main__offer'>
-				<div><img src='/img/hanger.jpg' alt='Вешалка наполная металлическая черная Loft №16' /></div>
-				<h3>Вешалка наполная металлическая черная Loft №16</h3>
-				<a href='/site/cvresume-web/index.html'>Арт.040023</a>
-				<div class='main__offerPrice'>
-					<span>5600</span> <span>р</span>
-					<span>6600</span> <span>р</span>
-				</div>
-				<div class='main__offerInCart'>
-					<form name='inCart'>
-						<input type='bottom' value='В корзину'>
-					</form>
-					<a href='/site/cvresume-web/index.html' title='Подробнее'>подробнее</a>					
-				</div>
-				<a href='/site/cvresume-web/index.html' title='Вешалки, урны'>Вешалки, урны</a>
-			</div>
+
+
+
+		</article>
+
+
+
+			</table>
+
+			</table>
+
+			</nav>
+
+			</nav>
 		</section>
-		<section id='main__article'>
-			<article>
-				<h2>Почему стоит приобретать мебель в Resta?</h2>
-				<p><strong>Мы работаем напрямую с фабриками</strong>, поэтому гарантируем низкие цены. Приобретая мебель в компании Resta, вы получаете мебель особой прочности, так как к мебели для объектов общепита предъявляются особые требования к износоустойчивости.  Вы можете приобрести мебель как для бара, кафе или ресторана, так и для дома и офиса.</p>
-				<h3 >Вот почему стоит приобретать мебель именно у нас:</h3>
-				<ul>
-					<li class='whyWe'><a href='/site/cvresume-web/index.html'>Работаем напрямую с производителями, поэтому гарантируем низкую цену</a></li>
-					<li class='whyWe'><a href='/site/cvresume-web/index.html'>Бесплатная доставка по Сочи</a></li>
-					<li class='whyWe'><a href='/site/cvresume-web/index.html'>Большой выбор товара в наличии на складе Сочи</a></li>
-					<li class='whyWe'><a href='/site/cvresume-web/index.html'>Вы можете выбрать любой цвет ткани под ваш интерьер</a></li>
-				</ul>
-				<h2 class='wohWill'>Какой должна быть мебель для баров и ресторанов?</h2>
-				<ul>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>износоустойчивой</a></li>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>огнеупорной</a></li>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>гипоаллергенной</a></li>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>функциональной</a></li>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>долговечной</a></li>
-					<li class='wohWill'><a href='/site/cvresume-web/index.html'>с оригинальным дизайном</a></li>
-				</ul>
-				<h2>Наши клиенты</h2>
-				<div class='main__articleSliderClient'></div>
-				<h2>Наши выполненные проекты</h2>
-				<div class='main__articleOurProject'>
-					<p>Стулья Eames сиденье  - полипропилен, ножки металл , высота от пола до сиденья 43 см.</p>
-				</div>
-			</article>
-		</section>
-		<section id='main__writeUs'>
-			<h2>Напишите нам! Мы на связи</h2>
-			<form>
-				<input type='text' name='nameClient' volume='Ваше имя' maxlength='15' required='required'>
-				<input type='tel' name='telNumber' volume='Телефон' maxlength='15' required='required'>
-				<input type='email' name='nameEmail' volume='Ваш e-mail (необязательно)' maxlength='20' required='required'>
-				<textarea width='254' height='723' maxlength='150'></textarea>
-				<button>Отправить</button>
-				<input type='checkbox' name='agree' valume='true'>
-				<label for='agree'>Я ознакомлен с Политикой конфиденциальности</label>
-				
-			</form>
-		</section>
-		
-		
+
+
 	</main>
 	<footer>
-		<div class='footer__logo'>
-			<a href='/site/cvresume-web/index.html'>
-				<img src='/img/logo_footer.png' />
-			</a>
+		<div class="header__logo">
+				<a href="https://mversta.ru/site/resta/" title="logo"></a>
+			</div>
+		<div class="header__contact">
+			<ul>
+				<li class="header__phone">
+					<a href="tel:+79820000000">+7 (982) 000-00-00</a>
+				</li>
+				<li class="header__phone">
+					<a href="tel:+79820000000">+7 (982) 000-00-00</a>
+				</li>
+				<li class="header__email">
+					<a href="milto:info@resta.ru">info@resta.ru</a>
+				</li>
+			</ul>
 		</div>
-		<!-- <div class='footer_menu'> -->
-		<div class='footer__nav nav footer__active'>
-			<div></div>
-			<nav>
-				<ul>
-					<li><a href='/site/cvresume-web/index.html' title='О компании'>О компании</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Доставка и оплата'>Доставка и оплата</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Отзывы'>Отзывы</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Акции'>Акции</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Вопрос-ответ'>Вопрос-ответ</a></li>
-					<li><a href='/site/cvresume-web/index.html' title='Контакты' class='footer__nav__a'>Контакты</a></li>
-				</ul>
-			</nav>
+		<nav class="header__nav">
+			<ul>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="О компании">О компании</a></li>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="Доставка и оплата">Доставка и оплата</a></li>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="Отзывы">Отзывы</a></li>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="Акции">Акции</a></li>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="Вопрос-ответ">Вопрос-ответ</a></li>
+				<li><a href="https://mversta.ru/site/resta/index.html" title="Контакты" class="header__nav__a">Контакты</a></li>
+			</ul>
+		</nav>
+		<div class="cocial-network">
+			<div>
+				<a href="https://mversta.ru/site/resta/">
+					<object type="image/svg+xml" data="/site/resta/img/svg/ins.svg">
+						<img src="https://mversta.ru/site/resta/img/svg/ins.svg" alt="Социальная сеть">
+					</object>
+				</a>
+			</div>
+			<div>
+				<a href="https://mversta.ru/site/resta/">
+					<object type="image/svg+xml" data="/site/resta/img/svg/f.svg">
+						<img src="https://mversta.ru/site/resta/img/svg/f.svg" alt="Социальная сеть">
+					</object>
+				</a>
+			</div>
+			<div>
+				<a href="https://mversta.ru/site/resta/">
+					<object type="image/svg+xml" data="/site/resta/img/svg/w.svg">
+						<img src="https://mversta.ru/site/resta/img/svg/w.svg" alt="Социальная сеть">
+					</object>
+				</a>
+			</div>
+
 		</div>
-		<!-- </div> -->
-		<!-- <div class='footer_contacts'> -->
-		<div class='footer__contact'>
-			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
-			<a href='tel:+7(982)000-00-00' title='Зоните для консультаций'>+7(982)000-00-00</a>
-			<a href='mailto:info@resta.ru' title='E-mail'>info@resta.ru</a>
-		</div>
-		
-		<!-- </div> -->
-		<div class='footer__cociaal'>
-			<a href='/site/cvresume-web/index.html' title=''></a>
-			<a href='/site/cvresume-web/index.html' title=''></a>
-			<a href='/site/cvresume-web/index.html' title=''></a>
-		</div>
-		<div class='footer_autor'>
+		<div class="autor">
 			<p>Resta, 2021. All rights reserved</p>
-			<a href='/site/cvresume-web/index.html' title='Политика конфиденциальности'>Политика конфиденциальности</a>
+			<a href="https://mversta.ru/site/resta/" title="">Политика конфиденциальности</a>
 		</div>
-		
-	
+	</footer>
+	<!-- class='navCatalog_active' -->
+	<!-- nav id='navCatalog' >
+				<ul>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/table.svg'>
+							<img src='/site/resta/img/menu/table.png' alt='Столы'>
+						</object>
+						<a href='/site/resta/index.html' title='Столы'>Столы</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/street.svg'>
+							<img src='/site/resta/img/menu/street.png' alt='Стулья'>
+						</object>
+						<a href='/site/resta/index.html' title='Стулья'>Стулья</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/soft.svg'>
+							<img src='/site/resta/img/menu/soft.png' alt='Мягкая мебель'>
+						</object>
+						<a href='/site/resta/index.html' title='Мягкая мебель'>Мягкая мебель</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/armchair.svg'>
+							<img src='/site/resta/img/menu/armchair.png' alt='Кресла'>
+						</object>
+						<a href='/site/resta/index.html' title='Кресла'>Кресла</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/top.svg'>
+							<img src='/site/resta/img/menu/top.png' alt='Столешницы'>
+						</object>
+						<a href='/site/resta/index.html' title='Столешницы'>Столешницы</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/under.svg'>
+							<img src='/site/resta/img/menu/under.png' alt='Подстолья'>
+						</object>
+						<a href='/site/resta/index.html' title='Подстолья'>Подстолья</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/loft.svg'>
+							<img src='/site/resta/img/menu/loft.png' alt='Мебель в стиле LOFT'>
+						</object>
+						<a href='/site/resta/index.html' title='Мебель в стиле LOFT'>Мебель в стиле LOFT</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/banket.svg'>
+							<img src='/site/resta/img/menu/banket.png' alt='Банкетная мебель'>
+						</object>
+						<a href='/site/resta/index.html' title='Банкетная мебель'>Банкетная мебель</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/chairs.svg'>
+							<img src='/site/resta/img/menu/chairs.png' alt='Уличная мебель'>
+						</object>
+						<a href='/site/resta/index.html' title='уличная мебель'>Уличная мебель</a></li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/interrior.svg'>
+							<img src='/site/resta/img/menu/interrior.png' alt='Предметная мебель'>
+						</object>
+						<a href='/site/resta/index.html' title='предметная мебель'>предметная мебель</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/design*.svg'>
+							<img src='/site/resta/img/menu/design.png' alt='Дизайнерская мебель'>
+						</object>
+						<a href='/site/resta/index.html' title='дизайнерская мебель'>дизайнерская мебель</a></li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/hanger.svg'>
+							<img src='/site/resta/img/menu/hanger.png' alt='Вешалки, урны'>
+						</object>
+						<a href='/site/resta/index.html' title='Вешалки, урны'>Вешалки, урны</a></li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+							<img src='/site/resta/img/menu/aroma.png' alt='Арома'>
+						</object>
+						<a href='/site/resta/index.html' title='арома'>арома</a>
+					</li>
+					<li>
+						<object type='image/svg+xml' data='/site/resta/img/menu/aroma.svg'>
+							<img src='/site/resta/img/menu/aroma.png' alt='Посуда для баров и ресторанов'>
+						</object>
+						<a href='/site/resta/index.html' title='посуда для баров и ресторанов'>посуда для баров и ресторанов</a>
+					</li>
+				</ul>
+			</nav -->
+	<footer>
+
 	</footer>
 </body>
 </html>

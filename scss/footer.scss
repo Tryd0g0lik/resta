@@ -1,0 +1,120 @@
+/* FOOTER style - start */
+footer {
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-left: 47px;
+	padding-top:20px;
+	background-color:#C4C4C4;
+
+	& > div,
+	& > nav{
+		flex-grow:1;
+		margin:initial;
+		width:100%;
+	}
+
+	& .header__logo{
+		background: no-repeat url('/site/resta/img/svg/Logo_Resta_vertical_color.svg') 2px 3px ;
+		margin:initial;
+		height:100px;
+	}
+
+	& .header__contact{
+		padding:initial;
+		margin:initial;
+		padding:2px 4px 12px ;
+		& li{
+			margin-bottom: 3px;
+			& a{
+				@extend %font_number_tel_footer;
+				color:var(--color_font);
+
+			}
+		}
+		& li:first-child a,
+		& li:nth-child(2) a{
+			background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 0 -1px;
+		}
+		& li:last-child a{
+			background: no-repeat url(/site/resta/img/svg/footer_email.svg) 0 3px;
+		}
+
+
+	}
+
+	& .header__nav{
+		width:100%;
+		height:initial;
+		grid-column:initial;
+		grid-row:initial;
+		position:relative;
+		padding-top:16px;
+		border:initial;
+
+		&::before,
+		&::after{
+			display:none;
+		}
+
+		& ul{
+			width:initial;
+			height:initial;
+			top:initial;
+			left:initial;
+			position:relative;
+			background:initial;
+
+			& li{
+				display:block;
+				margin-bottom:11px;
+				& a{
+					@extend %font_link_menu_footer;
+					color:var(--color_font);
+
+				}
+			}
+		}
+	}
+
+	& .cocial-network{
+		padding-top:33px;
+
+		& > div{
+			display:inline-block;
+			width:initial;
+			margin-right: 22px;
+
+			& a{
+				vertical-align:top;
+				width:initial;
+				height:35px;
+			}
+		}
+	}
+
+	& .autor{
+	padding-top:33px;
+
+		& > * {
+
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 17px;
+			letter-spacing: 0em;
+			text-align: left;
+			color:var(--color_font);
+
+		}
+		& a{
+			padding-top:5px;
+			display:inline-block;
+			border:initial;
+			border-bottom: 1px solid #5D5B61;
+
+		}
+	}
+}
+
+
+/* FOOTER style - and */

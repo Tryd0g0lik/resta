@@ -5,7 +5,7 @@ body {/* width: 1920px; *//* margin:0 auto; *//* max-width: 1170px; */display: -
 /* sbros stilei */
 * { -webkit-box-sizing: border-box; box-sizing: border-box;  -moz-box-sizing: border-box; border:0; margin:0; border:0; padding:0; letter-spacing:1px}
 #body *{}
-html, body, div, object, ifreine, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, addr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, ol, ul, li, fieldset, form, ladel, legent, table, caption, tbody, tfoot, thead, tr,  th, td, article, aside, canvas, details, embed, figure, figcapcion, footer,  header, hgroup, menu, output, ruby, time, mark, audio, video, select, input, textarea, span, applet, iframe, dd, label, legend, table, figcaption, nav, summary {margin:0; padding:0; border:0px; vertical-align:baseline; outline: 0; -webkit-box-sizing: content-box; box-sizing: content-box; -moz-sizing:content-box;  position: relative; vertical-align: baseline; font-family:'Panton', sans-serif, 'Arial', 'Helvetica'; font-size: 16px;}
+html, body, div, object, ifreine, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, addr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, ol, ul, li, fieldset, form, ladel, legent, table, caption, tbody, tfoot, thead, tr,  th, td, article, aside, canvas, details, embed, figure, figcapcion, footer,  header, hgroup, menu, output, ruby, time, mark, audio, video, select, input, textarea, span, applet, iframe, dd, label, legend, table, figcaption, nav, summary {margin:0; padding:0; border:0px; vertical-align:baseline; outline: 0; position: relative; vertical-align: baseline; font-family:'Panton', sans-serif, 'Arial', 'Helvetica'; font-size: 12px;}
 form, input, button{ -webkit-box-sizing: border-box; box-sizing: border-box; }
 button, input[type='submit'], input[type='button'], input[type='reset'], a, a:link, a:active, a:hover, a:focuse {cursor:pointer;}
 a{text-decoration:none;}
@@ -24,7 +24,6 @@ h2{font-size:30px;font-weight: 400;}
 h3{font-size:24px;font-weight: 400;}
 h4{font-size:16px;font-weight: 500;}
 h5{font-size:14px;font-weight: 500;}
-#contant li{padding: 0 10px 20px 20px;}
 @font-face {
     font-family: 'Panton';
     src: url('/fonts/panton/Panton-BoldItalic.eot');

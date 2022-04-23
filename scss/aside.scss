@@ -1,0 +1,160 @@
+/* The ASIDE COLUMN style - start */
+.topSection{
+	position: relative;
+	@extend %coren-block;
+	width: initial;
+
+	& > div {
+		margin-left:initial;
+		margin-right:initial;
+	}
+
+}
+.colLeft{
+	display: block;
+	overflow: hidden;
+	width: 35px;
+	height: 347px;
+	overflow:hidden;
+	background-color: #fff;
+	border-radius: 0 8px 8px 0;
+	border: 1px var(--backg_page) solid;
+	padding:initial;
+	position: absolute;
+	left: auto;
+	top: 0;
+	z-index: 50;
+
+	cursor: pointer;
+
+}
+.colLeft.colLeft_activity{
+	top:-168px;
+	width: 100%;
+
+	& nav ul{
+		display: initial;
+	}
+}
+
+.colLeft nav {
+	z-index: 60;
+	position: relative;
+	left: initial;
+	width: 100%;
+	height: 100%;
+
+	&::before,
+	&::after{
+		content: "Кликните, чтобы увидеть категории";
+		z-index: 60;
+		background-color: #fff;
+		width: 39px;
+		height: 347px;
+		padding: 18px 0 1px 8px;
+		box-sizing: border-box;
+
+		display: block;
+		border: 1px solid var(--color_font);
+		border-radius: 8px 0 0 8px;
+		border:1px 0 0 1px;
+		color: var(--color_normal);
+		position: absolute;
+		left: 0;
+		top: 16;
+
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 0.84em;
+		word-spacing: 0.5px;
+		letter-spacing: 0.1px;
+
+		cursor: pointer;
+
+	}
+
+	&::after{
+		display: none;
+		padding-top: 108px;
+		content: 'Скрыть контент';
+		top:0;
+
+		& ul{
+			display: none;
+
+		}
+
+	}
+	& li{
+		display: none;
+	}
+}
+
+.colLeft.colLeft_activity{
+	overflow: visible;
+	width: 100%;
+	height: initial;
+	background-color: initial;
+	border: 0;
+
+	/*& nav:hover {*/
+	& nav{
+		width: initial;
+		position: sticky;
+		margin: 0 auto;
+
+
+		&::before{
+			display: none;
+		}
+		&::after{
+			display: block;
+			top:168px;
+		}
+		& > ul{
+			background:none;
+		}
+		& > ul li{
+			display: block;
+			width: 265.32px;
+			height: 36.67px;
+			background-color: #fff;
+			text-align: center;
+			border-radius: 10px;
+			border: 1px solid var(--color_font);
+			margin: 0 auto;
+			z-index: 65;
+			left: 10px;
+			& object{
+				display: none;
+				vertical-align: top;
+				height: 35px;
+				z-index: 70;
+			}
+
+			& a,
+			& a:active,
+			& a:visited{
+				display: inline-block;
+				height: 100%;
+				width: 100% ; /* 209.9px*/
+				padding-top: 10px;
+				font-size: 1.34em;
+				vertical-align: top;
+				z-index:70;
+				color: var(--color_font);
+				border-radius: 8px;
+			}
+		/*	&, */ /* tochmobile */
+			&:hover
+			{
+				background-color: var(--color_normal);
+					& a{color: #fff;}
+				}
+
+		}
+	}
+}
+/* The ASIDE COLUMN style - end */

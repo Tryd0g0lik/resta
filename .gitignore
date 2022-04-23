@@ -1,0 +1,9 @@
+venv_02/
+backUp/
+img/
+Pixel_perfect/
+*.json
+*.map
+*.config
+*.zip
+

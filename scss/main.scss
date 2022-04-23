@@ -1,0 +1,748 @@
+/* The MAIN'S BLOCK style - start*/
+body > main{
+	@extend %first_block;
+	min-width:283px;
+	flex-wrap:wrap;
+	justify-content:start;
+	padding-bottom:37px;
+	margin:initial;
+}
+
+.categoryMenu{
+	background-color: var(--color_font);
+	padding: 8px 0 6px 16px;
+	box-sizing: border-box;
+	width:100%;
+
+
+
+	//.categoryMenu__nav header__nav contNav header__nav_activity
+	& .categoryMenu__nav{
+		display: inline-block;
+		margin: 0px 0 0 2px;
+
+
+
+	}
+	& .categoryMenu__nav.header__nav.header__nav_activity ul {
+		left: initial;
+
+		&::before{
+			left: 9px;
+		}
+	}
+
+
+	& .header__contact{
+		display: inline-block;
+		vertical-align: top;
+		padding: 15px 0 0px 33px;
+		margin-left: 0px;
+		float: right;
+
+		& .header__phone a{
+			font-size: 1.05em;
+			font-weight: 400;
+			line-height: 19px;
+			letter-spacing: 0em;
+			text-align: left;
+
+			letter-spacing: 0.02em;
+		}
+
+		&::after{
+			display: none;
+		}
+	}
+
+	& .header__contact > ul > li{
+		display: none;
+
+		&:first-child{
+			display: inline-block;
+			& a {
+				color: #fff;
+			}
+		}
+	}
+
+}
+
+
+.categoryMenu__button{
+	display: none;
+
+}
+/* --Categories style - start */
+.category {
+	padding-top: 34px;
+	margin-bottom:initial;
+
+	& > div {
+
+	}
+
+}
+
+.main__title{
+	display: block;
+	padding-left: 50px;
+	margin-bottom: 11px;
+	width: 100%;
+
+	& h2{
+
+		font-size: 24px;
+		font-weight: 700;
+		line-height: 1.17;
+		letter-spacing: 0em;
+		text-align: left;
+		color: var(--color_font);
+
+		padding:initial;
+		letter-spacing: 0.1px
+
+	}
+}
+/* --Categories style - end */
+
+#navCatalog{
+	float: none;
+	clear: both;
+	display: block;
+}
+
+.catalog{
+	height:376px;
+	overflow:hidden;
+	margin-bottom:45px;
+}
+.catalog__look{
+	display:none;
+}
+
+.catalog__look.look{
+	position:absolute;
+	padding:5px;
+	z-index:50;
+	background-color: rgb(93, 91, 97, 54%);
+// 		width:100%;
+// 		height:100%;
+	width:auto;
+	height:auto;
+	overflow:hidden;
+	display:inline-block;
+	top:0;
+	left:0px;
+}
+
+.catalog__furniture{
+	width: 100%;
+	max-width: 254px;
+	height: 171px;
+	padding: 14.34px 18px 13px 15px;
+	margin: 0 auto;
+	margin-bottom: 17px;
+	margin-left: 52px;
+
+	border: 1px var(--backg_page) solid;
+	border-radius: 10px;
+
+
+	& > div:first-child{
+		border-bottom: 1px var(--backg_page) solid;
+		padding-bottom:-4px;
+
+	}
+	& div{
+		& .catalog__foto{
+			width: 66px;
+			height: 48px;
+			overflow:hidden;
+			display: inline-block;
+
+		}
+		& .catalog__title{
+			width: 125px;
+			display: inline-block;
+			vertical-align: top;
+
+			& > div {
+				margin-bottom: 4px;
+			}
+			& h3{
+
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 22px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			}
+
+			& span{
+				color: var(--backg_page);
+				font-size: 12px;
+				text-decoration: underline;
+			}
+		}
+	}
+
+
+
+	& .catalog__info{
+		padding-top: 7.34px;
+		& li{
+			padding-left: 20.18px;
+			background: url('/site/resta/img/svg/li_table.svg') 0 0 no-repeat, url('/site/resta/img/svg/001.svg') right no-repeat;
+			height:18px;
+			margin-bottom:5px;
+
+			& a {
+				color:var(--color_font);
+
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: left;
+
+			}
+		}
+
+	}
+
+	& > div:nth-child(3){
+		width:100%;
+		height:15px;
+		text-align:left;
+		padding-top:4px;
+
+		 & > span{
+		    display:inline-block;
+		    border: 1px solid var(--color_font);
+		    width:5px;
+		    height:5px;
+		    border-radius:5px;
+		    vertical-align:top;
+
+	    }
+	}
+	& .catalog__inCart{
+		height:20px;
+		background: no-repeat url(/site/resta/img/svg/003.svg) 149px 0;
+
+		& a{
+			@extend %font_link_12;
+			color: var(--color_normal);
+			text-decoration:underline;
+			text-transform:lowercase;
+			letter-spacing: 0.35px;
+
+		}
+	}
+}
+.catalog__allProduct{
+	padding-left:52px;
+	& a{
+		@extend %font_linkUnderCategory;
+		display:inline-block;
+		box-sizing:content-box;
+		background: no-repeat url(/site/resta/img/svg/rght.svg) 200px 0;
+		padding-right:30px;
+		color: var(--color_normal);
+	}
+}
+
+
+/* --cpecial offer - start */
+.cpetialOffers{
+	height:856px;
+	overflow:hidden;
+	padding-bottom:10px;
+	margin-bottom:26px;
+
+	& .catalog__furniture{
+		padding-left:11px;
+		padding-top:18px;
+		padding-right:initial;
+		height:368px;
+		margin-bottom:30px;
+		&::before{
+			@extend %primary-block-absolute;
+			content:'%';
+			color:#fff;
+			font-size:2.5em;
+			text-align:center;
+
+			padding-top:10px;
+			background: no-repeat url("/site/resta/img/svg/percent.svg");
+			width:38px;
+			height:52px;
+			z-index:5;
+			right:10px;
+			top:-8px;
+
+
+		}
+
+		& div:first-child{
+			border:0;
+			margin-bottom:3px;
+		}
+
+		& div .catalog__foto{
+			width:226px;
+			height:149px;
+
+			display:block;
+			margin-bottom:20px;
+
+			& img{
+				width:99%;
+			}
+		}
+		& div .catalog__title{
+			width:100%;
+
+			& h3{
+				@extend %font_h3Catalog;
+				letter-spacing:0.1px;
+
+			}
+		}
+		& .catalog__inCart{
+			background:initial;
+			text-align:left;
+			height:25px;
+			width:120px;
+			background: no-repeat url("/site/resta/img/svg/right.svg") calc(100% - 10px) 7px;
+			/* background-size: 15px; */
+
+			& a{
+				@extend %font_link_14;
+				color:var(--backg_page);
+				word-spacing:-2.5px;
+				text-transform:initial;
+			}
+		}
+	}
+
+
+	& h3{
+		color:var(--color_font);
+	}
+
+
+
+	& .catalog__price{
+		display:flex;
+		flex-diraction:row;
+		flex-wrap: wrap;
+		padding-left:2px;
+		margin-bottom:8px;
+
+
+		& > div:first-child{
+			width:100px;
+			margin-bottom:13px;
+
+			& span{
+				@extend %font_newPrice;
+				color: var(--color_normal);
+			}
+
+			& span:last-child{
+				margin-left: 5px;
+			}
+		}
+
+		& > div:nth-child(2){
+			width:125px;
+			margin-bottom:13px;
+
+			& span:first-child::before{
+				@extend %primary-afterBefore;
+				background-color: var(--backg_page);
+				width:82.9px;
+				border:1px solid var(--backg_page);
+				transform:rotate(346deg);
+				top:10px;
+				left:-2px;
+
+			}
+
+			& span:first-child,
+			& span:last-child{
+				@extend %font_oldPrice;
+				color: var(--backg_page);
+			}
+
+			& span:last-child{
+				margin-left:5px;
+			}
+		}
+
+		& > div:nth-child(3){
+			width:125px;
+			padding-top:2px;
+
+			& button{
+				width: 120px;
+				height:32px;
+				background:no-repeat url('/site/resta/img/svg/cart.svg') calc(100% - 12px) 8px, var(--color_normal);
+				color:#fff;
+				text-align:left;
+				padding-left:10px;
+				padding-right:30px;
+				border-radius:5px;
+
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: center;
+			}
+		}
+
+		& > div:nth-child(4){
+			width:100px;
+			height:34px;
+			text-align:center;
+			padding-top:10px;
+			padding-left:10px;
+			background:initial;
+
+			& a{
+				@extend %font_link_14;
+				display:inline-block;
+				width:90px;
+				height:18px;
+				padding-right:15px;
+				color:var(--color_normal);
+				background: url("/site/resta/img/svg/003.svg") 75px 0px no-repeat;
+			}
+		}
+	}
+}
+.categoryMenu__nav_midle{
+	display:none;
+}
+
+.main__text{
+	& nav,
+	& aside{
+		display:none;
+	}
+}
+.info-text__about-us{
+	margin-bottom: 27.4px;
+
+	& .main__title {
+		padding-left:47px;
+		margin-right:0;
+		margin-bottom:14px;
+
+
+		& h2,
+		& h3{
+			line-height:1.3;
+			padding:initial;
+			margin-right:initial;
+		}
+
+		& h3{
+			letter-spacing:-0.3px;
+		}
+	}
+
+	& .main__title-correct{
+		padding-left:42px;
+		margin-bottom:20px;
+
+		& h3 {
+			line-height:1.2;
+		}
+	}
+
+}
+
+.main__info-text{
+	padding-left:40.7px;
+	padding-top:5px;
+	margin-bottom:15.5px;
+	line-height:1;
+
+	& li{
+		display:inline-block;
+		margin-bottom:8.9px;
+		padding:12px 16px 13px 17px;
+	}
+
+	& .info-text__01_bg{
+		background-color: #EEEEEE;
+		height: 86px;
+		width: 254px;
+		border-radius: 10px;
+	}
+	& .info-text__01_hover:hover {
+        background: -webkit-linear-gradient(107deg, #f2b97f45, #ededed, #4e9bd440, #ff6d9742);
+        background: linear-gradient(107deg, #f2b97f45, #ededed, #4e9bd440, #ff6d9742)
+    }
+}
+
+.main__info-text-property{
+    width: 15em;
+    margin-bottom: 12px;
+    padding-left:37.7px;
+
+	& li{
+		padding: initial;
+	    display: flex;
+	    margin-bottom: 6.5px;
+	    padding-top: 5px;
+	    width: 15em;
+	    flex-direction: row;
+	    flex-wrap: nowrap;
+
+		& object{
+			height: 23.86px;
+			width: 21.69px;
+			left: 1.15px;
+			top: 0.06px;
+			border-radius: 0px;
+			padding:initial;
+		    display: inline-block;
+			margin-right: 21px;
+		}
+
+		& span {
+			vertical-align:top;
+		}
+	}
+}
+
+.main__info-text-correct{
+	margin-bottom: 46px;
+}
+
+.info-our-client{
+	& .main__title{
+		padding-left:35px;
+		margin-bottom:17px;
+
+	}
+
+	& div.main__info-slider.main__client{
+		height:54px;
+		overflow:hidden;
+	}
+	& .main__client .carousel-inner{
+		display:flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap:4px;
+		flex-grow: 1;
+		justify-content: start;
+
+
+	}
+	& .main__client .carousel-inner,
+	& .main__client .carousel-inner > div{
+		height:54px;
+	}
+	& .main__client{
+		width:67px;
+		height:auto;
+
+		&  .carousel-inner{
+			& > div{
+				max-width:72px;
+				overflow:hidden;
+				display:inline-block;
+				margin-right:initial;
+			    margin-right: 10px;
+                box-sizing: content-box;
+
+				& img{
+					transform:scale(1.3);
+					transform-origin: top left;
+				}
+			}
+
+		}
+	}
+
+
+
+
+
+	& .main__info-slider{
+		padding-left:40.7px;
+		height:124px;
+		width: 100%;
+
+		& .slick-slider-project{
+
+
+			& div.main__slider-photo {
+				width: 195px;
+			    height: 155px;
+			    overflow: inherit;
+			    text-align: center;
+			    margin: auto;
+			    margin-bottom:17px;
+			}
+
+			& .main__slider-photo + div{
+				width:195px;
+				margin: 0 auto;
+			}
+		}
+
+		& .carousel-control-prev{
+			position:absolute;
+			z-index: 5;
+			left:50px;
+
+			& .carousel-control-prev-icon{
+				background:no-repeat url(/site/resta/img/svg/slider-control-left.svg);
+			    z-index: 50;
+			    top: 2px /*-35px*/;
+			    left: -15px;
+
+			}
+		}
+
+		& .carousel-control-next{
+		    position: absolute;
+		    z-index: 5;
+		    box-sizing: border-box;
+
+			& .carousel-control-next-icon{
+				background:no-repeat url(/site/resta/img/svg/slider-control-right.svg);
+			    z-index: 50;
+			    right: -10px;
+			    width: 42px;
+			    top: 2px /*-36px*/;
+				}
+			}
+
+	}
+	& div{
+		& .main__info-slider{
+			height:auto;
+			margin-bottom:61px;
+		}
+	}
+
+	& .main__info-work-our{
+		height:280px;
+		margin-bottom:30px;
+	}
+
+	& .main__info-work-our {
+		height:278px;
+		width:100%;
+		max-width:306px;
+
+		& div {
+			height: 100%;
+			width:100%;
+		}
+	}
+
+	&  .main__info-work-our.main__info-slider{
+		& .carousel-control-prev-icon{
+			top: -35px;
+		}
+
+	& .carousel-control-next{
+			top: -74px;
+		}
+	}
+}
+.carousel-inner{
+	overflow:initial;
+}
+
+
+.main__send-letters{
+
+	& .main__title{
+		padding-left:39px;
+	}
+
+}
+
+.main__form-send-letters{
+	padding-top:7px;
+
+	& > div{
+		width:100%;
+		display:flex;
+		flex-decoration:column;
+		margin-bottom:9px;
+		justify-content:flex-start;
+		padding-left: 39px;
+
+		& input{
+			border-radius: 10px;
+			background-color:#9493960f;
+			text-align:left;
+			padding-bottom:3px;
+		}
+
+		& textarea{
+			width:100%;
+			max-width:254px;
+			height:107px;
+			padding:.375rem .75rem;
+			background-color:#9493960f;
+			border:1px solid #ced4da;
+
+
+		}
+		& .mail__button{
+			padding-top:5px;
+		}
+		& input[type='button']{
+			height: 40px;
+			width: 248.83740234375px;
+			border-radius: 8px;
+			background-color:#8C325B;
+			color:#fff;
+			text-align:center;
+		}
+
+
+	}
+	& .mail__texterea{
+		height: 40px;
+		width: 254px;
+		border-radius: 10px;
+		background-color:#9493960f;
+		text-align:left;
+	}
+	& .mail__texterea{
+		width:initial;
+		height:auto;
+		margin-bottom: 12px;
+	}
+}
+.mail__sheckbox{
+		& .form-check-input{
+		width:24px;
+		height:18px;
+		margin-right:5px;
+		}
+
+		& p {
+			font-size: 13px;
+            line-height: 1;
+		}
+	}
+
+/* --cpecial offer - end */
+/* The MAIN'S BLOCK style - end*/
+
