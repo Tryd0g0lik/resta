@@ -1,0 +1,142 @@
+@media screen and (min-width:321px){
+	header{
+		width:100%;
+		max-width:1920px;
+
+		grid-template-columns: 122px 70px 130px
+	}
+	/* CATEGORY product - style  - start*/
+	/* -- title category - style - start */
+	.main__title{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: nowrap;
+		flex-grow:1;
+		justify-content:center;
+
+
+	}
+	.category__title{
+		padding:initial;
+	}
+	/* -- title category - style - and */
+
+	/* --category product style -start */
+	.category{
+		display:flex;
+		flex-direction: column;
+
+		& > div:last-child{
+			display:flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+			& > div{
+				flex-grow:1;
+				width:100%;
+			}
+
+			& .category__catalog {
+				display:flex;
+				flex-direction:row;
+				flex-grow: 1;
+				flex-wrap:wrap;
+				justify-content:center;
+				margin:initial;
+
+
+			}
+
+
+
+		}
+
+
+		& .catalog__allProduct{
+			display:flex;
+			flex-direction:row;
+			flex-wrap:nowrap;
+
+
+			& a {
+				margin:initial;
+			}
+
+		}
+	}
+/* --category product style - and */
+}
+
+.catalog{
+	display:flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	justify-content: start;
+	padding-left:48px;
+	padding-top:1px;
+	margin:initial;
+	margin-bottom:48px;
+
+
+	& > div{
+		display:inline-block;
+		margin:initial;
+		margin-bottom: 18px;
+	}
+
+
+}
+
+/* block SPECIAL AFFER atyle - start */
+.cpetialOffers{
+	display:flex;
+	flex-direction: column;
+	height:826px;
+	justify-content:start;
+
+	& .main__title{
+		padding:initial;
+		flex-grow:initial;
+		padding: 0 50px;
+	}
+
+	& > div:last-child{
+		display:flex;
+		flex-direction:row;
+		flex-wrap: wrap;
+
+		padding-left:34px;
+		justify-content:center;
+		gap:35px;
+		height:826px;
+		box-sizing: border-box;
+
+
+	}
+
+	& .catalog__furniture{
+		margin:initial;
+
+	}
+
+
+}
+
+/* block SPECIAL AFFER atyle - end */
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
+

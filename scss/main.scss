@@ -6,6 +6,7 @@ body > main{
 	justify-content:start;
 	padding-bottom:37px;
 	margin:initial;
+	background-color:var(--color_bg);
 }
 
 .categoryMenu{
@@ -140,18 +141,18 @@ body > main{
 	width: 100%;
 	max-width: 254px;
 	height: 171px;
-	padding: 14.34px 18px 13px 15px;
-	margin: 0 auto;
+	padding: 14.34px 18px 13px initial;
+	/* margin: 0 auto;
 	margin-bottom: 17px;
-	margin-left: 52px;
+	margin-left: 52px; */
 
-	border: 1px var(--backg_page) solid;
+	/* border: 1px var(--backg_page) solid; */
 	border-radius: 10px;
-
+	background-color:#fff;
 
 	& > div:first-child{
 		border-bottom: 1px var(--backg_page) solid;
-		padding-bottom:-4px;
+		padding-bottom:3px;
 
 	}
 	& div{
@@ -160,15 +161,19 @@ body > main{
 			height: 48px;
 			overflow:hidden;
 			display: inline-block;
+			text-align:center;
+			margin: 0 auto;
 
 		}
 		& .catalog__title{
 			width: 125px;
 			display: inline-block;
 			vertical-align: top;
+			padding-left:10px;
 
 			& > div {
-				margin-bottom: 4px;
+				margin-bottom: 1px;
+				margin-left:3.8px;
 			}
 			& h3{
 
@@ -184,6 +189,8 @@ body > main{
 				color: var(--backg_page);
 				font-size: 12px;
 				text-decoration: underline;
+				vertical-align: top;
+				margin-left:3.8px;
 			}
 		}
 	}
@@ -217,6 +224,7 @@ body > main{
 		height:15px;
 		text-align:left;
 		padding-top:4px;
+		padding-left:10px;
 
 		 & > span{
 		    display:inline-block;
@@ -244,6 +252,7 @@ body > main{
 }
 .catalog__allProduct{
 	padding-left:52px;
+	box-sizing:border-box;
 	& a{
 		@extend %font_linkUnderCategory;
 		display:inline-block;
@@ -263,7 +272,7 @@ body > main{
 	margin-bottom:26px;
 
 	& .catalog__furniture{
-		padding-left:11px;
+
 		padding-top:18px;
 		padding-right:initial;
 		height:368px;
@@ -288,7 +297,7 @@ body > main{
 
 		& div:first-child{
 			border:0;
-			margin-bottom:3px;
+			margin-bottom:initial;
 		}
 
 		& div .catalog__foto{
@@ -316,7 +325,7 @@ body > main{
 			text-align:left;
 			height:25px;
 			width:120px;
-			background: no-repeat url("/site/resta/img/svg/right.svg") calc(100% - 10px) 7px;
+			background: no-repeat url("/site/resta/img/svg/right.svg") calc(100% - 2px) 7px;
 			/* background-size: 15px; */
 
 			& a{
@@ -339,8 +348,8 @@ body > main{
 		display:flex;
 		flex-diraction:row;
 		flex-wrap: wrap;
-		padding-left:2px;
-		margin-bottom:8px;
+		padding-left:12px;
+		margin-bottom:3px;
 
 
 		& > div:first-child{
@@ -409,7 +418,7 @@ body > main{
 			width:100px;
 			height:34px;
 			text-align:center;
-			padding-top:10px;
+			padding-top:4px;
 			padding-left:10px;
 			background:initial;
 
@@ -438,10 +447,14 @@ body > main{
 .info-text__about-us{
 	margin-bottom: 27.4px;
 
+	& .main__info-text + .main__title{
+		padding-top: 40px;
+
+	}
 	& .main__title {
-		padding-left:47px;
+		padding:78px 0 0 47px;
 		margin-right:0;
-		margin-bottom:14px;
+		margin-bottom:10px;
 
 
 		& h2,
@@ -456,9 +469,10 @@ body > main{
 		}
 	}
 
-	& .main__title-correct{
-		padding-left:42px;
+	& .main__title.main__title-correct{
+		padding: 0px 0 0 42px;
 		margin-bottom:20px;
+
 
 		& h3 {
 			line-height:1.2;
@@ -468,7 +482,7 @@ body > main{
 }
 
 .main__info-text{
-	padding-left:40.7px;
+	padding-left:37px;
 	padding-top:5px;
 	margin-bottom:15.5px;
 	line-height:1;
@@ -524,6 +538,17 @@ body > main{
 
 .main__info-text-correct{
 	margin-bottom: 46px;
+	padding-top: 10px;
+
+	& ul{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		flex-grow:1;
+		justify-content: space-between;
+
+	}
+
 }
 
 .info-our-client{
@@ -540,7 +565,7 @@ body > main{
 	& .main__client .carousel-inner{
 		display:flex;
 		flex-direction: row;
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		gap:4px;
 		flex-grow: 1;
 		justify-content: start;
@@ -703,9 +728,7 @@ body > main{
 
 
 		}
-		& .mail__button{
-			padding-top:5px;
-		}
+
 		& input[type='button']{
 			height: 40px;
 			width: 248.83740234375px;
@@ -716,6 +739,13 @@ body > main{
 		}
 
 
+	}
+	& .mail__button{
+		padding-top:10px;
+
+	}
+	& div.mail__button.mb-3{
+		margin-bottom:2px;
 	}
 	& .mail__texterea{
 		height: 40px;

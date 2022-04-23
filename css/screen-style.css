@@ -86,9 +86,6 @@
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .category .catalog__allProduct a {
     margin: initial;
@@ -96,9 +93,28 @@
 
   /* --category product style - and */
 }
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding-left: 48px;
+  padding-top: 1px;
+  margin: initial;
+  margin-bottom: 48px;
+}
 .catalog > div {
   display: inline-block;
   margin: initial;
+  margin-bottom: 18px;
 }
 
 /* block SPECIAL AFFER atyle - start */
@@ -120,6 +136,7 @@
   -webkit-box-flex: initial;
       -ms-flex-positive: initial;
           flex-grow: initial;
+  padding: 0 50px;
 }
 .cpetialOffers > div:last-child {
   display: -webkit-box;
@@ -131,6 +148,7 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding-left: 34px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
