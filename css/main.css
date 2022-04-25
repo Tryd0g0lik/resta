@@ -746,3 +746,104 @@ body > main {
 
 /* --cpecial offer - end */
 /* The MAIN'S BLOCK style - end*/
+@media screen and (min-width: 321px) {
+  :root {
+    --backg_page:#949396;
+    /* фон страницы*/
+    --color_active:#A41656;
+    /* цвет-active */
+    --color_hover:#5A082D;
+    /* цвет-hover */
+    --color_normal:#8C325B;
+    /* цвет кнопок ссылок*/
+    --color_bg: #C4C4C4;
+    /* фоновый цвет */
+    --primary_color: #ffffff;
+    --color_font:#5D5B61;
+    /* фон шапки */
+    --primary__cursor: pointer;
+    --primary_border:1px #949396 solid;
+  }
+
+  .catalog__furniture .catalog__inCart a {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+  }
+
+  .cpetialOffers .catalog__furniture .catalog__inCart a, .cpetialOffers .catalog__price > div:nth-child(4) a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .catalog__allProduct a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__furniture div .catalog__title h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child, .cpetialOffers .catalog__price > div:nth-child(2) span:last-child {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:first-child span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  }
+
+  .cpetialOffers .catalog__furniture::before {
+    display: inline-block;
+    position: absolute;
+  }
+
+  body > main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1;
+  }
+
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  /*.categoryMenu__nav header__nav contNav header__nav_activity */
+}

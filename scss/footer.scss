@@ -1,3 +1,5 @@
+@import 'variabls-style';
+
 /* FOOTER style - start */
 footer {
 	display:flex;
@@ -27,6 +29,7 @@ footer {
 		& li{
 			margin-bottom: 3px;
 			& a{
+
 				@extend %font_number_tel_footer;
 				color:var(--color_font);
 
@@ -69,7 +72,7 @@ footer {
 				display:block;
 				margin-bottom:11px;
 				& a{
-					@extend %font_link_menu_footer;
+					//@extend %font_link_menu_footer;
 					color:var(--color_font);
 
 				}

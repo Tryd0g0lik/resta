@@ -1,4 +1,9 @@
+
+// @import 'variabls-style';
 /* the TOP SLIDER's style - start */
+
+
+
 .topSection__slider {
 	width: 100%;
 	min-width:320px;
@@ -61,57 +66,7 @@
 /* the TOP SLIDER's style - end */
 
 @media screen and (min-width:321px){
-	@import 'variabls-style';
 
-	/* --accaunt's head -style - start */
-	.header__account{
-		background-color:var(--color_bg);
-		max-width:210px;
-		width:100%;
-		margin:initial;
-		display:flex;
-		flex-direction: row;
-		flex-wrap:nowrap;
-		justify-content: start;
-
-
-		& a:nth-child(1){
-			display: inline-block;
-			@extend %font_link_12;
-			line-height:12px;
-			color: var(--color_hover);
-
-			height:24px;
-			width:45px;
-			margin: 18px 0 0 15px;
-		}
-
-		& div:nth-child(2){
-			background: no-repeat url(/site/resta/img/svg/accaunt_red.svg);
-			margin-left:6px;
-		}
-
-		& div:last-child{
-			background: no-repeat url(/site/resta/img/svg/shopping-cart-red.svg);
-			margin-left:2.6em;
-			& a{
-
-				@extend %font_link_14;
-				background-color:var(--backg_page);
-				color: #fff;
-				margin-top:0;
-				width:24px;
-				height:24px;
-				padding: initial;
-				padding: 5px 0 0 0;
-				box-sizing:border-box;
-				text-decoration: none;
-
-	        }
-		}
-	}
-
-	/* --accaunt's head -style - end */
 
 	/* --a top's Slider under a header style - start */
 	.topSection__slider {
