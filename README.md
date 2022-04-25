@@ -1,2 +1,2 @@
 # resta
-  This's only for save the layout's version. Projeckt a Resta
+  The figma is layout web-design. This  version have a web layout more 320px
