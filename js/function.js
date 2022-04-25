@@ -13,20 +13,20 @@ $('.header__EN').click(function(){
   pg.addRoverClass($('.header__EN_active'), $('.header__EN'), 'header__EN_active', 'header__EN header__EN_active');
 });
 
-$('.header__RU').mouseover(function(){
-  $('.header__RU').addClass('header__RU header__RU_active');
-});
-$('.header__RU').mouseout(function(){
-  $('.header__RU').removeClass('header__RU_active');
-});
-
-$('.header__EN').mouseout(function(){
-  $('.header__EN').addClass('header__EN header__RU_active');
-});
-
-$('.header__RU').mouseout(function(){
-  $('.header__RU').removeClass('header__RU header__RU_active');
-});
+//$('.header__RU').mouseover(function(){
+//  $('.header__RU').addClass('header__RU header__RU_active');
+//});
+//$('.header__RU').mouseout(function(){
+//  $('.header__RU').removeClass('header__RU_active');
+//});
+//
+//$('.header__EN').mouseout(function(){
+//  $('.header__EN').addClass('header__EN header__RU_active');
+//});
+//
+//$('.header__RU').mouseout(function(){
+//  $('.header__RU').removeClass('header__RU header__RU_active');
+//});
 
 
 // --------------SECTION under header----------------------
