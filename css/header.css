@@ -1,0 +1,516 @@
+/* The HEARD STYLE - start */
+header {
+  background-color: var(--color_font);
+  color: #fff;
+  padding-top: 10px;
+}
+header .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 122px 70px 1fr;
+  grid-template-columns: 122px 70px 1fr;
+  -ms-grid-rows: 47px 118px 55px;
+  grid-template-rows: 47px 118px 55px;
+  /* row-gap:10px;
+  gap:5px; */
+  min-width: 320px;
+}
+header .header > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+header .header > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+header .header > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+header .header a {
+  color: #fff;
+}
+header .header a:hover, header .header a:active {
+  color: #fff;
+}
+
+/* The site logo - start */
+.header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_horizontal.svg);
+  background-size: cover;
+  margin-left: 10px;
+}
+.header__logo a {
+  display: inline-block;
+  width: 105px;
+  height: 47px;
+  z-index: 2;
+}
+
+/* The site logo - end */
+/* The nav style - start */
+.header__nav {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 48px;
+  height: 44px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 4px 0 0 5px;
+}
+.header__nav::before, .header__nav::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  top: 13px;
+  left: 9px;
+}
+.header__nav::after {
+  top: 30px;
+  width: 5px;
+}
+.header__nav ul, .header__nav.header__nav_activity ul:before {
+  display: inline-block;
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 9px;
+}
+.header__nav.header__nav_activity ul:before {
+  content: "";
+  left: 113px;
+}
+.header__nav ul li {
+  display: none;
+}
+
+.header__nav.header__nav_activity ul {
+  top: 0;
+  left: -104px;
+  border: 0;
+  background-color: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding-top: 52px;
+  z-index: 5;
+}
+.header__nav.header__nav_activity ul li {
+  display: inline-block;
+  width: 265.32px;
+  height: 36.67px;
+  border: 1px solid var(--backg_page);
+  border-radius: 10px;
+  background: #fff;
+  z-index: 5;
+}
+.header__nav.header__nav_activity ul li:hover {
+  background-color: var(--color_normal);
+}
+.header__nav.header__nav_activity ul li:hover a {
+  color: #fff;
+}
+.header__nav.header__nav_activity ul li a {
+  color: var(--color_font);
+  font-size: 1.34em;
+  text-align: center;
+  padding-top: 8px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-transform: lowercase;
+}
+.header__nav.header__nav_activity ul li a:active {
+  color: var(--color_active);
+}
+
+/* The nav style - and */
+/* -- The contact's links a style - start */
+.header__contact {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  row-gap: 0;
+  width: 220px;
+  padding: 25px 0 0 0;
+  margin-left: 10px;
+}
+.header__contact:after {
+  border-right: 1px #fff solid;
+  height: 84px;
+  right: 0;
+  top: 23px;
+}
+.header__contact li {
+  display: inline-block;
+  word-spacing: 0.7px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-bottom: 7px;
+}
+.header__contact li a {
+  padding-left: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  background: no-repeat url(/site/resta/img/svg/header_tell.svg);
+  background-position: 5px 3px;
+  word-spacing: -5px;
+  letter-spacing: 0.5px;
+}
+.header__contact li:last-of-type a {
+  background: no-repeat url(/site/resta/img/svg/header_email.svg);
+  background-position: 5px 5px;
+}
+
+/* -- The contact's links a style - end */
+/* -- The language's button style - start */
+.header__language {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  padding: 3px 3px 0 0px;
+  text-align: right;
+  margin-right: 10px;
+}
+.header__language .header__RU,
+.header__language .header__EN {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  border-radius: 21px;
+  border: 1px solid var(--color_font);
+}
+.header__language .header__RU.header__RU_active, .header__language .header__RU.header__EN_active,
+.header__language .header__EN.header__RU_active,
+.header__language .header__EN.header__EN_active {
+  border: var(--backg_page);
+  background-color: var(--backg_page);
+}
+.header__language .header__RU a,
+.header__language .header__EN a {
+  display: block;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 6px;
+}
+
+/* -- The language's button style - end */
+/* --The search form's style - start */
+.header__search {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-color: var(--color_bg);
+  padding: 8px 15px 9px 17px;
+  width: 100%;
+}
+.header__search form {
+  min-width: 288px;
+  height: 36px;
+  width: 100%;
+}
+.header__search form input {
+  display: inline-block;
+  border-color: var(--color_bg);
+  border-radius: 6px;
+  min-width: 217px;
+  width: 100%;
+  height: 36px;
+  max-width: 217px;
+  background: no-repeat url(/site/resta/img/svg/header_search.svg) #fff;
+  background-position: 6px 6px;
+}
+.header__search form button {
+  width: 65px;
+  height: 35px;
+  background: no-repeat url(/site/resta/img/right-search.png) var(--color_normal);
+  background-position: 23px 13px;
+  color: var(--color_normal);
+  border-radius: 8px;
+  font-size: 1px;
+  vertical-align: top;
+}
+
+/* --The search form's style - end */
+/* -- The style personal account's into site - start*/
+.header__account {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  width: 52px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.header__account > a {
+  display: none;
+}
+.header__account > div {
+  width: 34px;
+  height: 34px;
+  background: no-repeat url(/site/resta/img/svg/accaunt.svg);
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.header__account > div a {
+  display: block;
+  height: 100%;
+  z-index: 3;
+}
+.header__account > div:last-child {
+  background: no-repeat url(/site/resta/img/svg/shopping-cart.svg);
+  background-size: 55px 55px;
+  width: 49px;
+  height: 51px;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.header__account > div:last-child a {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 18px;
+  background-color: var(--color_normal);
+  position: absolute;
+  right: -6px;
+  top: 0;
+  padding: 5px 0 0 5px;
+  font-size: 1.5em;
+}
+
+/* -- The style personal account's into site - end*/
+/* The HEARD STYLE - end */
+@media screen and (min-width: 321px) {
+  .font14, .header__account > div:last-child a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  /* HEADER style - start */
+  header .header {
+    width: 100%;
+    max-width: 1920px;
+    -ms-grid-columns: initial;
+    grid-template-columns: initial;
+    -ms-grid-rows: initial;
+    grid-template-rows: initial;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 82px 0 54px;
+    grid-template-rows: 82px 54px;
+    -ms-grid-columns: 155px 0 1fr 0 1fr 0 90px;
+    grid-template-columns: 155px 1fr 1fr 90px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 0;
+    justify-items: start;
+  }
+  header .header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header .header > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  header .header > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
+  header .header > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 7;
+  }
+  header .header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header .header > div {
+    grid-row: initial;
+    grid-column: initial;
+  }
+  header .header .header__logo {
+    /* logo */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 130px;
+    height: 64.46px;
+    margin: 0 0 0 19px;
+    background-size: 130px 54.46px;
+    background-position: 0 10px;
+  }
+  header .header .header__nav {
+    /* menu */
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: 18px 0 0 15px;
+    -ms-grid-column-align: initial;
+        justify-self: initial;
+  }
+  header .header .header__contact {
+    /* contact block */
+    padding: initial;
+    width: 1fr;
+    border: initial;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  header .header .header__contact::after {
+    border: initial;
+    content: initial;
+  }
+  header .header .header__contact li:first-child {
+    padding-top: 5px;
+  }
+  header .header .header__contact li {
+    margin-bottom: initial;
+  }
+  header .header .header__search {
+    /* search form */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    max-width: 558px;
+  }
+  header .header .header__account {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  /* --accaunt's head -style - start */
+  .header__account {
+    background-color: var(--color_bg);
+    max-width: 210px;
+    width: 100%;
+    margin: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__account a:nth-child(1) {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    line-height: 12px;
+    color: var(--color_hover);
+    height: 24px;
+    width: 45px;
+    margin: 18px 0 0 15px;
+  }
+  .header__account div:nth-child(2) {
+    background: no-repeat url(/site/resta/img/svg/accaunt_red.svg);
+    margin-left: 6px;
+  }
+  .header__account > div:last-child {
+    background: no-repeat url(/site/resta/img/svg/shopping-cart-red.svg);
+    margin-left: 2.6em;
+  }
+  .header__account > div:last-child a {
+    background-color: var(--backg_page);
+    color: #fff;
+    margin-top: 0;
+    width: 24px;
+    height: 24px;
+    padding: initial;
+    padding: 5px 0 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  /* --accaunt's head -style - end */
+  /* HEADER style - end */
+}

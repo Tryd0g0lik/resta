@@ -42,6 +42,17 @@ body > main{
 		margin-left: 0px;
 		float: right;
 
+		& > ul > li{
+			display: none;
+
+			&:first-child{
+				display: inline-block;
+				& a {
+					color: #fff;
+				}
+			}
+		}
+
 		& .header__phone a{
 			font-size: 1.05em;
 			font-weight: 400;
@@ -54,27 +65,18 @@ body > main{
 
 		&::after{
 			display: none;
+
 		}
 	}
 
-	& .header__contact > ul > li{
-		display: none;
-
-		&:first-child{
-			display: inline-block;
-			& a {
-				color: #fff;
-			}
-		}
-	}
 
 }
-
-
 .categoryMenu__button{
 	display: none;
 
 }
+
+
 /* --Categories style - start */
 .category {
 	padding-top: 34px;
@@ -142,7 +144,7 @@ body > main{
 	width: 100%;
 	max-width: 254px;
 	height: 171px;
-	padding: 14.34px 18px 13px initial;
+	padding: 14.34px 18px 13px 12px;
 	/* margin: 0 auto;
 	margin-bottom: 17px;
 	margin-left: 52px; */
@@ -150,7 +152,71 @@ body > main{
 	/* border: 1px var(--backg_page) solid; */
 	border-radius: 10px;
 	background-color:#fff;
+	& .catalog__furniture{
 
+		padding-top:18px;
+		padding-right:initial;
+		height:368px;
+		margin-bottom:30px;
+		&::before{
+			@extend %primary-block-absolute;
+			content:'%';
+			color:#fff;
+			font-size:2.5em;
+			text-align:center;
+
+			padding-top:10px;
+			background: no-repeat url(/site/resta/img/svg/percent.svg);
+			width:38px;
+			height:52px;
+			z-index:5;
+			right:10px;
+			top:-8px;
+
+
+		}
+
+		& div:first-child{
+			border:0;
+			margin-bottom:initial;
+		}
+
+		& div .catalog__foto{
+			width:226px;
+			height:149px;
+
+			display:block;
+			margin-bottom:20px;
+
+			& img{
+				width:99%;
+			}
+		}
+		& div .catalog__title{
+			width:100%;
+
+			& h3{
+				@extend %font_h3Catalog;
+				letter-spacing:0.1px;
+
+			}
+		}
+		& .catalog__inCart{
+			background:initial;
+			text-align:left;
+			height:25px;
+			width:120px;
+			background: no-repeat url(/site/resta/img/svg/right.svg) calc(100% - 2px) 7px;
+			/* background-size: 15px; */
+
+			& a{
+				@extend %font_link_14;
+				color:var(--backg_page);
+				word-spacing:-2.5px;
+				text-transform:initial;
+			}
+		}
+	}
 	& > div:first-child{
 		border-bottom: 1px var(--backg_page) solid;
 		padding-bottom:3px;
@@ -272,71 +338,7 @@ body > main{
 	padding-bottom:10px;
 	margin-bottom:26px;
 	@extend %font-link-12;
-	& .catalog__furniture{
 
-		padding-top:18px;
-		padding-right:initial;
-		height:368px;
-		margin-bottom:30px;
-		&::before{
-			@extend %primary-block-absolute;
-			content:'%';
-			color:#fff;
-			font-size:2.5em;
-			text-align:center;
-
-			padding-top:10px;
-			background: no-repeat url("/site/resta/img/svg/percent.svg");
-			width:38px;
-			height:52px;
-			z-index:5;
-			right:10px;
-			top:-8px;
-
-
-		}
-
-		& div:first-child{
-			border:0;
-			margin-bottom:initial;
-		}
-
-		& div .catalog__foto{
-			width:226px;
-			height:149px;
-
-			display:block;
-			margin-bottom:20px;
-
-			& img{
-				width:99%;
-			}
-		}
-		& div .catalog__title{
-			width:100%;
-
-			& h3{
-				@extend %font_h3Catalog;
-				letter-spacing:0.1px;
-
-			}
-		}
-		& .catalog__inCart{
-			background:initial;
-			text-align:left;
-			height:25px;
-			width:120px;
-			background: no-repeat url("/site/resta/img/svg/right.svg") calc(100% - 2px) 7px;
-			/* background-size: 15px; */
-
-			& a{
-				@extend %font_link_14;
-				color:var(--backg_page);
-				word-spacing:-2.5px;
-				text-transform:initial;
-			}
-		}
-	}
 
 
 	& h3{
@@ -781,11 +783,44 @@ body > main{
 @media screen and (min-width:321px){
 	@import 'variabls-style';
 
-	main {
-		flex-direction: column;
-		flex-wrap:wrap;
-		justify-content:start;
+	/*  свойства display block */
+	.display_Block{
+		display:block;
+		width:100%;
+		height:100%;
+	}
 
+	/*  свойства display flex row */
+	.display_Flex{
+		display:flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		flex-grow:1;
+	}
+
+	/* шрифт 18рх */
+	.font_18{
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 21px;
+		letter-spacing: 0em;
+		text-align: center;
+
+	}
+
+	/* шрифт 14рх */
+	.font_14{
+
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 17px;
+		letter-spacing: 0em;
+		text-align: center;
+
+	}
+
+	.margin_left_title{
+		margin-left:    2.79em;
 	}
 
 	.main__title{
@@ -794,10 +829,189 @@ body > main{
 		flex-wrap: nowrap;
 		flex-grow:1;
 		justify-content:center;
+		margin-bottom:15px;
 
+		& h2{
+			font-size:  1.889em;
+		}
+	}
+
+	main {
+		flex-direction: column;
+		flex-wrap:wrap;
+		justify-content:start;
 
 	}
-	/*.categoryMenu__nav header__nav contNav header__nav_activity */
+	.categoryMenu{
+		@extend .display_Flex;
+		flex-wrap:  nowrap;
+		justify-content:    space-between;
+
+		& .header__nav{
+			min-width:  50px;
+		}
+		& .header__contact{
+			margin-left: 9.817em;
+			padding-top:    11px;
+		}
+
+		& .header__phone{
+			min-width:  177px;
+		}
+
+		& .categoryMenu__button{
+			display: inline-block;
+			min-width:  133px;
+			width:  100%;
+			max-width: 241px;
+			height: 40px;
+			margin-right:   1.75em;
+			margin-top: 3px;
+
+
+			& form{
+				@extend .display_Block;
+
+				& input{
+					@extend .display_Block;
+					@extend .font_18;
+					background: var(--color_hover);
+					color: #fff;
+					border-radius:  8px;
+				}
+			}
+		}
+	}
+	/* --.categoryMenu__nav header__nav contNav header__nav_activity */
+
+	/* CATEGORY product - style  - start*/
+	/* -- title category - style - start */
+
+	/* -- title category - style - and */
+
+	/* --category product style -start */
+	.category{
+		display:flex;
+		flex-direction: column;
+		padding-top:    60px;
+
+		& > div:last-child{
+			@extend .display_Flex;
+			justify-content: center;
+// 			display:flex;
+// 			flex-direction: row;
+// 			flex-wrap: wrap;
+
+
+			& > div{
+				flex-grow:1;
+				width:100%;
+
+				max-width:  590px;
+			}
+
+			& .catalog{
+				padding:    initial;
+			}
+
+		}
+		& .category__catalog {
+				display:flex;
+				flex-direction:row;
+				flex-grow: 1;
+				flex-wrap:wrap;
+				justify-content:   space-between;
+				margin:initial;
+				padding: 4px 0px;
+
+			& .catalog__furniture{
+				max-width: 287px;
+				height: 100%;
+				max-height: 196px;
+				padding-top:    12px;
+				margin-bottom:10px;
+
+
+			}
+		}
+
+		& .catalog__furniture{
+			& > div:first-child{
+				height: 78px;
+				padding-bottom: 2px;
+
+				& .catalog__title{
+					padding: 0px 0 0 5px;
+
+					& h3{
+						line-height: 1.2;
+					}
+				}
+			}
+			& .catalog__foto{
+				padding-top:    2px;
+				height: 68px;;
+				width:  100px;
+			}
+
+		}
+		& .category__title{
+			padding:initial;
+			justify-content: start;
+
+			& h2 {
+				@extend .margin_left_title;
+			}
+		}
+
+
+
+		& .catalog__allProduct{
+			display:flex;
+			flex-direction:row;
+			flex-wrap:nowrap;
+
+
+			& a {
+				margin:initial;
+			}
+		}
+
+	}
+	.catalog__furniture{
+		& .catalog__info{
+			padding-top:    9px;
+
+			& li{
+				padding-left:   30px;
+				height: 20px;
+				width:  205px;
+				background-size: 17.92px 17.92px;
+
+			}
+		}
+
+		& div:nth-child(3){
+			padding: 7px 0 0 3px;;
+
+		}
+
+		& div.catalog__inCart{
+			background-position: 180px 4px;
+
+			& a{
+				@extend .font_14;
+				line-height: 16.8px;
+				letter-spacing: 0.61px;
+
+			}
+		}
+	}
+
+
+	/* --category product style - end */
+	/* CATEGORY product - style  - end*/
+
 
 
 
