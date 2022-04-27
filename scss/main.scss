@@ -331,7 +331,7 @@ body > main{
 }
 
 
-/* --cpecial offer - start */
+/* --cpecial offers - start */
 .cpetialOffers{
 	height:856px;
 	overflow:hidden;
@@ -776,7 +776,7 @@ body > main{
 		}
 	}
 
-/* --cpecial offer - end */
+/* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
 
 
@@ -851,7 +851,7 @@ body > main{
 			min-width:  50px;
 		}
 		& .header__contact{
-			margin-left: 9.817em;
+			margin-left: 22%; /* 9.817em; */
 			padding-top:    11px;
 		}
 
@@ -898,10 +898,8 @@ body > main{
 		& > div:last-child{
 			@extend .display_Flex;
 			justify-content: center;
-// 			display:flex;
-// 			flex-direction: row;
-// 			flex-wrap: wrap;
-
+ 			margin-bottom: 85
+ 			px;
 
 			& > div{
 				flex-grow:1;
@@ -912,6 +910,9 @@ body > main{
 
 			& .catalog{
 				padding:    initial;
+				height: 100%;
+				max-height: 608px;
+				margin-bottom: 150px;
 			}
 
 		}
@@ -923,6 +924,7 @@ body > main{
 				justify-content:   space-between;
 				margin:initial;
 				padding: 4px 0px;
+
 
 			& .catalog__furniture{
 				max-width: 287px;
@@ -970,10 +972,13 @@ body > main{
 			display:flex;
 			flex-direction:row;
 			flex-wrap:nowrap;
+			justify-content: center;
+			padding-left: initial;
 
 
 			& a {
 				margin:initial;
+				letter-spacing: 0.00510em;
 			}
 		}
 
@@ -1008,8 +1013,14 @@ body > main{
 		}
 	}
 
-
 	/* --category product style - end */
+
+	/* --cpecial offers - start */
+	.categoryMenu__nav{
+		background-color: var(--color_font);
+	}
+
+	/* --cpecial offers - end */
 	/* CATEGORY product - style  - end*/
 
 

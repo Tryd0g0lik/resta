@@ -20,49 +20,6 @@ body > footer {min-width: 320px; max-width: 1920px; margin: 0 auto;}
 
 
 /* the  UPPER OFFER style , under upper the slider - start*/
-.topSection__topOffer{
-	/* width: 260px; */
 
-	padding-top: 17px;
-	padding-bottom: initial;
-	margin-bottom: 58px;
-
-	background:radial-gradient(ellipse farthest-corner at 20px 49px, rgba(243, 185, 127, 0.05), rgba(240, 95,
-	136, 0.08), rgba(140, 50, 91, 0.12), rgba(243, 185, 127, 0.15), rgb(78, 155, 213, 0.05));
-	& > ul {
-		width: 100%;
-		display: block;
-	}
-	& > ul > li{
-		width: 260px;
-		font-size: 1em;
-		font-weight: 400;
-		line-height: 22px;
-		letter-spacing: 0em;
-
-
-		color: var(--color_font);
-		background: no-repeat url(/site/resta/img/svg/top_offer/slider_delivery.svg) 17px 5px;
-		height: 40px;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 28px;
-
-		padding-left: 75px;
-	}
-
-	& > ul > li:nth-child(2){
-		background: no-repeat url(/site/resta/img/svg/top_offer/slider_furnitur.svg) 22px 5px;
-		margin-bottom: 27px;
-
-	}
-
-	& > ul > li:nth-child(3){
-		height: 50px;
-		padding-top: 10px;
-		margin-bottom: initial;
-		background: no-repeat url(/site/resta/img/svg/top_offer/slider_colors.svg) 17px 0px;
-	}
-}
 /* the  UPPER OFFER style , under upper the slider - end*/
 
