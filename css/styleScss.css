@@ -63,7 +63,7 @@ header .header a:hover, header .header a:active {
 }
 
 /* The site logo - start */
-__logo {
+.header__logo {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -74,7 +74,7 @@ __logo {
   background-size: cover;
   margin-left: 10px;
 }
-__logo a {
+.header__logo a {
   display: inline-block;
   width: 105px;
   height: 47px;
@@ -97,6 +97,7 @@ __logo a {
   -ms-grid-column-align: center;
       justify-self: center;
   margin: 4px 0 0 5px;
+  z-index: 2;
 }
 .header__nav::before, .header__nav::after {
   content: "";
@@ -185,6 +186,12 @@ __logo a {
   max-width: 220px;
   padding: 25px 0 0 0;
   margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__contact:after {
   border-right: 1px #fff solid;
@@ -305,6 +312,9 @@ __logo a {
       justify-self: end;
   margin-right: 20px;
   margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header__account > a {
   display: none;
@@ -554,11 +564,11 @@ __logo a {
             box-sizing: content-box;
   }
   .header__language div:first-child {
-    margin: 6px 0 0 14px;
+    margin: 0px 0 0 14px;
     height: 29px;
   }
   .header__language div:last-child {
-    margin: 6px 14px 0 0;
+    margin: 0px 14px 0 0;
   }
 
   /* --lenguage's button  - end */
@@ -1537,7 +1547,7 @@ body > main {
   }
 
   .topSection {
-    min-width: 320px;
+    /* min-width: 320px; */
     width: 100%;
     z-index: 1;
     margin: 0 auto;
@@ -1906,7 +1916,7 @@ body > main {
 }
 
 .topSection {
-  min-width: 320px;
+  /* min-width: 320px; */
   width: 100%;
   z-index: 1;
   margin: 0 auto;
@@ -2241,7 +2251,7 @@ body > main {
   .topSection__slider {
     width: 100%;
     max-width: 768px;
-    height: 532px;
+    /* height:532px; */
     /* height: 100%; */
     max-height: 532px;
   }
@@ -2285,6 +2295,7 @@ body > main {
     max-width: 300px;
     padding:6px 0 0 114px */
     margin: initial;
+    padding-top: 17px;
   }
   .topSection > div:last-child > div > ul li:first-child {
     /* top:36px;
@@ -2294,7 +2305,8 @@ body > main {
     background-position: 9px 1px;
     background-size: 77px 41px;
     /* margin-bottom:  32px; */
-    margin: 0 0 32px 8.2%;
+    margin: 10px 0 20px 8.2%;
+    padding-top: 1px;
   }
   .topSection > div:last-child > div > ul li:nth-child(2) {
     /* top: 110px;
@@ -2302,16 +2314,16 @@ body > main {
     height: 60px;
 
     padding-left:98px; */
-    background-position: 25px 0;
+    background-position: 25px 20px;
     background-size: 70px 49px;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
     width: 100%;
     max-width: 300px;
-    min-height: 50px;
+    min-height: 70px;
     /* margin-right:    2em; */
-    margin: 0 0 32px 8.2%;
+    margin: 0 0 20px 8.2%;
   }
   .topSection > div:last-child > div > ul li:last-child {
     /* top: 193px;

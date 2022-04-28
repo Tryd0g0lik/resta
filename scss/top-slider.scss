@@ -120,7 +120,7 @@
 	.topSection__slider {
 		width: 100%;
 		max-width: 768px;
-		height:532px;
+		/* height:532px; */
 		/* height: 100%; */
 		max-height: 532px;
 
@@ -167,6 +167,8 @@
 						max-width: 300px;
 						padding:6px 0 0 114px */
 						margin: initial;
+						padding-top: 17px;
+
 					}
 					& li:first-child{
 						/* top:36px;
@@ -176,7 +178,8 @@
 						background-position: 9px 1px;
 						background-size: 77px 41px;
 						/* margin-bottom:  32px; */
-						margin: 0 0 32px 8.2%;
+						margin: 10px 0 20px 8.2%;
+						padding-top:    1px;
 
 
 					}
@@ -187,15 +190,16 @@
 						height: 60px;
 
 						padding-left:98px; */
-						background-position: 25px 0;
+						background-position: 25px 20px;
 					    background-size: 70px 49px;
 					    align-self: end;
 					    width:  100%;
 					    max-width: 300px;
-					    min-height: 50px;
+					    min-height: 70px;
+
 
 					    /* margin-right:    2em; */
-                        margin: 0 0 32px 8.2%;
+                        margin: 0 0 20px 8.2%;
 
 
 					}
