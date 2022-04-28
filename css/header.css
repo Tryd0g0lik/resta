@@ -622,10 +622,13 @@ __logo a {
   }
 
   /* -- The language's button style - end */
-  /* --search form style- start */
-  .header__search {
-    width: 100%;
+  /* -- The style personal account's into site - start*/
+  .header__account {
+    margin: 0 7px 5px 0;
   }
+
+  /* -- The style personal account's into site - end*/
+  /* --search form style- start */
   .header__search form {
     gap: 3%;
   }
@@ -638,6 +641,10 @@ __logo a {
     border-radius: 8px;
     font-size: 1px;
     vertical-align: top;
+  }
+
+  header .header .header__search {
+    width: 100%;
   }
 
   /* --search form style- end */
@@ -653,8 +660,8 @@ __logo a {
   header .header {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 82px 82px 54px;
-    grid-template-rows: 82px 82px 54px;
+    -ms-grid-rows: 82px 105px 54px;
+    grid-template-rows: 82px 105px 54px;
   }
   header .header > *:nth-child(1) {
     -ms-grid-row: 1;
@@ -723,8 +730,8 @@ __logo a {
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
     -ms-flex-negative: 1;
         flex-shrink: 1;
     background-color: initial;
