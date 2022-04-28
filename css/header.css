@@ -66,7 +66,7 @@ header .header a:hover, header .header a:active {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  background: no-repeat url(/site/resta/img/svg/Logo_Resta_horizontal.svg);
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_horizontal.svg) 1px 0;
   background-size: cover;
   margin-left: 10px;
 }
@@ -167,7 +167,7 @@ header .header a:hover, header .header a:active {
   color: var(--color_active);
 }
 
-/* The nav style - and */
+/* The nav style - end */
 /* -- The contact's links a style - start */
 .header__contact {
   -ms-grid-row: 2;
@@ -180,7 +180,7 @@ header .header a:hover, header .header a:active {
   min-width: 184px;
   width: 100%;
   max-width: 220px;
-  padding: 25px 0 0 0;
+  padding: 22px 0 0 0;
   margin-left: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +188,9 @@ header .header a:hover, header .header a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .header__contact:after {
   border-right: 1px #fff solid;
@@ -200,7 +203,8 @@ header .header a:hover, header .header a:active {
   word-spacing: 0.7px;
   letter-spacing: 0.5px;
   width: 100%;
-  margin-bottom: 7px;
+  margin-bottom: 2px;
+  vertical-align: top;
 }
 .header__contact li a {
   padding-left: 28px;

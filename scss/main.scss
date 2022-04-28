@@ -2,9 +2,12 @@
 /* The MAIN'S BLOCK style - start*/
 body > main{
 	@extend %first_block;
+}
+body > main#main{
+
 	min-width:283px;
 	flex-wrap: wrap;
-	justify-content:start;
+	justify-content: start;
 	padding-bottom:37px;
 	margin:initial;
 	background-color:var(--color_bg);
@@ -79,8 +82,14 @@ body > main{
 
 /* --Categories style - start */
 .category {
+	@extend %first_block;
+}
+section.category {
 	padding-top: 34px;
 	margin-bottom:initial;
+
+	flex-direction: column;
+	justify-content: start;
 
 	& > div {
 
@@ -114,12 +123,23 @@ body > main{
 	float: none;
 	clear: both;
 	display: block;
+
 }
 
 .catalog{
 	height:376px;
 	overflow:hidden;
 	margin-bottom:45px;
+
+	display: flex;
+	flex-wrap:  wrap;
+	flex-grow: 1;
+	flex-shrink: 1;
+	justify-content: center;
+	gap: 19px;
+
+	width: inherit;
+
 }
 .catalog__look{
 	display:none;
@@ -924,6 +944,7 @@ body > main{
 				justify-content:   space-between;
 				margin:initial;
 				padding: 4px 0px;
+
 
 
 			& .catalog__furniture{
