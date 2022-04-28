@@ -11,6 +11,11 @@ body > main#main{
 	padding-bottom:37px;
 	margin:initial;
 	background-color:var(--color_bg);
+
+	& section.categoryMenu:nth-child(3){
+		display: none;
+
+	}
 }
 
 .categoryMenu{
@@ -86,10 +91,11 @@ body > main#main{
 }
 section.category {
 	padding-top: 34px;
-	margin-bottom:initial;
+	margin-bottom:  45px;
 
 	flex-direction: column;
 	justify-content: start;
+
 
 	& > div {
 
@@ -140,6 +146,8 @@ section.category {
 
 	width: inherit;
 
+
+
 }
 .catalog__look{
 	display:none;
@@ -165,13 +173,17 @@ section.category {
 	max-width: 254px;
 	height: 171px;
 	padding: 14.34px 18px 13px 12px;
-	/* margin: 0 auto;
-	margin-bottom: 17px;
-	margin-left: 52px; */
-
-	/* border: 1px var(--backg_page) solid; */
 	border-radius: 10px;
 	background-color:#fff;
+
+
+	/* margin-left: 37px; */
+
+	/* margin: 0 auto;
+	margin-bottom: 17px;
+	 */
+
+	/* border: 1px var(--backg_page) solid; */
 	& .catalog__furniture{
 
 		padding-top:18px;
@@ -361,11 +373,16 @@ section.category {
 
 
 
+
 	& h3{
 		color:var(--color_font);
 	}
 
 
+	& div:last-child{
+		@extend %first_block;
+		gap: 15px;
+	}
 
 	& .catalog__price{
 		display:flex;
@@ -455,6 +472,11 @@ section.category {
 				background: url("/site/resta/img/svg/003.svg") 75px 0px no-repeat;
 			}
 		}
+	}
+}
+section.cpetialOffers {
+	& > div:last-child{
+		flex-wrap:  wrap;
 	}
 }
 .categoryMenu__nav_midle{
