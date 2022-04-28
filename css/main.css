@@ -1003,3 +1003,18 @@ body > main {
   /* --cpecial offers - end */
   /* CATEGORY product - style  - end*/
 }
+@media screen and (min-width: 321px) and (max-width: 624px) {
+  .main__title h2 {
+    font: 23px/1.2 "Ponton";
+  }
+
+  .category {
+    padding-top: 17px;
+  }
+  .category > div:last-child .catalog {
+    margin-bottom: 50px;
+  }
+  .category > div:last-child .catalog__allProduct {
+    margin-bottom: 10px;
+  }
+}

@@ -3,7 +3,7 @@
 body > main{
 	@extend %first_block;
 	min-width:283px;
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	justify-content:start;
 	padding-bottom:37px;
 	margin:initial;
@@ -1026,4 +1026,26 @@ body > main{
 
 
 
+}
+
+@media screen and (min-width: 321px) and (max-width:   624px){
+	.main__title{
+		& h2{
+			font: 23px/1.2 "Ponton";
+		}
+	}
+
+	.category{
+		padding-top: 17px;
+
+		& > div:last-child{
+		    & .catalog{
+		        margin-bottom: 50px;
+		    }
+
+			& .catalog__allProduct{
+				margin-bottom:  10px;
+			}
+	    }
+	}
 }
