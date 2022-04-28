@@ -142,7 +142,7 @@ section.category {
   width: 100%;
   max-width: 254px;
   height: 171px;
-  padding: 14.34px 18px 13px 12px;
+  padding: 14.34px 9px 13px 12px;
   border-radius: 10px;
   background-color: #fff;
   /* margin-left: 37px; */
@@ -206,7 +206,7 @@ section.category {
   border-bottom: 1px var(--backg_page) solid;
   padding-bottom: 3px;
 }
-.catalog__furniture div .catalog__foto {
+.catalog__furniture > div .catalog__foto {
   width: 66px;
   height: 48px;
   overflow: hidden;
@@ -214,24 +214,24 @@ section.category {
   text-align: center;
   margin: 0 auto;
 }
-.catalog__furniture div .catalog__title {
+.catalog__furniture > div .catalog__title {
   width: 125px;
   display: inline-block;
   vertical-align: top;
   padding-left: 10px;
 }
-.catalog__furniture div .catalog__title > div {
+.catalog__furniture > div .catalog__title > div {
   margin-bottom: 1px;
   margin-left: 3.8px;
 }
-.catalog__furniture div .catalog__title h3 {
+.catalog__furniture > div .catalog__title h3 {
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
 }
-.catalog__furniture div .catalog__title span {
+.catalog__furniture > div .catalog__title span {
   color: var(--backg_page);
   font-size: 12px;
   text-decoration: underline;
@@ -302,10 +302,23 @@ section.category {
   padding-bottom: 10px;
   margin-bottom: 26px;
 }
-.cpetialOffers h3 {
-  color: var(--color_font);
+.cpetialOffers .main__title {
+  margin-bottom: 16px;
 }
-.cpetialOffers div:last-child {
+.cpetialOffers > div .catalog__title {
+  width: 100%;
+  padding-left: 0px;
+  height: 63.6px;
+}
+.cpetialOffers > div .catalog__title h3 {
+  color: var(--color_font);
+  letter-spacing: 0.8px;
+  line-height: 1.2;
+}
+.cpetialOffers > div .catalog__title > div:first-child {
+  margin-bottom: 2px;
+}
+.cpetialOffers > div:last-child {
   gap: 15px;
 }
 .cpetialOffers .catalog__price {
@@ -315,7 +328,7 @@ section.category {
   flex-diraction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 12px;
+  padding-left: 2px;
   margin-bottom: 3px;
 }
 .cpetialOffers .catalog__price > div:first-child {
@@ -329,8 +342,9 @@ section.category {
   margin-left: 5px;
 }
 .cpetialOffers .catalog__price > div:nth-child(2) {
-  width: 125px;
+  width: 100px;
   margin-bottom: 13px;
+  padding-left: 5px;
 }
 .cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before {
   background-color: var(--backg_page);
@@ -386,6 +400,40 @@ section.category {
 section.cpetialOffers > div:last-child {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: 40px;
+}
+section.cpetialOffers > div:last-child .catalog__foto {
+  width: 231px;
+  height: 145px;
+  margin-bottom: 17px;
+}
+
+section.cpetialOffers .catalog__furniture {
+  height: 360px;
+  margin-left: 31px;
+  padding-right: 4px;
+}
+section.cpetialOffers .catalog__furniture::before {
+  color: #fff;
+  width: 38px;
+  height: 52px;
+  background: no-repeat url(/site/resta/img/svg/percent.svg) 0px 0;
+  z-index: 6;
+  right: 7px;
+  top: -12px;
+}
+section.cpetialOffers .catalog__furniture .catalog__inCart {
+  height: initial;
+  background: no-repeat url(/site/resta/img/svg/right.svg) 96px 10px;
+}
+section.cpetialOffers div.catalog__furniture::before {
+  content: "%";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .categoryMenu__nav_midle {
@@ -403,7 +451,7 @@ section.cpetialOffers > div:last-child {
   padding-top: 40px;
 }
 .info-text__about-us .main__title {
-  padding: 78px 0 0 47px;
+  padding: 49px 0 0 47px;
   margin-right: 0;
   margin-bottom: 10px;
 }
@@ -764,7 +812,7 @@ section.cpetialOffers > div:last-child {
     text-align: left;
   }
 
-  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before {
+  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before, section.cpetialOffers .catalog__furniture::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -775,7 +823,7 @@ section.cpetialOffers > div:last-child {
     position: absolute;
   }
 
-  body > main, .category, .cpetialOffers div:last-child {
+  body > main, .category, .cpetialOffers > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

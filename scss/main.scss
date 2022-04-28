@@ -172,7 +172,7 @@ section.category {
 	width: 100%;
 	max-width: 254px;
 	height: 171px;
-	padding: 14.34px 18px 13px 12px;
+	padding: 14.34px 9px 13px 12px;
 	border-radius: 10px;
 	background-color:#fff;
 
@@ -254,7 +254,7 @@ section.category {
 		padding-bottom:3px;
 
 	}
-	& div{
+	& > div{
 		& .catalog__foto{
 			width: 66px;
 			height: 48px;
@@ -349,6 +349,8 @@ section.category {
 		}
 	}
 }
+
+
 .catalog__allProduct{
 	padding-left:52px;
 	box-sizing:border-box;
@@ -371,15 +373,30 @@ section.category {
 	margin-bottom:26px;
 	@extend %font-link-12;
 
+	& .main__title {
+		margin-bottom: 16px;
+	}
+	& > div {
+		& .catalog__title{
+			width:  100%;
+			padding-left:   0px;
+			height: 63.6px;
 
-
-
-	& h3{
-		color:var(--color_font);
+			& h3{
+				color:var(--color_font);
+				letter-spacing: 0.8px;
+				line-height:    1.2;
+			}
+		    & > div:first-child{
+		        margin-bottom:  2px;
+		    }
+		}
 	}
 
 
-	& div:last-child{
+
+
+	& > div:last-child{
 		@extend %first_block;
 		gap: 15px;
 	}
@@ -388,7 +405,7 @@ section.category {
 		display:flex;
 		flex-diraction:row;
 		flex-wrap: wrap;
-		padding-left:12px;
+		padding-left:2px;
 		margin-bottom:3px;
 
 
@@ -407,8 +424,9 @@ section.category {
 		}
 
 		& > div:nth-child(2){
-			width:125px;
+			width:100px;
 			margin-bottom:13px;
+			padding-left:   5px;
 
 			& span:first-child::before{
 				@extend %primary-afterBefore;
@@ -474,9 +492,63 @@ section.category {
 		}
 	}
 }
+
 section.cpetialOffers {
 	& > div:last-child{
 		flex-wrap:  wrap;
+		gap:    40px;
+
+		& .catalog__foto{
+			width:  231px;
+			height: 145px;
+			margin-bottom:  17px;
+
+		}
+	}
+}
+
+section.cpetialOffers {
+
+	& .catalog__furniture{
+		height: 360px;
+		margin-left: 31px;
+		padding-right:  4px;
+
+
+
+
+		&::before{
+			@extend %primary-afterBefore;
+
+			color: #fff;
+			width:  38px;
+			height: 52px;
+			background: no-repeat url(/site/resta/img/svg/percent.svg) 0px 0;
+			z-index:    6;
+			right:  7px;
+			top:    -12px;
+
+		}
+
+
+
+		& .catalog__inCart{
+			height: initial;
+			background: no-repeat url(/site/resta/img/svg/right.svg) 96px 10px;
+
+		}
+	}
+
+	div.catalog__furniture::before{
+		content: "%";
+
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 36px;
+		letter-spacing: 0em;
+		text-align: center;
+		padding-top: 5px;
+
 	}
 }
 .categoryMenu__nav_midle{
@@ -497,7 +569,7 @@ section.cpetialOffers {
 
 	}
 	& .main__title {
-		padding:78px 0 0 47px;
+		padding:    49px 0 0 47px;
 		margin-right:0;
 		margin-bottom:10px;
 
@@ -1040,7 +1112,7 @@ section.cpetialOffers {
 		}
 
 		& div:nth-child(3){
-			padding: 7px 0 0 3px;;
+			padding: 7px 0 0 3px;
 
 		}
 
