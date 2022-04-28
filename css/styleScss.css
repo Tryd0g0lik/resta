@@ -827,8 +827,8 @@ body > main#main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  padding-bottom: 37px;
   margin: initial;
+  margin-bottom: 37px;
   background-color: var(--color_bg);
 }
 body > main#main section.categoryMenu:nth-child(3) {
@@ -1346,6 +1346,10 @@ section.cpetialOffers div.catalog__furniture::before {
   vertical-align: top;
 }
 
+.main__text {
+  background-color: #fff;
+}
+
 .main__info-text-correct {
   margin-bottom: 46px;
   padding-top: 10px;
@@ -1557,6 +1561,129 @@ section.cpetialOffers div.catalog__furniture::before {
 
 /* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
+/* THe FOOTER BLOCK style - start */
+footer {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  background-color: var(--color_bg);
+  /* --logo style - start */
+  /* --logo style - end */
+  /* --contact style - start */
+  /* --contact style - end */
+  /* --menu style - start */
+  /* --menu style - end */
+  /* --cocial-network style - start */
+  /* --cocial-network style - end */
+  /* site owner it's a block autor class - start */
+  /* site owner it's a block autor class - end */
+}
+footer > div, footer > nav.header__nav {
+  width: 100%;
+  border: 0;
+}
+footer .header__logo {
+  height: 74px;
+  background-size: 60px 74px;
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
+}
+footer div.header__contact {
+  padding-top: 27px;
+  max-width: 235px;
+  margin-bottom: 12px;
+}
+footer div.header__contact li {
+  margin: initial;
+  padding-left: 60px;
+  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+}
+footer div.header__contact li a {
+  background: initial;
+  padding: initial;
+  line-height: 1.2;
+  color: var(--color_font);
+  letter-spacing: 0.1px;
+}
+footer div.header__contact li:nth-child(3) {
+  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
+}
+footer div.header__contact li:nth-child(3) a {
+  background: initial;
+}
+footer nav.header__nav {
+  min-width: 150px;
+  min-height: 235px;
+  padding-left: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+footer nav.header__nav::before, footer nav.header__nav::after {
+  display: none;
+}
+footer nav.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 13px;
+  width: initial;
+  height: initial;
+  background: none;
+  margin: initial;
+  position: relative;
+}
+footer nav.header__nav li {
+  display: block;
+}
+footer nav.header__nav a {
+  color: var(--color_font);
+  text-transform: lowercase;
+}
+footer div.cocial-network {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 20px 0 0 48px;
+}
+footer .autor {
+  padding-top: 30px;
+}
+footer .autor a, footer .autor p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--color_font);
+}
+
+/* THe FOOTER BLOCK style - end */
 @media screen and (min-width: 321px) {
   :root {
     --backg_page:#949396;
@@ -1650,7 +1777,7 @@ section.cpetialOffers div.catalog__furniture::before {
     position: absolute;
   }
 
-  body > main, .category, .cpetialOffers > div:last-child {
+  body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, footer .cocial-network {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2019,7 +2146,7 @@ section.cpetialOffers div.catalog__furniture::before {
   position: absolute;
 }
 
-body > main, .category, .cpetialOffers > div:last-child {
+body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, footer .cocial-network {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

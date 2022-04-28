@@ -8,8 +8,8 @@ body > main#main{
 	min-width:283px;
 	flex-wrap: wrap;
 	justify-content: start;
-	padding-bottom:37px;
 	margin:initial;
+	margin-bottom:37px;
 	background-color:var(--color_bg);
 
 	& section.categoryMenu:nth-child(3){
@@ -653,6 +653,10 @@ section.cpetialOffers {
 	}
 }
 
+.main__text{
+	background-color:   #fff;
+}
+
 .main__info-text-correct{
 	margin-bottom: 46px;
 	padding-top: 10px;
@@ -893,6 +897,143 @@ section.cpetialOffers {
 /* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
 
+/* THe FOOTER BLOCK style - start */
+
+footer{
+	padding-top:    25px;
+	display: flex;
+	justify-content:    space-between;
+	flex-grow:  1;
+	flex-shrink:    1;
+	background-color:   var(--color_bg);
+	& > div,
+	& > nav.header__nav {
+		width:  100%;
+		border: 0;
+	}
+	/* --logo style - start */
+	& .header__logo{
+
+		height: 74px;
+		background-size:  60px 74px;
+		background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
+
+	}
+	/* --logo style - end */
+	/* --contact style - start */
+	& div.header__contact{
+		padding-top:    27px;
+		max-width:  235px;
+		margin-bottom:  12px;
+
+		& li{
+			margin: initial;
+			padding-left:   60px;
+			background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+
+			& a{
+				background: initial;
+				padding:    initial;
+				line-height: 1.2;
+
+				color:  var(--color_font);
+				letter-spacing: 0.1px;
+			}
+
+		}
+
+		& li:nth-child(3){
+			background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
+
+			& a{
+				background: initial;
+
+			}
+		}
+	}
+	/* --contact style - end */
+	/* --menu style - start */
+	& .header__nav{
+		@extend %first_block;
+
+	}
+
+	& nav.header__nav{
+		min-width:  150px;
+		min-height: 235px;
+		padding-left:   35px;
+
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content:    start;
+
+		&::before,
+		&::after{
+			display:    none;
+
+		}
+
+		& ul {
+			display: flex;
+			flex-direction: column;
+			flex-grow:  1;
+			gap:    13px;
+			width: initial;
+			height: initial;
+			background: none;
+
+			margin: initial;
+			position:   relative;
+
+		}
+		& li{
+			display:    block;
+		}
+
+		& a{
+		color:  var(--color_font);
+		text-transform: lowercase;
+
+		}
+	}
+
+	/* --menu style - end */
+
+	/* --cocial-network style - start */
+	& .cocial-network{
+		@extend %first_block;
+	}
+	& div.cocial-network{
+		justify-content: start;
+		gap:    25px;
+		flex-grow:  1;
+		flex-shrink:    1;
+
+		padding: 20px 0 0 48px;
+	}
+
+	/* --cocial-network style - end */
+
+	/* site owner it's a block autor class - start */
+	.autor{
+		padding-top:    30px;
+
+
+		& a,
+		& p {
+			display:    inline-block;
+			width:  100%;
+			text-align: center;
+
+			color:  var(--color_font);
+		}
+	}
+
+	/* site owner it's a block autor class - end */
+}
+
+
+/* THe FOOTER BLOCK style - end */
 
 @media screen and (min-width:321px){
 	@import 'variabls-style';
