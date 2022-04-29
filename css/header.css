@@ -1,0 +1,825 @@
+.font_18, .header__account > div:last-child a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+/* The HEARD STYLE - start */
+header {
+  background-color: var(--color_font);
+  color: #fff;
+  padding-top: 10px;
+}
+header .header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 122px 70px 1fr;
+  grid-template-columns: 122px 70px 1fr;
+  -ms-grid-rows: 47px 118px 55px;
+  grid-template-rows: 47px 118px 55px;
+  /* row-gap:10px;
+  gap:5px; */
+  min-width: 298px;
+}
+header .header > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+header .header > *:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+}
+header .header > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+header .header > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+}
+header .header > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+header .header a {
+  color: #fff;
+}
+header .header a:hover, header .header a:active {
+  color: #fff;
+}
+
+/* The site logo - start */
+.header__logo {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_horizontal.svg) 1px 0;
+  background-size: cover;
+  margin-left: 10px;
+}
+.header__logo a {
+  display: inline-block;
+  width: 105px;
+  height: 47px;
+  z-index: 2;
+}
+
+/* The site logo - end */
+/* The nav style - start */
+.header__nav {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  width: 48px;
+  height: 44px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 4px 0 0 5px;
+  z-index: 2;
+}
+.header__nav::before, .header__nav::after {
+  content: "";
+  width: 28px;
+  height: 2px;
+  display: inline-block;
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  top: 13px;
+  left: 9px;
+}
+.header__nav::after {
+  top: 30px;
+  width: 5px;
+}
+.header__nav ul, .header__nav.header__nav_activity ul:before {
+  display: inline-block;
+  width: 21px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 21px;
+  left: 9px;
+}
+.header__nav.header__nav_activity ul:before {
+  content: "";
+  left: 113px;
+}
+.header__nav ul li {
+  display: none;
+}
+
+.header__nav.header__nav_activity ul {
+  top: 0;
+  left: -104px;
+  border: 0;
+  background-color: initial;
+  width: initial;
+  height: initial;
+  margin: initial;
+  padding-top: 52px;
+  z-index: 5;
+}
+.header__nav.header__nav_activity ul li {
+  display: inline-block;
+  width: 265.32px;
+  height: 36.67px;
+  border: 1px solid var(--backg_page);
+  border-radius: 10px;
+  background: #fff;
+  z-index: 5;
+}
+.header__nav.header__nav_activity ul li:hover {
+  background-color: var(--color_normal);
+}
+.header__nav.header__nav_activity ul li:hover a {
+  color: #fff;
+}
+.header__nav.header__nav_activity ul li a {
+  color: var(--color_font);
+  font-size: 1.34em;
+  text-align: center;
+  padding-top: 8px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-transform: lowercase;
+}
+.header__nav.header__nav_activity ul li a:active {
+  color: var(--color_active);
+}
+
+/* The nav style - end */
+/* -- The contact's links a style - start */
+.header__contact {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  row-gap: 0;
+  min-width: 184px;
+  width: 100%;
+  max-width: 220px;
+  padding: 22px 0 0 0;
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.header__contact:after {
+  border-right: 1px #fff solid;
+  height: 84px;
+  right: 0;
+  top: 23px;
+}
+.header__contact li {
+  display: inline-block;
+  word-spacing: 0.7px;
+  letter-spacing: 0.5px;
+  width: 100%;
+  margin-bottom: 2px;
+  vertical-align: top;
+}
+.header__contact li a {
+  padding-left: 28px;
+  font-size: 18px;
+  font-weight: 400;
+  background: no-repeat url(/site/resta/img/svg/header_tell.svg);
+  background-position: 5px 3px;
+  word-spacing: -5px;
+  letter-spacing: 0.5px;
+}
+.header__contact li:last-of-type a {
+  background: no-repeat url(/site/resta/img/svg/header_email.svg);
+  background-position: 5px 5px;
+}
+
+/* -- The contact's links a style - end */
+/* -- The language's button style - start */
+.header__language {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  padding: 3px 3px 0 0px;
+  text-align: right;
+  margin-right: 10px;
+  min-width: 90px;
+}
+.header__language .header__RU,
+.header__language .header__EN {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  border-radius: 21px;
+  border: 1px solid var(--color_font);
+}
+.header__language .header__RU.header__RU_active, .header__language .header__RU.header__EN_active,
+.header__language .header__EN.header__RU_active,
+.header__language .header__EN.header__EN_active {
+  border: var(--backg_page);
+  background-color: var(--backg_page);
+}
+.header__language .header__RU a,
+.header__language .header__EN a {
+  display: block;
+  height: 100%;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 6px;
+}
+
+/* -- The language's button style - end */
+/* --The search form's style - start */
+.header__search {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  background-color: var(--color_bg);
+  padding: 8px 15px 9px 17px;
+  width: 100%;
+}
+.header__search form {
+  min-width: 288px;
+  height: 36px;
+  width: 100%;
+}
+.header__search form input {
+  display: inline-block;
+  border-color: var(--color_bg);
+  border-radius: 6px;
+  min-width: 217px;
+  width: 100%;
+  height: 36px;
+  max-width: 217px;
+  background: no-repeat url(/site/resta/img/svg/header_search.svg) #fff;
+  background-position: 6px 6px;
+}
+.header__search form button {
+  width: 65px;
+  height: 35px;
+  background: no-repeat url(/site/resta/img/right-search.png) var(--color_normal);
+  background-position: 23px 13px;
+  color: var(--color_normal);
+  border-radius: 8px;
+  font-size: 1px;
+  vertical-align: top;
+}
+
+/* --The search form's style - end */
+/* -- The style personal account's into site - start*/
+.header__account {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  width: 52px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 20px;
+  margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__account > a {
+  display: none;
+}
+.header__account > div {
+  width: 34px;
+  height: 34px;
+  background: no-repeat url(/site/resta/img/svg/accaunt.svg);
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.header__account > div a {
+  display: block;
+  height: 100%;
+  z-index: 3;
+}
+.header__account > div:last-child {
+  background: no-repeat url(/site/resta/img/svg/shopping-cart.svg);
+  background-size: 55px 55px;
+  width: 49px;
+  height: 51px;
+  margin-top: 3px;
+  margin-left: 3px;
+  z-index: 1;
+}
+.header__account > div:last-child a {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  border-radius: 18px;
+  background-color: var(--color_normal);
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  padding: 7px 0 0 0px;
+}
+
+/* -- The style personal account's into site - end*/
+/* The HEARD STYLE - end */
+@media screen and (min-width: 321px) {
+  .font14, .header__account > div:last-child a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  /* HEADER style - start */
+  .header > div {
+    z-index: 3;
+  }
+
+  header .header::before, header .header::after {
+    content: "";
+    display: block;
+    z-index: 1;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--color_font);
+  }
+
+  header .header::after {
+    bottom: 0;
+    top: initial;
+    background: var(--color_bg);
+    height: 54px;
+  }
+
+  header .header {
+    width: 100%;
+    max-width: 1920px;
+    -ms-grid-columns: initial;
+    grid-template-columns: initial;
+    -ms-grid-rows: initial;
+    grid-template-rows: initial;
+    display: -ms-grid;
+    display: grid;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    row-gap: 0;
+    justify-items: start;
+  }
+
+  header .header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header .header > div {
+    grid-row: initial;
+    grid-column: initial;
+  }
+  header .header .header__logo {
+    /* logo */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    width: 130px;
+    height: 64.46px;
+    margin: 0 0 0 19px;
+    background-size: 130px 54.46px;
+    background-position: 0 10px;
+  }
+  header .header .header__nav {
+    /* menu */
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: 18px 0 0 15px;
+    -ms-grid-column-align: initial;
+        justify-self: initial;
+  }
+  header .header .header__contact {
+    /* contact block */
+    padding: initial;
+    width: 1fr;
+    border: initial;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  header .header .header__contact::after {
+    border: initial;
+    content: initial;
+  }
+  header .header .header__contact li:first-child {
+    padding-top: 5px;
+  }
+  header .header .header__contact li {
+    margin-bottom: initial;
+  }
+  header .header .header__search {
+    /* search form */
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    /* max-width:558px; */
+    max-width: 517px;
+    width: 76%;
+    /* 82%; */
+    padding-right: initial;
+  }
+  header .header .header__account {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+
+  /* --search form style- start */
+  .header__search form {
+    max-width: 1071px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    gap: 16px;
+    width: 100%;
+  }
+  .header__search form input[type=search] {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+    max-width: 287px;
+    min-width: 217px;
+    text-align: left;
+    padding-left: 20px;
+  }
+  .header__search form button {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    min-width: 80px;
+    /* 150px; */
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    max-width: 180px;
+    background-image: initial;
+    color: #fff;
+    text-align: center;
+  }
+
+  /* --search form style- end */
+  /* --lenguage's button  - start */
+  .header__language {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    max-width: 90px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: initial;
+    margin: initial;
+  }
+  .header__language > div {
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .header__language div:first-child {
+    margin: 0px 0 0 14px;
+    height: 29px;
+  }
+  .header__language div:last-child {
+    margin: 0px 14px 0 0;
+  }
+
+  /* --lenguage's button  - end */
+  /* --accaunt's head -style - start */
+  .header__account {
+    background-color: var(--color_bg);
+    max-width: 210px;
+    width: 100%;
+    margin: initial;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .header__account a:nth-child(1) {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    line-height: 12px;
+    color: var(--color_hover);
+    height: 24px;
+    width: 45px;
+    margin: 18px 0 0 15px;
+  }
+  .header__account div:nth-child(2) {
+    background: no-repeat url(/site/resta/img/svg/accaunt_red.svg);
+    margin-left: 6px;
+  }
+  .header__account > div:last-child {
+    background: no-repeat url(/site/resta/img/svg/shopping-cart-red.svg);
+    margin-left: 2.6em;
+  }
+  .header__account > div:last-child a {
+    background-color: var(--backg_page);
+    color: #fff;
+    margin-top: 0;
+    width: 24px;
+    height: 24px;
+    padding: initial;
+    padding: 5px 0 0 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    text-decoration: none;
+  }
+
+  /* --accaunt's head -style - end */
+  /* HEADER style - end */
+}
+@media screen and (min-width: 321px) and (max-width: 417px) {
+  /* -- The language's button style - start */
+  .header__language {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    width: initial;
+  }
+
+  /* -- The language's button style - end */
+  /* -- The style personal account's into site - start*/
+  .header__account {
+    margin: 0 7px 5px 0;
+  }
+
+  /* -- The style personal account's into site - end*/
+  /* --search form style- start */
+  .header__search form {
+    gap: 3%;
+  }
+  .header__search form button {
+    width: 65px;
+    height: 35px;
+    background: no-repeat url(/site/resta/img/right-search.png) var(--color_normal);
+    background-position: 23px 13px;
+    color: var(--color_normal);
+    border-radius: 8px;
+    font-size: 1px;
+    vertical-align: top;
+  }
+
+  header .header .header__search {
+    width: 100%;
+  }
+
+  /* --search form style- end */
+  /* -- The contact's links a style - start */
+  section.categoryMenu div.header__contact {
+    display: none;
+  }
+
+  /* -- The contact's links a style - end */
+}
+@media screen and (min-width: 321px) and (max-width: 624px) {
+  /* The HEARD STYLE - start */
+  header .header {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 82px 105px 54px;
+    grid-template-rows: 82px 105px 54px;
+  }
+  header .header > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  header .header > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  header .header > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  header .header > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  header .header > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  header .header > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  header .header .header__nav {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+  }
+  header .header .header__contact, header .header .header__language {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  header .header .header__language {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 50px;
+    width: auto;
+  }
+  header .header .header__language > div:last-child {
+    margin: 0 0 0 14px;
+  }
+  header .header .header__language > div:last-child a {
+    z-index: 3;
+  }
+  header .header .header__search, header .header .header__account {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    background-color: initial;
+    min-width: 120px;
+  }
+  header .header .header__search > a:nth-child(1), header .header .header__account > a:nth-child(1) {
+    font-size: 1px;
+    margin-left: initial;
+    display: none;
+  }
+  header .header .header__search > div:nth-child(2) a, header .header .header__account > div:nth-child(2) a {
+    min-width: 28px;
+    min-height: 30px;
+    width: initial;
+    padding: initial;
+    margin: initial;
+  }
+  header .header .header__search > div:last-child, header .header .header__account > div:last-child {
+    margin-right: 10px;
+    margin-left: 3px;
+  }
+  header .header .header__account {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    min-width: 50px;
+    width: initial;
+    max-width: 220px;
+  }
+  header .header .header__account > div:nth-child(2) {
+    background: no-repeat url(/site/resta/img/svg/accaunt.svg);
+  }
+
+  .header__contact li a {
+    font-size: 12pt;
+  }
+
+  /* The HEARD STYLE - end */
+  /* -- The contact's links a style - start */
+  section.categoryMenu {
+    gap: 1%;
+  }
+  section.categoryMenu div.header__contact {
+    margin-left: 0;
+    padding-left: initial;
+  }
+  section.categoryMenu .categoryMenu__button {
+    margin-right: 1%;
+  }
+  section.categoryMenu .categoryMenu__button form input {
+    font-size: 13px;
+  }
+
+  /* -- The contact's links a style - end */
+}
+/*
+cpetialOffers */

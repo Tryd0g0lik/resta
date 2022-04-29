@@ -1,0 +1,866 @@
+@charset "UTF-8";
+/* The MAIN'S BLOCK style - start*/
+body > main#main {
+  min-width: 283px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin: initial;
+  margin-bottom: 37px;
+  background-color: var(--color_bg);
+}
+body > main#main section.categoryMenu:nth-child(3) {
+  display: none;
+}
+
+.categoryMenu {
+  background-color: var(--color_font);
+  padding: 8px 0 6px 16px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+.categoryMenu .categoryMenu__nav {
+  display: inline-block;
+  margin: 0px 0 0 2px;
+}
+.categoryMenu .categoryMenu__nav.header__nav.header__nav_activity ul {
+  left: initial;
+}
+.categoryMenu .categoryMenu__nav.header__nav.header__nav_activity ul::before {
+  left: 9px;
+}
+.categoryMenu .header__contact {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 0 0px 33px;
+  margin-left: 0px;
+  float: right;
+}
+.categoryMenu .header__contact > ul > li {
+  display: none;
+}
+.categoryMenu .header__contact > ul > li:first-child {
+  display: inline-block;
+}
+.categoryMenu .header__contact > ul > li:first-child a {
+  color: #fff;
+}
+.categoryMenu .header__contact .header__phone a {
+  font-size: 1.05em;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  letter-spacing: 0.02em;
+}
+.categoryMenu .header__contact::after {
+  display: none;
+}
+
+.categoryMenu__button {
+  display: none;
+}
+
+/* --Categories style - start */
+section.category {
+  padding-top: 34px;
+  margin-bottom: 45px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.main__title {
+  display: block;
+  padding-left: 50px;
+  margin-bottom: 11px;
+  width: 100%;
+}
+.main__title h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color_font);
+  padding: initial;
+  letter-spacing: 0.1px;
+}
+
+/* --Categories style - end */
+#navCatalog {
+  float: none;
+  clear: both;
+  display: block;
+}
+
+.catalog {
+  height: 376px;
+  overflow: hidden;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 19px;
+  width: inherit;
+}
+
+.catalog__look {
+  display: none;
+}
+
+.catalog__look.look {
+  position: absolute;
+  padding: 5px;
+  z-index: 50;
+  background-color: rgba(93, 91, 97, 0.54);
+  width: auto;
+  height: auto;
+  overflow: hidden;
+  display: inline-block;
+  top: 0;
+  left: 0px;
+}
+
+.catalog__furniture {
+  width: 100%;
+  max-width: 254px;
+  height: 171px;
+  padding: 14.34px 9px 13px 12px;
+  border-radius: 10px;
+  background-color: #fff;
+  /* margin-left: 37px; */
+  /* margin: 0 auto;
+  margin-bottom: 17px;
+   */
+  /* border: 1px var(--backg_page) solid; */
+}
+.catalog__furniture .catalog__furniture {
+  padding-top: 18px;
+  padding-right: initial;
+  height: 368px;
+  margin-bottom: 30px;
+}
+.catalog__furniture .catalog__furniture::before {
+  content: "%";
+  color: #fff;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 10px;
+  background: no-repeat url(/site/resta/img/svg/percent.svg);
+  width: 38px;
+  height: 52px;
+  z-index: 5;
+  right: 10px;
+  top: -8px;
+}
+.catalog__furniture .catalog__furniture div:first-child {
+  border: 0;
+  margin-bottom: initial;
+}
+.catalog__furniture .catalog__furniture div .catalog__foto {
+  width: 226px;
+  height: 149px;
+  display: block;
+  margin-bottom: 20px;
+}
+.catalog__furniture .catalog__furniture div .catalog__foto img {
+  width: 99%;
+}
+.catalog__furniture .catalog__furniture div .catalog__title {
+  width: 100%;
+}
+.catalog__furniture .catalog__furniture div .catalog__title h3 {
+  letter-spacing: 0.1px;
+}
+.catalog__furniture .catalog__furniture .catalog__inCart {
+  background: initial;
+  text-align: left;
+  height: 25px;
+  width: 120px;
+  background: no-repeat url(/site/resta/img/svg/right.svg) calc(100% - 2px) 7px;
+  /* background-size: 15px; */
+}
+.catalog__furniture .catalog__furniture .catalog__inCart a {
+  color: var(--backg_page);
+  word-spacing: -2.5px;
+  text-transform: initial;
+}
+.catalog__furniture > div:first-child {
+  border-bottom: 1px var(--backg_page) solid;
+  padding-bottom: 3px;
+}
+.catalog__furniture > div .catalog__foto {
+  width: 66px;
+  height: 48px;
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+.catalog__furniture > div .catalog__title {
+  width: 125px;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 10px;
+}
+.catalog__furniture > div .catalog__title > div {
+  margin-bottom: 1px;
+  margin-left: 3.8px;
+}
+.catalog__furniture > div .catalog__title h3 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.catalog__furniture > div .catalog__title span {
+  color: var(--backg_page);
+  font-size: 12px;
+  text-decoration: underline;
+  vertical-align: top;
+  margin-left: 3.8px;
+}
+.catalog__furniture .catalog__info {
+  padding-top: 7.34px;
+}
+.catalog__furniture .catalog__info li {
+  padding-left: 20.18px;
+  background: url("/site/resta/img/svg/li_table.svg") 0 0 no-repeat, url("/site/resta/img/svg/001.svg") right no-repeat;
+  height: 18px;
+  margin-bottom: 5px;
+}
+.catalog__furniture .catalog__info li a {
+  color: var(--color_font);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.catalog__furniture > div:nth-child(3) {
+  width: 100%;
+  height: 15px;
+  text-align: left;
+  padding-top: 4px;
+  padding-left: 10px;
+}
+.catalog__furniture > div:nth-child(3) > span {
+  display: inline-block;
+  border: 1px solid var(--color_font);
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  vertical-align: top;
+}
+.catalog__furniture .catalog__inCart {
+  height: 20px;
+  background: no-repeat url(/site/resta/img/svg/003.svg) 149px 0;
+}
+.catalog__furniture .catalog__inCart a {
+  color: var(--color_normal);
+  text-decoration: underline;
+  text-transform: lowercase;
+  letter-spacing: 0.35px;
+}
+
+.catalog__allProduct {
+  padding-left: 52px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.catalog__allProduct a {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background: no-repeat url(/site/resta/img/svg/rght.svg) 200px 0;
+  padding-right: 30px;
+  color: var(--color_normal);
+}
+
+/* --cpecial offers - start */
+.cpetialOffers {
+  height: 830px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  margin-bottom: 26px;
+}
+.cpetialOffers .main__title {
+  margin-bottom: 16px;
+}
+.cpetialOffers > div .catalog__title {
+  width: 100%;
+  padding-left: 0px;
+  height: 63.6px;
+}
+.cpetialOffers > div .catalog__title h3 {
+  color: var(--color_font);
+  letter-spacing: -1.3px;
+  line-height: 1.2;
+}
+.cpetialOffers > div .catalog__title > div:first-child {
+  margin-bottom: 2px;
+}
+.cpetialOffers > div:last-child {
+  gap: 15px;
+}
+.cpetialOffers .catalog__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-diraction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 2px;
+  margin-bottom: 3px;
+}
+.cpetialOffers .catalog__price > div:first-child {
+  width: 100px;
+  margin-bottom: 13px;
+}
+.cpetialOffers .catalog__price > div:first-child span {
+  color: var(--color_normal);
+}
+.cpetialOffers .catalog__price > div:first-child span:last-child {
+  margin-left: 5px;
+}
+.cpetialOffers .catalog__price > div:nth-child(2) {
+  width: 100px;
+  margin-bottom: 13px;
+  padding-left: 5px;
+}
+.cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before {
+  background-color: var(--backg_page);
+  width: 82.9px;
+  border: 1px solid var(--backg_page);
+  -webkit-transform: rotate(346deg);
+          transform: rotate(346deg);
+  top: 10px;
+  left: -2px;
+}
+.cpetialOffers .catalog__price > div:nth-child(2) span:first-child, .cpetialOffers .catalog__price > div:nth-child(2) span:last-child {
+  color: var(--backg_page);
+}
+.cpetialOffers .catalog__price > div:nth-child(2) span:last-child {
+  margin-left: 5px;
+}
+.cpetialOffers .catalog__price > div:nth-child(3) {
+  width: 125px;
+  padding-top: 2px;
+}
+.cpetialOffers .catalog__price > div:nth-child(3) button {
+  width: 120px;
+  height: 32px;
+  background: no-repeat url("/site/resta/img/svg/cart.svg") calc(100% - 12px) 8px, var(--color_normal);
+  color: #fff;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.cpetialOffers .catalog__price > div:nth-child(4) {
+  width: 100px;
+  height: 34px;
+  text-align: center;
+  padding-top: 4px;
+  padding-left: 10px;
+  background: initial;
+}
+.cpetialOffers .catalog__price > div:nth-child(4) a {
+  display: inline-block;
+  width: 90px;
+  height: 18px;
+  padding-right: 15px;
+  color: var(--color_normal);
+  background: url("/site/resta/img/svg/003.svg") 75px 0px no-repeat;
+}
+
+section.cpetialOffers > div:last-child {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+}
+section.cpetialOffers > div:last-child .catalog__foto {
+  width: 231px;
+  height: 145px;
+  margin-bottom: 17px;
+}
+
+section.cpetialOffers .catalog__furniture {
+  height: 360px;
+  margin-left: 31px;
+  padding-right: 4px;
+}
+section.cpetialOffers .catalog__furniture::before {
+  color: #fff;
+  width: 38px;
+  height: 52px;
+  background: no-repeat url(/site/resta/img/svg/percent.svg) 0px 0;
+  z-index: 6;
+  right: 7px;
+  top: -12px;
+}
+section.cpetialOffers .catalog__furniture .catalog__inCart {
+  height: initial;
+  background: no-repeat url(/site/resta/img/svg/right.svg) 96px 10px;
+}
+section.cpetialOffers div.catalog__furniture::before {
+  content: "%";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.categoryMenu__nav_midle {
+  display: none;
+}
+
+.main__text nav, .main__text aside {
+  display: none;
+}
+
+.info-text__about-us {
+  margin-bottom: 27.4px;
+}
+.info-text__about-us .main__info-text + .main__title {
+  padding-top: 40px;
+}
+.info-text__about-us .main__title {
+  padding: 75px 0 0 47px;
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.info-text__about-us .main__title h2, .info-text__about-us .main__title h3 {
+  line-height: 1.3;
+  padding: initial;
+  margin-right: initial;
+}
+.info-text__about-us .main__title h3 {
+  letter-spacing: -0.3px;
+}
+.info-text__about-us .main__title.main__title-correct {
+  padding: 0px 0 0 42px;
+  margin-bottom: 20px;
+}
+.info-text__about-us .main__title.main__title-correct h3 {
+  line-height: 1.2;
+}
+
+.main__info-text {
+  padding-left: 37px;
+  padding-top: 5px;
+  margin-bottom: 15.5px;
+  line-height: 1;
+}
+.main__info-text li {
+  display: inline-block;
+  margin-bottom: 8.9px;
+  padding: 12px 16px 13px 17px;
+}
+.main__info-text .info-text__01_bg {
+  background-color: #EEEEEE;
+  height: 86px;
+  width: 254px;
+  border-radius: 10px;
+}
+.main__info-text .info-text__01_hover:hover {
+  background: linear-gradient(107deg, #f2b97f45, #ededed, #4e9bd440, #ff6d9742);
+}
+
+.main__info-text-property {
+  width: 15em;
+  margin-bottom: 12px;
+  padding-left: 37.7px;
+}
+.main__info-text-property li {
+  padding: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 6.5px;
+  padding-top: 5px;
+  width: 15em;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.main__info-text-property li object {
+  height: 23.86px;
+  width: 21.69px;
+  left: 1.15px;
+  top: 0.06px;
+  border-radius: 0px;
+  padding: initial;
+  display: inline-block;
+  margin-right: 21px;
+}
+.main__info-text-property li span {
+  vertical-align: top;
+}
+
+.main__text {
+  background-color: #fff;
+}
+
+.main__info-text-correct {
+  margin-bottom: 46px;
+  padding-top: 10px;
+}
+.main__info-text-correct ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-our-client .main__title {
+  padding-left: 35px;
+  margin-bottom: 17px;
+}
+.info-our-client div.main__info-slider.main__client {
+  height: 54px;
+  overflow: hidden;
+}
+.info-our-client .main__client .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.info-our-client .main__client .carousel-inner, .info-our-client .main__client .carousel-inner > div {
+  height: 54px;
+}
+.info-our-client .main__client {
+  width: 67px;
+  height: auto;
+}
+.info-our-client .main__client .carousel-inner > div {
+  max-width: 72px;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: initial;
+  margin-right: 10px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.info-our-client .main__client .carousel-inner > div img {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+.info-our-client .main__info-slider {
+  padding-left: 40.7px;
+  height: 124px;
+  width: 100%;
+}
+.info-our-client .main__info-slider .slick-slider-project div.main__slider-photo {
+  width: 195px;
+  height: 155px;
+  overflow: inherit;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 17px;
+}
+.info-our-client .main__info-slider .slick-slider-project .main__slider-photo + div {
+  width: 195px;
+  margin: 0 auto;
+}
+.info-our-client .main__info-slider .carousel-control-prev {
+  position: absolute;
+  z-index: 5;
+  left: 50px;
+}
+.info-our-client .main__info-slider .carousel-control-prev .carousel-control-prev-icon {
+  background: no-repeat url(/site/resta/img/svg/slider-control-left.svg);
+  z-index: 50;
+  top: 2px;
+  left: -15px;
+}
+.info-our-client .main__info-slider .carousel-control-next {
+  position: absolute;
+  z-index: 5;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.info-our-client .main__info-slider .carousel-control-next .carousel-control-next-icon {
+  background: no-repeat url(/site/resta/img/svg/slider-control-right.svg);
+  z-index: 50;
+  right: -10px;
+  width: 42px;
+  top: 2px;
+}
+.info-our-client div .main__info-slider {
+  height: auto;
+  margin-bottom: 61px;
+}
+.info-our-client .main__info-work-our {
+  height: 280px;
+  margin-bottom: 30px;
+}
+.info-our-client .main__info-work-our {
+  height: 278px;
+  width: 100%;
+  max-width: 306px;
+}
+.info-our-client .main__info-work-our div {
+  height: 100%;
+  width: 100%;
+}
+.info-our-client .main__info-work-our.main__info-slider .carousel-control-prev-icon {
+  top: -35px;
+}
+.info-our-client .main__info-work-our.main__info-slider .carousel-control-next {
+  top: -74px;
+}
+
+.carousel-inner {
+  overflow: initial;
+}
+
+.main__send-letters .main__title {
+  padding-left: 39px;
+}
+
+.main__form-send-letters {
+  padding-top: 7px;
+}
+.main__form-send-letters > div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-decoration: column;
+  margin-bottom: 9px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-left: 39px;
+}
+.main__form-send-letters > div input {
+  border-radius: 10px;
+  background-color: #9493960f;
+  text-align: left;
+  /* min-width:  254px;
+  max-width:  589px; */
+  padding-bottom: 3px;
+}
+.main__form-send-letters > div textarea {
+  width: 100%;
+  /* 	min-width:  254px;
+  	max-width:  589px; */
+  height: 107px;
+  padding: 0.375rem 0.75rem;
+  background-color: #9493960f;
+  border: 1px solid #ced4da;
+}
+.main__form-send-letters > div input[type=button] {
+  height: 40px;
+  width: 248.8374023438px;
+  border-radius: 8px;
+  background-color: #8C325B;
+  color: #fff;
+  text-align: center;
+}
+.main__form-send-letters .mail__button {
+  padding-top: 10px;
+}
+.main__form-send-letters div.mail__button.mb-3 {
+  margin-bottom: 2px;
+}
+.main__form-send-letters .mail__texterea {
+  height: 40px;
+  width: 254px;
+  border-radius: 10px;
+  background-color: #9493960f;
+  text-align: left;
+}
+.main__form-send-letters .mail__texterea {
+  width: initial;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.mail__sheckbox .form-check-input {
+  width: 24px;
+  height: 18px;
+  margin-right: 5px;
+}
+.mail__sheckbox p {
+  font-size: 13px;
+  line-height: 1;
+}
+
+/* --cpecial offers - end */
+/* The MAIN'S BLOCK style - end*/
+@media screen and (min-width: 350px) {
+  :root {
+    --backg_page:#949396;
+    /* фон страницы*/
+    --color_active:#A41656;
+    /* цвет-active */
+    --color_hover:#5A082D;
+    /* цвет-hover */
+    --color_normal:#8C325B;
+    /* цвет кнопок ссылок*/
+    --color_bg: #C4C4C4;
+    /* фоновый цвет */
+    --primary_color: #ffffff;
+    --color_font:#5D5B61;
+    /* фон шапки */
+    --primary__cursor: pointer;
+    --primary_border:1px #949396 solid;
+  }
+
+  .catalog__furniture .catalog__inCart a, .cpetialOffers {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+  }
+
+  .catalog__furniture .catalog__furniture .catalog__inCart a, .cpetialOffers .catalog__price > div:nth-child(4) a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  .font-18 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  .catalog__allProduct a {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .catalog__furniture .catalog__furniture div .catalog__title h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child, .cpetialOffers .catalog__price > div:nth-child(2) span:last-child {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:first-child span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .cpetialOffers .catalog__price > div:nth-child(2) span:first-child::before, section.cpetialOffers .catalog__furniture::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+  }
+
+  .catalog__furniture .catalog__furniture::before {
+    display: inline-block;
+    position: absolute;
+  }
+
+  body > main, .category, .cpetialOffers > div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 1;
+  }
+
+  .display-Block {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main__info-text-correct ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 576px) {
+  /* --form near footer - start */
+  .form-control {
+    max-width: 589px;
+  }
+
+  /* --form near footer - end */
+}

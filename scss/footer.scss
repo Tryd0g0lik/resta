@@ -1,120 +1,161 @@
-/* FOOTER style - start */
-footer {
-	display:flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	padding-left: 47px;
-	padding-top:20px;
-	background-color:#C4C4C4;
+/* THe FOOTER BLOCK style - start */
 
+footer{
+	padding-top:    25px;
+	display: flex;
+	justify-content:    space-between;
+	flex-grow:  1;
+	flex-shrink:    1;
+	background-color:   var(--color_bg);
 	& > div,
-	& > nav{
-		flex-grow:1;
-		margin:initial;
-		width:100%;
+	& > nav.header__nav {
+		width:  100%;
+		border: 0;
 	}
-
+	/* --logo style - start */
 	& .header__logo{
-		background: no-repeat url('/site/resta/img/svg/Logo_Resta_vertical_color.svg') 2px 3px ;
-		margin:initial;
-		height:100px;
-	}
 
-	& .header__contact{
-		padding:initial;
-		margin:initial;
-		padding:2px 4px 12px ;
+		height: 74px;
+		background-size:  60px 74px;
+		background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
+
+	}
+	/* --logo style - end */
+	/* --contact style - start */
+	& div.header__contact{
+		padding-top:    27px;
+		max-width:  235px;
+		margin-bottom:  12px;
+
 		& li{
-			margin-bottom: 3px;
+			margin: initial;
+			padding-left:   60px;
+			background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+
 			& a{
-				@extend %font_number_tel_footer;
-				color:var(--color_font);
+				background: initial;
+				padding:    initial;
+				line-height: 1.2;
+
+				color:  var(--color_font);
+				letter-spacing: 0.1px;
+			}
+
+		}
+
+		& li:nth-child(3){
+			background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
+
+			& a{
+				background: initial;
 
 			}
 		}
-		& li:first-child a,
-		& li:nth-child(2) a{
-			background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 0 -1px;
-		}
-		& li:last-child a{
-			background: no-repeat url(/site/resta/img/svg/footer_email.svg) 0 3px;
-		}
-
+	}
+	/* --contact style - end */
+	/* --menu style - start */
+	& .header__nav{
+		@extend %first_block;
 
 	}
 
-	& .header__nav{
-		width:100%;
-		height:initial;
-		grid-column:initial;
-		grid-row:initial;
-		position:relative;
-		padding-top:16px;
-		border:initial;
+	& nav.header__nav{
+		min-width:  150px;
+		min-height: 235px;
+		padding-left:   35px;
+
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content:    start;
 
 		&::before,
 		&::after{
-			display:none;
-		}
-
-		& ul{
-			width:initial;
-			height:initial;
-			top:initial;
-			left:initial;
-			position:relative;
-			background:initial;
-
-			& li{
-				display:block;
-				margin-bottom:11px;
-				& a{
-					@extend %font_link_menu_footer;
-					color:var(--color_font);
-
-				}
-			}
-		}
-	}
-
-	& .cocial-network{
-		padding-top:33px;
-
-		& > div{
-			display:inline-block;
-			width:initial;
-			margin-right: 22px;
-
-			& a{
-				vertical-align:top;
-				width:initial;
-				height:35px;
-			}
-		}
-	}
-
-	& .autor{
-	padding-top:33px;
-
-		& > * {
-
-			font-size: 14px;
-			font-weight: 400;
-			line-height: 17px;
-			letter-spacing: 0em;
-			text-align: left;
-			color:var(--color_font);
+			display:    none;
 
 		}
+
+		& ul {
+			display: flex;
+			flex-direction: column;
+			flex-grow:  1;
+			gap:    13px;
+		    width: 100%;
+			max-width: 275px;
+			height: initial;
+			background: none;
+
+			margin: initial;
+			position:   relative;
+
+		}
+		& li{
+			display:    block;
+		}
+
 		& a{
-			padding-top:5px;
-			display:inline-block;
-			border:initial;
-			border-bottom: 1px solid #5D5B61;
+		color:  var(--color_font);
+		text-transform: lowercase;
 
+		}
+	}
+
+	/* --menu style - end */
+
+	/* --cocial-network style - start */
+	& .cocial-network{
+		@extend %first_block;
+	}
+	& div.cocial-network{
+		justify-content: start;
+		gap:    25px;
+		flex-grow:  1;
+		flex-shrink:    1;
+
+		padding: 20px 0 0 48px;
+	}
+
+	/* --cocial-network style - end */
+
+	/* site owner it's a block autor class - start */
+	.autor{
+		padding-top:    30px;
+
+
+		& a,
+		& p {
+			display:    inline-block;
+			width:  100%;
+			text-align: center;
+
+			color:  var(--color_font);
+		}
+	}
+
+	/* site owner it's a block autor class - end */
+
+}
+@media screen and (min-width:350px){
+
+	footer{
+		justify-content: space-around;
+
+		& > div,
+		& > nav.header__nav{
+			width: initial;
+		}
+
+		& > nav.header__nav{
+			padding-left: initial;
+		}
+
+		& .autor{
+			width:  100%;
 		}
 	}
 }
 
+@media screen and (min-width:576px){}
 
-/* FOOTER style - and */
+
+
+/* THe FOOTER BLOCK style - end */

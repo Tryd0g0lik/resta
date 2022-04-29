@@ -1,0 +1,255 @@
+@charset "UTF-8";
+:root {
+  --backg_page:#949396;
+  /* фон страницы*/
+  --color_active:#A41656;
+  /* цвет-active */
+  --color_hover:#5A082D;
+  /* цвет-hover */
+  --color_normal:#8C325B;
+  /* цвет кнопок ссылок*/
+  --color_bg: #C4C4C4;
+  /* фоновый цвет */
+  --primary_color: #ffffff;
+  --color_font:#5D5B61;
+  /* фон шапки */
+  --primary__cursor: pointer;
+  --primary_border:1px #949396 solid;
+}
+
+.font-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.topSection {
+  /* min-width: 320px; */
+  width: 100%;
+  z-index: 1;
+  margin: 0 auto;
+}
+
+.display-Block {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.font_16, .colLeft.colLeft_activity nav > ul li a, .colLeft.colLeft_activity nav > ul li a:active, .colLeft.colLeft_activity nav > ul li a:visited {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/* TOPsECTION__SLIDER TOPsLIDER style - start */
+.topSection__slider.topSlider {
+  z-index: 2;
+}
+
+/* TOPsECTION__SLIDER TOPsLIDER style - end */
+/* the TOP SLIDER's style - start */
+.topSection__slider {
+  width: 100%;
+  min-width: 320px;
+  max-width: initial;
+  height: 158px;
+  overflow: hidden;
+}
+.topSection__slider ul {
+  display: block;
+  height: 155px;
+}
+
+.sliderTop {
+  display: block;
+  height: 100%;
+}
+.sliderTop > div {
+  width: initial;
+  min-height: 155px;
+  position: relative;
+  padding-top: 38px;
+}
+.sliderTop .sliderTop__slider {
+  position: absolute;
+  left: -197%;
+  top: -184px;
+  /* -webkit-transform: scale(0.3); */
+  z-index: 2;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+}
+.sliderTop .sliderTop__title {
+  width: 225px;
+  margin: 0 auto;
+  z-index: 3;
+}
+.sliderTop .sliderTop__title h1 {
+  font-size: 1.3em;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  padding-right: 20px;
+}
+.sliderTop > div .sliderTop__form, .sliderTop > div .sliderTop__slider:nth-child(4), .sliderTop > div > div:nth-child(5), .sliderTop > div .topSlider__social {
+  display: none;
+}
+
+/* the TOP SLIDER's style - end */
+/* The ASIDE COLUMN style - start */
+.topSection {
+  position: relative;
+  width: initial;
+}
+.topSection > div {
+  margin-left: initial;
+  margin-right: initial;
+}
+
+.colLeft {
+  display: block;
+  overflow: hidden;
+  width: 35px;
+  height: 347px;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 0 8px 8px 0;
+  border: 1px var(--backg_page) solid;
+  padding: initial;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.colLeft.colLeft_activity {
+  top: -168px;
+  width: 100%;
+}
+.colLeft.colLeft_activity nav ul {
+  display: initial;
+}
+
+.colLeft nav {
+  z-index: 60;
+  position: relative;
+  left: initial;
+  width: 100%;
+  height: 100%;
+}
+.colLeft nav::before, .colLeft nav::after {
+  content: "Кликните, чтобы увидеть категории";
+  z-index: 60;
+  background-color: #fff;
+  width: 39px;
+  height: 347px;
+  padding: 18px 0 1px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  border: 1px solid var(--color_font);
+  border-radius: 8px 0 0 8px;
+  border: 1px 0 0 1px;
+  color: var(--color_normal);
+  position: absolute;
+  left: 0;
+  top: 16;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.84em;
+  word-spacing: 0.5px;
+  letter-spacing: 0.1px;
+  cursor: pointer;
+}
+.colLeft nav::after {
+  display: none;
+  padding-top: 108px;
+  content: "Скрыть контент";
+  top: 0;
+}
+.colLeft nav::after ul {
+  display: none;
+}
+.colLeft nav li {
+  display: none;
+}
+
+.colLeft.colLeft_activity {
+  overflow: visible;
+  width: 100%;
+  height: initial;
+  background-color: initial;
+  border: 0;
+  /*& nav:hover {*/
+}
+.colLeft.colLeft_activity nav {
+  width: initial;
+  position: sticky;
+  margin: 0 auto;
+}
+.colLeft.colLeft_activity nav::before {
+  display: none;
+}
+.colLeft.colLeft_activity nav::after {
+  display: block;
+  top: 168px;
+}
+.colLeft.colLeft_activity nav > ul {
+  background: none;
+}
+.colLeft.colLeft_activity nav > ul li {
+  display: block;
+  width: 265.32px;
+  height: 36.67px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid var(--color_font);
+  margin: 0 auto;
+  z-index: 5;
+  left: 10px;
+  /*	&, */
+  /* tochmobile */
+}
+.colLeft.colLeft_activity nav > ul li object {
+  display: none;
+  vertical-align: top;
+  height: 35px;
+  z-index: 7;
+}
+.colLeft.colLeft_activity nav > ul li a, .colLeft.colLeft_activity nav > ul li a:active, .colLeft.colLeft_activity nav > ul li a:visited {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  /* 209.9px*/
+  padding-top: 10px;
+  vertical-align: top;
+  z-index: 70;
+  text-align: center;
+  color: var(--color_font);
+  z-index: 7;
+}
+.colLeft.colLeft_activity nav > ul li a:hover {
+  color: #fff;
+}
+.colLeft.colLeft_activity nav > ul li:hover {
+  background-color: var(--color_normal);
+}
+.colLeft.colLeft_activity nav > ul li:hover a {
+  color: #fff;
+}
+
+/* The ASIDE COLUMN style - end */

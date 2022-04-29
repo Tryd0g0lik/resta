@@ -1,0 +1,145 @@
+@charset "UTF-8";
+:root {
+  --backg_page:#949396;
+  /* фон страницы*/
+  --color_active:#A41656;
+  /* цвет-active */
+  --color_hover:#5A082D;
+  /* цвет-hover */
+  --color_normal:#8C325B;
+  /* цвет кнопок ссылок*/
+  --color_bg: #C4C4C4;
+  /* фоновый цвет */
+  --primary_color: #ffffff;
+  --color_font:#5D5B61;
+  /* фон шапки */
+  --primary__cursor: pointer;
+  --primary_border:1px #949396 solid;
+}
+
+.font-18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+footer .header__contact li a {
+  font-family: Panton;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.display-Block {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* FOOTER style - start */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 47px;
+  padding-top: 20px;
+  background-color: #C4C4C4;
+}
+footer > div, footer > nav {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: initial;
+  width: 100%;
+}
+footer .header__logo {
+  background: no-repeat url("/site/resta/img/svg/Logo_Resta_vertical_color.svg") 2px 3px;
+  margin: initial;
+  height: 100px;
+}
+footer .header__contact {
+  padding: initial;
+  margin: initial;
+  padding: 2px 4px 12px;
+}
+footer .header__contact li {
+  margin-bottom: 3px;
+}
+footer .header__contact li a {
+  color: var(--color_font);
+}
+footer .header__contact li:first-child a, footer .header__contact li:nth-child(2) a {
+  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 0 -1px;
+}
+footer .header__contact li:last-child a {
+  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 0 3px;
+}
+footer .header__nav {
+  width: 100%;
+  height: initial;
+  grid-column: initial;
+  grid-row: initial;
+  position: relative;
+  padding-top: 16px;
+  border: initial;
+}
+footer .header__nav::before, footer .header__nav::after {
+  display: none;
+}
+footer .header__nav ul {
+  width: initial;
+  height: initial;
+  top: initial;
+  left: initial;
+  position: relative;
+  background: initial;
+}
+footer .header__nav ul li {
+  display: block;
+  margin-bottom: 11px;
+}
+footer .header__nav ul li a {
+  color: var(--color_font);
+}
+footer .cocial-network {
+  padding-top: 33px;
+}
+footer .cocial-network > div {
+  display: inline-block;
+  width: initial;
+  margin-right: 22px;
+}
+footer .cocial-network > div a {
+  vertical-align: top;
+  width: initial;
+  height: 35px;
+}
+footer .autor {
+  padding-top: 33px;
+}
+footer .autor > * {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--color_font);
+}
+footer .autor a {
+  padding-top: 5px;
+  display: inline-block;
+  border: initial;
+  border-bottom: 1px solid #5D5B61;
+}
+
+/* FOOTER style - and */
