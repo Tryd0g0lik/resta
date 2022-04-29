@@ -1,3 +1,11 @@
+.font_18, .header__account > div:last-child a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 /* The HEARD STYLE - start */
 header {
   background-color: var(--color_font);
@@ -339,6 +347,7 @@ header .header a:hover, header .header a:active {
   height: 51px;
   margin-top: 3px;
   margin-left: 3px;
+  z-index: 1;
 }
 .header__account > div:last-child a {
   display: inline-block;
@@ -347,10 +356,9 @@ header .header a:hover, header .header a:active {
   border-radius: 18px;
   background-color: var(--color_normal);
   position: absolute;
-  right: -6px;
-  top: 0;
-  padding: 5px 0 0 5px;
-  font-size: 1.5em;
+  right: -5px;
+  top: -5px;
+  padding: 7px 0 0 0px;
 }
 
 /* -- The style personal account's into site - end*/

@@ -229,7 +229,7 @@ section.category {
 
 			& h3{
 				@extend %font_h3Catalog;
-				letter-spacing:0.1px;
+					letter-spacing:0.1px;
 
 			}
 		}
@@ -367,7 +367,8 @@ section.category {
 
 /* --cpecial offers - start */
 .cpetialOffers{
-	height:856px;
+	height:830px;
+
 	overflow:hidden;
 	padding-bottom:10px;
 	margin-bottom:26px;
@@ -384,7 +385,7 @@ section.category {
 
 			& h3{
 				color:var(--color_font);
-				letter-spacing: 0.8px;
+				letter-spacing: -1.3px;
 				line-height:    1.2;
 			}
 		    & > div:first-child{
@@ -569,7 +570,7 @@ section.cpetialOffers {
 
 	}
 	& .main__title {
-		padding:    49px 0 0 47px;
+		padding:   75px 0 0 47px;
 		margin-right:0;
 		margin-bottom:10px;
 
@@ -826,6 +827,7 @@ section.cpetialOffers {
 
 	& > div{
 		width:100%;
+
 		display:flex;
 		flex-decoration:column;
 		margin-bottom:9px;
@@ -836,12 +838,16 @@ section.cpetialOffers {
 			border-radius: 10px;
 			background-color:#9493960f;
 			text-align:left;
+
+			/* min-width:  254px;
+			max-width:  589px; */
 			padding-bottom:3px;
 		}
 
 		& textarea{
 			width:100%;
-			max-width:254px;
+		/* 	min-width:  254px;
+			max-width:  589px; */
 			height:107px;
 			padding:.375rem .75rem;
 			background-color:#9493960f;
@@ -897,411 +903,25 @@ section.cpetialOffers {
 /* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
 
-/* THe FOOTER BLOCK style - start */
-
-footer{
-	padding-top:    25px;
-	display: flex;
-	justify-content:    space-between;
-	flex-grow:  1;
-	flex-shrink:    1;
-	background-color:   var(--color_bg);
-	& > div,
-	& > nav.header__nav {
-		width:  100%;
-		border: 0;
-	}
-	/* --logo style - start */
-	& .header__logo{
-
-		height: 74px;
-		background-size:  60px 74px;
-		background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
-
-	}
-	/* --logo style - end */
-	/* --contact style - start */
-	& div.header__contact{
-		padding-top:    27px;
-		max-width:  235px;
-		margin-bottom:  12px;
-
-		& li{
-			margin: initial;
-			padding-left:   60px;
-			background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
-
-			& a{
-				background: initial;
-				padding:    initial;
-				line-height: 1.2;
-
-				color:  var(--color_font);
-				letter-spacing: 0.1px;
-			}
-
-		}
-
-		& li:nth-child(3){
-			background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
-
-			& a{
-				background: initial;
-
-			}
-		}
-	}
-	/* --contact style - end */
-	/* --menu style - start */
-	& .header__nav{
-		@extend %first_block;
-
-	}
-
-	& nav.header__nav{
-		min-width:  150px;
-		min-height: 235px;
-		padding-left:   35px;
-
-		flex-wrap: wrap;
-		flex-direction: column;
-		justify-content:    start;
-
-		&::before,
-		&::after{
-			display:    none;
-
-		}
-
-		& ul {
-			display: flex;
-			flex-direction: column;
-			flex-grow:  1;
-			gap:    13px;
-			width: initial;
-			height: initial;
-			background: none;
-
-			margin: initial;
-			position:   relative;
-
-		}
-		& li{
-			display:    block;
-		}
-
-		& a{
-		color:  var(--color_font);
-		text-transform: lowercase;
-
-		}
-	}
-
-	/* --menu style - end */
-
-	/* --cocial-network style - start */
-	& .cocial-network{
-		@extend %first_block;
-	}
-	& div.cocial-network{
-		justify-content: start;
-		gap:    25px;
-		flex-grow:  1;
-		flex-shrink:    1;
-
-		padding: 20px 0 0 48px;
-	}
-
-	/* --cocial-network style - end */
-
-	/* site owner it's a block autor class - start */
-	.autor{
-		padding-top:    30px;
 
 
-		& a,
-		& p {
-			display:    inline-block;
-			width:  100%;
-			text-align: center;
-
-			color:  var(--color_font);
-		}
-	}
-
-	/* site owner it's a block autor class - end */
-}
-
-
-/* THe FOOTER BLOCK style - end */
-
-@media screen and (min-width:321px){
+@media screen and (min-width:350px){
 	@import 'variabls-style';
 
-	/*  свойства display block */
-	.display_Block{
-		display:block;
-		width:100%;
-		height:100%;
-	}
-
-	/*  свойства display flex row */
-	.display_Flex{
-		display:flex;
-		flex-direction:row;
-		flex-wrap:wrap;
-		flex-grow:1;
-	}
-
-	/* шрифт 18рх */
-	.font_18{
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 21px;
-		letter-spacing: 0em;
-		text-align: center;
-
-	}
-
-	/* шрифт 14рх */
-	.font_14{
-
-		font-size: 14px;
-		font-weight: 400;
-		line-height: 17px;
-		letter-spacing: 0em;
-		text-align: center;
-
-	}
-
-	.margin_left_title{
-		margin-left:    2.79em;
-	}
-
-	.main__title{
-		display:flex;
-		flex-direction:row;
-		flex-wrap: nowrap;
-		flex-grow:1;
-		justify-content:center;
-		margin-bottom:15px;
-
-		& h2{
-			font-size:  1.889em;
-		}
-	}
-
-	main {
-		flex-direction: column;
-		flex-wrap:wrap;
-		justify-content:start;
-
-	}
-	.categoryMenu{
-		@extend .display_Flex;
-		flex-wrap:  nowrap;
-		justify-content:    space-between;
-
-		& .header__nav{
-			min-width:  50px;
-		}
-		& .header__contact{
-			margin-left: 22%; /* 9.817em; */
-			padding-top:    11px;
-		}
-
-		& .header__phone{
-			min-width:  177px;
-		}
-
-		& .categoryMenu__button{
-			display: inline-block;
-			min-width:  133px;
-			width:  100%;
-			max-width: 241px;
-			height: 40px;
-			margin-right:   1.75em;
-			margin-top: 3px;
-
-
-			& form{
-				@extend .display_Block;
-
-				& input{
-					@extend .display_Block;
-					@extend .font_18;
-					background: var(--color_hover);
-					color: #fff;
-					border-radius:  8px;
-				}
-			}
-		}
-	}
-	/* --.categoryMenu__nav header__nav contNav header__nav_activity */
-
-	/* CATEGORY product - style  - start*/
-	/* -- title category - style - start */
-
-	/* -- title category - style - and */
-
-	/* --category product style -start */
-	.category{
-		display:flex;
-		flex-direction: column;
-		padding-top:    60px;
-
-		& > div:last-child{
-			@extend .display_Flex;
-			justify-content: center;
- 			margin-bottom: 85
- 			px;
-
-			& > div{
-				flex-grow:1;
-				width:100%;
-
-				max-width:  590px;
-			}
-
-			& .catalog{
-				padding:    initial;
-				height: 100%;
-				max-height: 608px;
-				margin-bottom: 150px;
-			}
-
-		}
-		& .category__catalog {
-				display:flex;
-				flex-direction:row;
-				flex-grow: 1;
-				flex-wrap:wrap;
-				justify-content:   space-between;
-				margin:initial;
-				padding: 4px 0px;
-
-
-
-			& .catalog__furniture{
-				max-width: 287px;
-				height: 100%;
-				max-height: 196px;
-				padding-top:    12px;
-				margin-bottom:10px;
-
-
-			}
-		}
-
-		& .catalog__furniture{
-			& > div:first-child{
-				height: 78px;
-				padding-bottom: 2px;
-
-				& .catalog__title{
-					padding: 0px 0 0 5px;
-
-					& h3{
-						line-height: 1.2;
-					}
-				}
-			}
-			& .catalog__foto{
-				padding-top:    2px;
-				height: 68px;;
-				width:  100px;
-			}
-
-		}
-		& .category__title{
-			padding:initial;
-			justify-content: start;
-
-			& h2 {
-				@extend .margin_left_title;
-			}
-		}
-
-
-
-		& .catalog__allProduct{
-			display:flex;
-			flex-direction:row;
-			flex-wrap:nowrap;
-			justify-content: center;
-			padding-left: initial;
-
-
-			& a {
-				margin:initial;
-				letter-spacing: 0.00510em;
-			}
-		}
-
-	}
-	.catalog__furniture{
-		& .catalog__info{
-			padding-top:    9px;
-
-			& li{
-				padding-left:   30px;
-				height: 20px;
-				width:  205px;
-				background-size: 17.92px 17.92px;
-
-			}
-		}
-
-		& div:nth-child(3){
-			padding: 7px 0 0 3px;
-
-		}
-
-		& div.catalog__inCart{
-			background-position: 180px 4px;
-
-			& a{
-				@extend .font_14;
-				line-height: 16.8px;
-				letter-spacing: 0.61px;
-
-			}
-		}
-	}
-
-	/* --category product style - end */
-
-	/* --cpecial offers - start */
-	.categoryMenu__nav{
-		background-color: var(--color_font);
-	}
-
-	/* --cpecial offers - end */
-	/* CATEGORY product - style  - end*/
-
-
-
-
-}
-
-@media screen and (min-width: 321px) and (max-width:   624px){
-	.main__title{
-		& h2{
-			font: 23px/1.2 "Ponton";
-		}
-	}
-
-	.category{
-		padding-top: 17px;
-
-		& > div:last-child{
-		    & .catalog{
-		        margin-bottom: 50px;
-		    }
-
-			& .catalog__allProduct{
-				margin-bottom:  10px;
-			}
+	.main__info-text-correct{
+	    ul{
+	        justify-content: space-evenly;
 	    }
-	}
+    }
+
 }
+@media screen and (min-width:576px){
+
+	/* --form near footer - start */
+	.form-control{
+		max-width:  589px;
+	}
+	/* --form near footer - end */
+}
+
+
