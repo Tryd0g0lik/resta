@@ -297,7 +297,7 @@ section.category {
 
 /* --cpecial offers - start */
 .cpetialOffers {
-  height: 856px;
+  height: 830px;
   overflow: hidden;
   padding-bottom: 10px;
   margin-bottom: 26px;
@@ -312,7 +312,7 @@ section.category {
 }
 .cpetialOffers > div .catalog__title h3 {
   color: var(--color_font);
-  letter-spacing: 0.8px;
+  letter-spacing: -1.3px;
   line-height: 1.2;
 }
 .cpetialOffers > div .catalog__title > div:first-child {
@@ -451,7 +451,7 @@ section.cpetialOffers div.catalog__furniture::before {
   padding-top: 40px;
 }
 .info-text__about-us .main__title {
-  padding: 49px 0 0 47px;
+  padding: 75px 0 0 47px;
   margin-right: 0;
   margin-bottom: 10px;
 }
@@ -692,11 +692,14 @@ section.cpetialOffers div.catalog__furniture::before {
   border-radius: 10px;
   background-color: #9493960f;
   text-align: left;
+  /* min-width:  254px;
+  max-width:  589px; */
   padding-bottom: 3px;
 }
 .main__form-send-letters > div textarea {
   width: 100%;
-  max-width: 254px;
+  /* 	min-width:  254px;
+  	max-width:  589px; */
   height: 107px;
   padding: 0.375rem 0.75rem;
   background-color: #9493960f;
@@ -741,130 +744,7 @@ section.cpetialOffers div.catalog__furniture::before {
 
 /* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
-/* THe FOOTER BLOCK style - start */
-footer {
-  padding-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  background-color: var(--color_bg);
-  /* --logo style - start */
-  /* --logo style - end */
-  /* --contact style - start */
-  /* --contact style - end */
-  /* --menu style - start */
-  /* --menu style - end */
-  /* --cocial-network style - start */
-  /* --cocial-network style - end */
-  /* site owner it's a block autor class - start */
-  /* site owner it's a block autor class - end */
-}
-footer > div, footer > nav.header__nav {
-  width: 100%;
-  border: 0;
-}
-footer .header__logo {
-  height: 74px;
-  background-size: 60px 74px;
-  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
-}
-footer div.header__contact {
-  padding-top: 27px;
-  max-width: 235px;
-  margin-bottom: 12px;
-}
-footer div.header__contact li {
-  margin: initial;
-  padding-left: 60px;
-  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
-}
-footer div.header__contact li a {
-  background: initial;
-  padding: initial;
-  line-height: 1.2;
-  color: var(--color_font);
-  letter-spacing: 0.1px;
-}
-footer div.header__contact li:nth-child(3) {
-  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
-}
-footer div.header__contact li:nth-child(3) a {
-  background: initial;
-}
-footer nav.header__nav {
-  min-width: 150px;
-  min-height: 235px;
-  padding-left: 35px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-footer nav.header__nav::before, footer nav.header__nav::after {
-  display: none;
-}
-footer nav.header__nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  gap: 13px;
-  width: initial;
-  height: initial;
-  background: none;
-  margin: initial;
-  position: relative;
-}
-footer nav.header__nav li {
-  display: block;
-}
-footer nav.header__nav a {
-  color: var(--color_font);
-  text-transform: lowercase;
-}
-footer div.cocial-network {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  gap: 25px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  padding: 20px 0 0 48px;
-}
-footer .autor {
-  padding-top: 30px;
-}
-footer .autor a, footer .autor p {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  color: var(--color_font);
-}
-
-/* THe FOOTER BLOCK style - end */
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 350px) {
   :root {
     --backg_page:#949396;
     /* фон страницы*/
@@ -950,7 +830,7 @@ footer .autor a, footer .autor p {
     position: absolute;
   }
 
-  body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, footer .cocial-network {
+  body > main, .category, .cpetialOffers > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -970,260 +850,17 @@ footer .autor a, footer .autor p {
     height: 100%;
   }
 
-  /*  свойства display block */
-  .display_Block, .categoryMenu .categoryMenu__button form input, .categoryMenu .categoryMenu__button form {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .main__info-text-correct ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-
-  /*  свойства display flex row */
-  .display_Flex, .category > div:last-child, .categoryMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-
-  /* шрифт 18рх */
-  .font_18, .categoryMenu .categoryMenu__button form input {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  /* шрифт 14рх */
-  .font_14, .catalog__furniture div.catalog__inCart a {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  .margin_left_title, .category .category__title h2 {
-    margin-left: 2.79em;
-  }
-
-  .main__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 15px;
-  }
-  .main__title h2 {
-    font-size: 1.889em;
-  }
-
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-
-  .categoryMenu {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .categoryMenu .header__nav {
-    min-width: 50px;
-  }
-  .categoryMenu .header__contact {
-    margin-left: 22%;
-    /* 9.817em; */
-    padding-top: 11px;
-  }
-  .categoryMenu .header__phone {
-    min-width: 177px;
-  }
-  .categoryMenu .categoryMenu__button {
-    display: inline-block;
-    min-width: 133px;
-    width: 100%;
-    max-width: 241px;
-    height: 40px;
-    margin-right: 1.75em;
-    margin-top: 3px;
-  }
-  .categoryMenu .categoryMenu__button form input {
-    background: var(--color_hover);
-    color: #fff;
-    border-radius: 8px;
-  }
-
-  /* --.categoryMenu__nav header__nav contNav header__nav_activity */
-  /* CATEGORY product - style  - start*/
-  /* -- title category - style - start */
-  /* -- title category - style - and */
-  /* --category product style -start */
-  .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 60px;
-  }
-  .category > div:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 85 px;
-  }
-  .category > div:last-child > div {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 100%;
-    max-width: 590px;
-  }
-  .category > div:last-child .catalog {
-    padding: initial;
-    height: 100%;
-    max-height: 608px;
-    margin-bottom: 150px;
-  }
-  .category .category__catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: initial;
-    padding: 4px 0px;
-  }
-  .category .category__catalog .catalog__furniture {
-    max-width: 287px;
-    height: 100%;
-    max-height: 196px;
-    padding-top: 12px;
-    margin-bottom: 10px;
-  }
-  .category .catalog__furniture > div:first-child {
-    height: 78px;
-    padding-bottom: 2px;
-  }
-  .category .catalog__furniture > div:first-child .catalog__title {
-    padding: 0px 0 0 5px;
-  }
-  .category .catalog__furniture > div:first-child .catalog__title h3 {
-    line-height: 1.2;
-  }
-  .category .catalog__furniture .catalog__foto {
-    padding-top: 2px;
-    height: 68px;
-    width: 100px;
-  }
-  .category .category__title {
-    padding: initial;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .category .catalog__allProduct {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: initial;
-  }
-  .category .catalog__allProduct a {
-    margin: initial;
-    letter-spacing: 0.0051em;
-  }
-
-  .catalog__furniture .catalog__info {
-    padding-top: 9px;
-  }
-  .catalog__furniture .catalog__info li {
-    padding-left: 30px;
-    height: 20px;
-    width: 205px;
-    background-size: 17.92px 17.92px;
-  }
-  .catalog__furniture div:nth-child(3) {
-    padding: 7px 0 0 3px;
-  }
-  .catalog__furniture div.catalog__inCart {
-    background-position: 180px 4px;
-  }
-  .catalog__furniture div.catalog__inCart a {
-    line-height: 16.8px;
-    letter-spacing: 0.61px;
-  }
-
-  /* --category product style - end */
-  /* --cpecial offers - start */
-  .categoryMenu__nav {
-    background-color: var(--color_font);
-  }
-
-  /* --cpecial offers - end */
-  /* CATEGORY product - style  - end*/
 }
-@media screen and (min-width: 321px) and (max-width: 624px) {
-  .main__title h2 {
-    font: 23px/1.2 "Ponton";
+@media screen and (min-width: 576px) {
+  /* --form near footer - start */
+  .form-control {
+    max-width: 589px;
   }
 
-  .category {
-    padding-top: 17px;
-  }
-  .category > div:last-child .catalog {
-    margin-bottom: 50px;
-  }
-  .category > div:last-child .catalog__allProduct {
-    margin-bottom: 10px;
-  }
+  /* --form near footer - end */
 }

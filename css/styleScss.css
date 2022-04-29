@@ -2,6 +2,14 @@
 /* @import url('/css/screen-style.css');*/
 /* @import url('_null-style.scss'); */
 /* The common-style - start */
+.font_18, .header__account > div:last-child a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 /* The HEARD STYLE - start */
 header {
   background-color: var(--color_font);
@@ -343,6 +351,7 @@ header .header a:hover, header .header a:active {
   height: 51px;
   margin-top: 3px;
   margin-left: 3px;
+  z-index: 1;
 }
 .header__account > div:last-child a {
   display: inline-block;
@@ -351,10 +360,9 @@ header .header a:hover, header .header a:active {
   border-radius: 18px;
   background-color: var(--color_normal);
   position: absolute;
-  right: -6px;
-  top: 0;
-  padding: 5px 0 0 5px;
-  font-size: 1.5em;
+  right: -5px;
+  top: -5px;
+  padding: 7px 0 0 0px;
 }
 
 /* -- The style personal account's into site - end*/
@@ -1117,7 +1125,7 @@ section.category {
 
 /* --cpecial offers - start */
 .cpetialOffers {
-  height: 856px;
+  height: 830px;
   overflow: hidden;
   padding-bottom: 10px;
   margin-bottom: 26px;
@@ -1132,7 +1140,7 @@ section.category {
 }
 .cpetialOffers > div .catalog__title h3 {
   color: var(--color_font);
-  letter-spacing: 0.8px;
+  letter-spacing: -1.3px;
   line-height: 1.2;
 }
 .cpetialOffers > div .catalog__title > div:first-child {
@@ -1271,7 +1279,7 @@ section.cpetialOffers div.catalog__furniture::before {
   padding-top: 40px;
 }
 .info-text__about-us .main__title {
-  padding: 49px 0 0 47px;
+  padding: 75px 0 0 47px;
   margin-right: 0;
   margin-bottom: 10px;
 }
@@ -1512,11 +1520,14 @@ section.cpetialOffers div.catalog__furniture::before {
   border-radius: 10px;
   background-color: #9493960f;
   text-align: left;
+  /* min-width:  254px;
+  max-width:  589px; */
   padding-bottom: 3px;
 }
 .main__form-send-letters > div textarea {
   width: 100%;
-  max-width: 254px;
+  /* 	min-width:  254px;
+  	max-width:  589px; */
   height: 107px;
   padding: 0.375rem 0.75rem;
   background-color: #9493960f;
@@ -1561,130 +1572,7 @@ section.cpetialOffers div.catalog__furniture::before {
 
 /* --cpecial offers - end */
 /* The MAIN'S BLOCK style - end*/
-/* THe FOOTER BLOCK style - start */
-footer {
-  padding-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  background-color: var(--color_bg);
-  /* --logo style - start */
-  /* --logo style - end */
-  /* --contact style - start */
-  /* --contact style - end */
-  /* --menu style - start */
-  /* --menu style - end */
-  /* --cocial-network style - start */
-  /* --cocial-network style - end */
-  /* site owner it's a block autor class - start */
-  /* site owner it's a block autor class - end */
-}
-footer > div, footer > nav.header__nav {
-  width: 100%;
-  border: 0;
-}
-footer .header__logo {
-  height: 74px;
-  background-size: 60px 74px;
-  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
-}
-footer div.header__contact {
-  padding-top: 27px;
-  max-width: 235px;
-  margin-bottom: 12px;
-}
-footer div.header__contact li {
-  margin: initial;
-  padding-left: 60px;
-  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
-}
-footer div.header__contact li a {
-  background: initial;
-  padding: initial;
-  line-height: 1.2;
-  color: var(--color_font);
-  letter-spacing: 0.1px;
-}
-footer div.header__contact li:nth-child(3) {
-  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
-}
-footer div.header__contact li:nth-child(3) a {
-  background: initial;
-}
-footer nav.header__nav {
-  min-width: 150px;
-  min-height: 235px;
-  padding-left: 35px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-footer nav.header__nav::before, footer nav.header__nav::after {
-  display: none;
-}
-footer nav.header__nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  gap: 13px;
-  width: initial;
-  height: initial;
-  background: none;
-  margin: initial;
-  position: relative;
-}
-footer nav.header__nav li {
-  display: block;
-}
-footer nav.header__nav a {
-  color: var(--color_font);
-  text-transform: lowercase;
-}
-footer div.cocial-network {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  gap: 25px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  padding: 20px 0 0 48px;
-}
-footer .autor {
-  padding-top: 30px;
-}
-footer .autor a, footer .autor p {
-  display: inline-block;
-  width: 100%;
-  text-align: center;
-  color: var(--color_font);
-}
-
-/* THe FOOTER BLOCK style - end */
-@media screen and (min-width: 321px) {
+@media screen and (min-width: 350px) {
   :root {
     --backg_page:#949396;
     /* фон страницы*/
@@ -1777,7 +1665,7 @@ footer .autor a, footer .autor p {
     position: absolute;
   }
 
-  body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, footer .cocial-network {
+  footer .cocial-network, footer .header__nav, body > main, .category, .cpetialOffers > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1797,262 +1685,19 @@ footer .autor a, footer .autor p {
     height: 100%;
   }
 
-  /*  свойства display block */
-  .display_Block, .categoryMenu .categoryMenu__button form input, .categoryMenu .categoryMenu__button form {
-    display: block;
-    width: 100%;
-    height: 100%;
+  .main__info-text-correct ul {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
-
-  /*  свойства display flex row */
-  .display_Flex, .category > div:last-child, .categoryMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-  }
-
-  /* шрифт 18рх */
-  .font_18, .categoryMenu .categoryMenu__button form input {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  /* шрифт 14рх */
-  .font_14, .catalog__furniture div.catalog__inCart a {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    letter-spacing: 0em;
-    text-align: center;
-  }
-
-  .margin_left_title, .category .category__title h2 {
-    margin-left: 2.79em;
-  }
-
-  .main__title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 15px;
-  }
-  .main__title h2 {
-    font-size: 1.889em;
-  }
-
-  main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-
-  .categoryMenu {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .categoryMenu .header__nav {
-    min-width: 50px;
-  }
-  .categoryMenu .header__contact {
-    margin-left: 22%;
-    /* 9.817em; */
-    padding-top: 11px;
-  }
-  .categoryMenu .header__phone {
-    min-width: 177px;
-  }
-  .categoryMenu .categoryMenu__button {
-    display: inline-block;
-    min-width: 133px;
-    width: 100%;
-    max-width: 241px;
-    height: 40px;
-    margin-right: 1.75em;
-    margin-top: 3px;
-  }
-  .categoryMenu .categoryMenu__button form input {
-    background: var(--color_hover);
-    color: #fff;
-    border-radius: 8px;
-  }
-
-  /* --.categoryMenu__nav header__nav contNav header__nav_activity */
-  /* CATEGORY product - style  - start*/
-  /* -- title category - style - start */
-  /* -- title category - style - and */
-  /* --category product style -start */
-  .category {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 60px;
-  }
-  .category > div:last-child {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-bottom: 85 px;
-  }
-  .category > div:last-child > div {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    width: 100%;
-    max-width: 590px;
-  }
-  .category > div:last-child .catalog {
-    padding: initial;
-    height: 100%;
-    max-height: 608px;
-    margin-bottom: 150px;
-  }
-  .category .category__catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: initial;
-    padding: 4px 0px;
-  }
-  .category .category__catalog .catalog__furniture {
-    max-width: 287px;
-    height: 100%;
-    max-height: 196px;
-    padding-top: 12px;
-    margin-bottom: 10px;
-  }
-  .category .catalog__furniture > div:first-child {
-    height: 78px;
-    padding-bottom: 2px;
-  }
-  .category .catalog__furniture > div:first-child .catalog__title {
-    padding: 0px 0 0 5px;
-  }
-  .category .catalog__furniture > div:first-child .catalog__title h3 {
-    line-height: 1.2;
-  }
-  .category .catalog__furniture .catalog__foto {
-    padding-top: 2px;
-    height: 68px;
-    width: 100px;
-  }
-  .category .category__title {
-    padding: initial;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .category .catalog__allProduct {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-left: initial;
-  }
-  .category .catalog__allProduct a {
-    margin: initial;
-    letter-spacing: 0.0051em;
-  }
-
-  .catalog__furniture .catalog__info {
-    padding-top: 9px;
-  }
-  .catalog__furniture .catalog__info li {
-    padding-left: 30px;
-    height: 20px;
-    width: 205px;
-    background-size: 17.92px 17.92px;
-  }
-  .catalog__furniture div:nth-child(3) {
-    padding: 7px 0 0 3px;
-  }
-  .catalog__furniture div.catalog__inCart {
-    background-position: 180px 4px;
-  }
-  .catalog__furniture div.catalog__inCart a {
-    line-height: 16.8px;
-    letter-spacing: 0.61px;
-  }
-
-  /* --category product style - end */
-  /* --cpecial offers - start */
-  .categoryMenu__nav {
-    background-color: var(--color_font);
-  }
-
-  /* --cpecial offers - end */
-  /* CATEGORY product - style  - end*/
 }
-@media screen and (min-width: 321px) and (max-width: 624px) {
-  .main__title h2 {
-    font: 23px/1.2 "Ponton";
+@media screen and (min-width: 576px) {
+  /* --form near footer - start */
+  .form-control {
+    max-width: 589px;
   }
 
-  .category {
-    padding-top: 17px;
-  }
-  .category > div:last-child .catalog {
-    margin-bottom: 50px;
-  }
-  .category > div:last-child .catalog__allProduct {
-    margin-bottom: 10px;
-  }
+  /* --form near footer - end */
 }
 :root {
   --backg_page:#949396;
@@ -2146,7 +1791,7 @@ footer .autor a, footer .autor p {
   position: absolute;
 }
 
-body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, footer .cocial-network {
+footer .cocial-network, footer .header__nav, body > main, .category, .cpetialOffers > div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2164,6 +1809,14 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.font_16, .colLeft.colLeft_activity nav > ul li a, .colLeft.colLeft_activity nav > ul li a:active, .colLeft.colLeft_activity nav > ul li a:visited {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 /* TOPsECTION__SLIDER TOPsLIDER style - start */
@@ -2246,7 +1899,7 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 50;
+  z-index: 4;
   cursor: pointer;
 }
 
@@ -2339,7 +1992,7 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
   border-radius: 10px;
   border: 1px solid var(--color_font);
   margin: 0 auto;
-  z-index: 65;
+  z-index: 5;
   left: 10px;
   /*	&, */
   /* tochmobile */
@@ -2348,7 +2001,7 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
   display: none;
   vertical-align: top;
   height: 35px;
-  z-index: 70;
+  z-index: 7;
 }
 .colLeft.colLeft_activity nav > ul li a, .colLeft.colLeft_activity nav > ul li a:active, .colLeft.colLeft_activity nav > ul li a:visited {
   display: inline-block;
@@ -2356,11 +2009,14 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
   width: 100%;
   /* 209.9px*/
   padding-top: 10px;
-  font-size: 1.34em;
   vertical-align: top;
   z-index: 70;
+  text-align: center;
   color: var(--color_font);
-  border-radius: 8px;
+  z-index: 7;
+}
+.colLeft.colLeft_activity nav > ul li a:hover {
+  color: #fff;
 }
 .colLeft.colLeft_activity nav > ul li:hover {
   background-color: var(--color_normal);
@@ -2460,164 +2116,225 @@ body > main, .category, .cpetialOffers > div:last-child, footer .header__nav, fo
 }
 
 /* the TOP SLIDER's style - end */
-@media screen and (min-width: 321px) {
-  /* --a top's Slider under a header style - start */
-  .topSection__slider {
-    width: 100%;
-    max-width: 768px;
-    /* height:532px; */
-    /* height: 100%; */
-    max-height: 532px;
-  }
-
-  /* --a top's Slider under a header style - end */
-  /* TOPsECTION__SLIDER TOPsLIDER style - start */
-  .topSection > div:last-child > div {
-    /* max-width:600px;*/
-    height: 19.289em;
-    max-height: 347px;
-    margin-bottom: initial;
-  }
-  .topSection > div:last-child > div > ul {
-    max-width: 670px;
-    width: 100%;
-    margin: 0 auto;
-    padding: initial;
-    padding-top: 5.4%;
+@media screen and (min-width: 576px) {
+  .first_block, .topSection__topOffer ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    gap: 0;
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    -ms-flex-line-pack: start;
-        align-content: start;
-  }
-  .topSection > div:last-child > div > ul li {
-    /* position: absolute;
-    width:100%;
-    max-width: 300px;
-    padding:6px 0 0 114px */
-    margin: initial;
-    padding-top: 17px;
-  }
-  .topSection > div:last-child > div > ul li:first-child {
-    /* top:36px;
-    left:84px;
-    background-size: 77px 41px; */
-    width: 300px;
-    background-position: 9px 1px;
-    background-size: 77px 41px;
-    /* margin-bottom:  32px; */
-    margin: 10px 0 20px 8.2%;
-    padding-top: 1px;
-  }
-  .topSection > div:last-child > div > ul li:nth-child(2) {
-    /* top: 110px;
-    left: calc(50% + 45px);
-    height: 60px;
-
-    padding-left:98px; */
-    background-position: 25px 20px;
-    background-size: 70px 49px;
-    -ms-flex-item-align: end;
-        -ms-grid-row-align: end;
-        align-self: end;
-    width: 100%;
-    max-width: 300px;
-    min-height: 70px;
-    /* margin-right:    2em; */
-    margin: 0 0 20px 8.2%;
-  }
-  .topSection > div:last-child > div > ul li:last-child {
-    /* top: 193px;
-    left: 74px;
-    background-size: 63px 55px;
-    padding:10px 0 0 90px; */
-    margin-left: 5%;
-    background-size: 63px 55px;
-    padding-left: 95px;
-  }
-
-  /* TOPsECTION__SLIDER TOPsLIDER style - end */
-  .catalog {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-    padding-left: 48px;
-    padding-top: 1px;
-    margin: initial;
-    margin-bottom: 48px;
-  }
-  .catalog > div {
-    display: inline-block;
-    margin: initial;
-    margin-bottom: 18px;
-  }
-
-  /* block SPECIAL OFFER style - start */
-  .cpetialOffers {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    height: 826px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
-  }
-  .cpetialOffers .main__title {
-    padding: initial;
-    -webkit-box-flex: initial;
-        -ms-flex-positive: initial;
-            flex-grow: initial;
-    padding: 0 50px;
-  }
-  .cpetialOffers > div:last-child {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-left: 34px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 35px;
-    height: 826px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    z-index: 1;
   }
-  .cpetialOffers .catalog__furniture {
+
+  /* TOPsECTION__SLIDER TOPsLIDER style - start */
+  .topSection > div:last-child {
+    height: 347px;
+  }
+
+  .topSection__topOffer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    flew-shrink: 1;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: initial;
+    padding: 59px 0 0 0;
+  }
+  div.topSection__topOffer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    padding: 0;
+    width: 100%;
+    max-width: 560px;
     margin: initial;
   }
+  div.topSection__topOffer ul li {
+    margin: initial;
+    margin-bottom: 30px;
+    background-size: 77px 41px;
+    background-position: 6px -1px;
+    min-width: 360px;
+    width: 100%;
+  }
+  div.topSection__topOffer ul li:nth-child(2) {
+    background-size: 60px 49px;
+    background-position: 6px -1px;
+    width: 270px;
+    margin: initial;
+    margin-bottom: 30px;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  div.topSection__topOffer ul li:nth-child(3) {
+    background-size: 60px 49px;
+    background-position: 6px -1px;
+    width: 270px;
+  }
+  /* TOPsECTION__SLIDER TOPsLIDER style - end */
 }
+/* THe FOOTER BLOCK style - start */
+footer {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  background-color: var(--color_bg);
+  /* --logo style - start */
+  /* --logo style - end */
+  /* --contact style - start */
+  /* --contact style - end */
+  /* --menu style - start */
+  /* --menu style - end */
+  /* --cocial-network style - start */
+  /* --cocial-network style - end */
+  /* site owner it's a block autor class - start */
+  /* site owner it's a block autor class - end */
+}
+footer > div, footer > nav.header__nav {
+  width: 100%;
+  border: 0;
+}
+footer .header__logo {
+  height: 74px;
+  background-size: 60px 74px;
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
+}
+footer div.header__contact {
+  padding-top: 27px;
+  max-width: 235px;
+  margin-bottom: 12px;
+}
+footer div.header__contact li {
+  margin: initial;
+  padding-left: 60px;
+  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+}
+footer div.header__contact li a {
+  background: initial;
+  padding: initial;
+  line-height: 1.2;
+  color: var(--color_font);
+  letter-spacing: 0.1px;
+}
+footer div.header__contact li:nth-child(3) {
+  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
+}
+footer div.header__contact li:nth-child(3) a {
+  background: initial;
+}
+footer nav.header__nav {
+  min-width: 150px;
+  min-height: 235px;
+  padding-left: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+footer nav.header__nav::before, footer nav.header__nav::after {
+  display: none;
+}
+footer nav.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 13px;
+  width: 100%;
+  max-width: 275px;
+  height: initial;
+  background: none;
+  margin: initial;
+  position: relative;
+}
+footer nav.header__nav li {
+  display: block;
+}
+footer nav.header__nav a {
+  color: var(--color_font);
+  text-transform: lowercase;
+}
+footer div.cocial-network {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 20px 0 0 48px;
+}
+footer .autor {
+  padding-top: 30px;
+}
+footer .autor a, footer .autor p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: var(--color_font);
+}
+
+@media screen and (min-width: 350px) {
+  footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer > div, footer > nav.header__nav {
+    width: initial;
+  }
+  footer > nav.header__nav {
+    padding-left: initial;
+  }
+  footer .autor {
+    width: 100%;
+  }
+}
+/* THe FOOTER BLOCK style - end */
 body {
   display: inline-block;
 }

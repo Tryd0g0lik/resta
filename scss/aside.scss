@@ -1,4 +1,13 @@
 @import 'variabls-style';
+.font_16{
+
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: center;
+
+}
 /* TOPsECTION__SLIDER TOPsLIDER style - start */
 .topSection__slider.topSlider{
 	z-index: 2;
@@ -92,7 +101,7 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	z-index: 50;
+	z-index: 4;
 
 	cursor: pointer;
 
@@ -194,13 +203,13 @@
 			border-radius: 10px;
 			border: 1px solid var(--color_font);
 			margin: 0 auto;
-			z-index: 65;
+			z-index: 5;
 			left: 10px;
 			& object{
 				display: none;
 				vertical-align: top;
 				height: 35px;
-				z-index: 70;
+				z-index: 7;
 			}
 
 			& a,
@@ -210,11 +219,15 @@
 				height: 100%;
 				width: 100% ; /* 209.9px*/
 				padding-top: 10px;
-				font-size: 1.34em;
 				vertical-align: top;
 				z-index:70;
+				text-align: center;
+				@extend .font_16;
 				color: var(--color_font);
-				border-radius: 8px;
+				z-index: 7;
+			}
+			& a:hover{
+				color: #fff;
 			}
 		/*	&, */ /* tochmobile */
 			&:hover
