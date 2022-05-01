@@ -1117,3 +1117,10 @@ section.cpetialOffers div.catalog__furniture::before {
     background: no-repeat url(/site/resta/img/subtract.png) bottom right;
   }
 }
+/* The MAIN'S BLOCK style - end*/
+@media screen and (min-width: 1200px) {
+  /* The MAIN'S BLOCK style - start*/
+  /* This's a catalog from the main block - start */
+  /* This's a catalog from the main block - end*/
+  /* The MAIN'S BLOCK style - end*/
+}

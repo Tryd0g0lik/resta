@@ -779,7 +779,146 @@ header {
 	/* The HEARD STYLE - end */
 }
 
+@media screen and (min-width: 992px){
 
+	body > header{
+		padding-top:    initial;
+	}
+
+	header .header{
+		grid-template-columns: 155px 1fr 290px 177px;
+
+		/* The site logo - start */
+		.header__logo{
+			width: 135px;
+			height: 64px;
+
+		}
+		/* The site logo - end */
+
+		/* The nav style - start */
+		.header__nav{
+			display: flex;
+			flex-shrink: 1;
+			justify-content:    stretch;
+			align-self: flex-start;
+		    align-items: flex-start;
+
+			margin: initial;
+			width:  98%;
+			height: 100%;
+			min-height: initial;
+			border: none;
+
+
+			&::after,
+			&::before
+			{
+				display: none;
+			}
+
+			& > ul{
+				display: flex;
+				flex-direction: row;
+				flex-wrap:  wrap;
+				/* flex-grow:  1; */
+				flex-shrink:    1;
+				row-gap:    0;
+				column-gap: 18px;
+				justify-content: space-evenly;
+
+
+				width: initial;
+				height: auto;
+				position:   relative;
+				background-color: initial;
+				&::before{
+					display: none;
+				}
+				& li{
+					display: inline-block;
+				}
+			}
+
+		}
+		.header__search{
+			max-width:  1173px;
+			width:  70%;
+
+
+		}
+		.header__search{
+			& form input[type=search]{
+				width: 100%;
+				max-width:  815px;
+
+			}
+		}
+		/* The nav style - end */
+	}
+}
+
+@media screen and (min-width:   1200px){
+	header .header{
+		grid-template-columns: 268px 1fr 290px 200px;
+		grid-template-rows: 90px 56px;
+		& .header__logo{
+			justify-self:   flex-end;
+		}
+
+		& .header__logo{
+			margin: initial;
+			width:  150px;
+			height: 74px;
+			background-size:    150px 70px;
+			background-position-y:  0;
+		}
+		& .header__nav{
+			justify-content:    center;
+			width:  100%;
+
+			&  > ul{
+				max-width:  1090px;
+				justify-content: center;
+
+			}
+		}
+		& .header__search{
+			width:  80%;
+			margin-left: 118px;
+            padding-left: initial;
+            padding-top: 11px;
+            padding-bottom: 5px;
+
+            & input,
+            & button,
+            & form{
+                height: 42px;
+            }
+
+            & button{
+                max-width:  210px;
+            }
+		}
+		& .header__account{
+			margin-right:110px;
+			max-width: 230px;
+
+			& > div:last-child{
+				margin-left:    65px;
+			}
+
+		}
+	}
+}
+
+@media screen and (min-width:   1400px){
+	header .header{
+		& .header__search{
+			width:  100%;
+		}
+	}
+}
 
 
 /*
