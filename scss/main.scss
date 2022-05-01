@@ -132,6 +132,7 @@ section.category {
 
 }
 
+
 .catalog{
 	height:376px;
 	overflow:hidden;
@@ -628,6 +629,9 @@ section.cpetialOffers {
     margin-bottom: 12px;
     padding-left:37.7px;
 
+	& p {
+		display:    none;
+	}
 	& li{
 		padding: initial;
 	    display: flex;
@@ -923,5 +927,316 @@ section.cpetialOffers {
 	}
 	/* --form near footer - end */
 }
+@media screen and (min-width:576px){
+	.font_34{
 
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 41px;
+	letter-spacing: 0em;
+	text-align: left;
+
+	}
+
+	section.category{
+		padding-top:    58px;
+		margin-bottom:  63px;
+	}
+	body > main#main{
+		margin-bottom:  117px;
+	}
+	.main__title {
+		padding-left:   93px;
+
+		& h2 {
+			@extend .font_34;
+		}
+	}
+	/* --This's a catalog product's category -start */
+	.catalog {
+		height: auto;
+		gap:    10px;
+		margin-bottom:  151px;
+	}
+	.catalog__furniture{
+		max-width:  284px;
+		height: 198px;
+
+		padding:    16.34px 9px 13px 13px;
+		& > div{
+			.catalog__foto{
+				height: 66px;
+				width:  102px;
+			}
+		}
+
+		& .catalog__info {
+			&   li{
+				background-position: 189px 5px;
+			}
+		}
+
+	}
+	.catalog__allProduct{
+		text-align: center;
+	}
+
+	body > main#main section.categoryMenu:nth-child(3){
+		display: initial;
+
+	}
+	/* --This's a catalog product's category -end */
+
+	/* --cpecial offers - start */
+	section.cpetialOffers{
+		padding-top: 63px;
+		height: auto;
+		margin-bottom:  64px;
+
+
+		& div.main__title {
+		margin-bottom:  24px;
+		}
+
+		& > div:last-child{
+			column-gap:    10px;
+			row-gap:     35px;
+			padding-left:   16px;
+			height: 768px;
+			margin-bottom:  0;
+
+
+		}
+		& div.catalog__furniture{
+			margin-left:    0;
+			padding-right:  13px;
+			max-width:  290px;
+
+			& .catalog__foto{
+				width: 264px;
+                height: 160px;
+                margin-bottom:  3px;
+			}
+		}
+
+		& .catalog__price{
+			& > div:nth-child(4){
+				width:  119px;
+			}
+		}
+
+	}
+
+	section.cpetialOffers div.catalog__furniture::before{
+		content:    "%";
+ 		right:  27px;
+
+	}
+	div.catalog__furniture{
+
+
+		& > div{
+			& .catalog__title{
+				height: 62px;
+				& > div:first-child{
+					margin:    0;
+
+					width:  252px;
+				}
+
+				& h3{
+					letter-spacing: -0.8px;
+					line-height: 1
+				}
+			}
+		}
+	}
+
+
+	/* --cpecial offers - end */
+
+	/* menu - start*/
+	.cpecial-offers-menu{
+
+	}
+	.categoryMenu__nav{
+		display:    initial;
+	}
+	/* menu - end*/
+
+	/* this's block then have the info-text - start*/
+	.main__text{
+		width: 100%;
+	}
+	.info-text__about-us {
+		width: inherit;
+		& .main__title{
+
+		max-width:  640px;
+		padding:    54px 0 0 102px;
+
+
+		}
+
+		& > div{
+			& > div:last-child{
+
+			}
+		}
+		& .main__info-text{
+			padding: 26px 0 0 83px;
+			width:  100%;
+
+
+
+		}
+
+		& .main__title.main__title-correct{
+			padding:    0px 0 0 95px;
+			& > h3{
+				letter-spacing: 0px;
+			}
+
+
+		}
+		& div > div.main__info-text-correct {
+			padding-top:    initial;
+			margin-bottom:  15px;
+			&  > ul{
+				justify-content:    space-between;
+				align-self: start;
+			}
+
+			& .info-text__01_bg{
+				width:  295px;
+				padding-left: 72px;
+				letter-spacing: 0;
+
+			}
+			& .info-text__01_bg:nth-child(1){
+				background: no-repeat url(/site/resta/img/svg/content-list-bg/euro-bag.svg) 14px 13px;
+			}
+			& .info-text__01_bg:nth-child(2){
+				background: no-repeat url(/site/resta/img/svg/content-list-bg/drive-car.svg) 12px 16px;
+			}
+			& .info-text__01_bg:nth-child(3){
+				background: no-repeat url(/site/resta/img/svg/content-list-bg/vardrobe.svg) 15px 7px;
+			}
+			& .info-text__01_bg:nth-child(4){
+				background: no-repeat url(/site/resta/img/svg/content-list-bg/veer.svg) 9px 8px;
+			}
+
+		}
+
+		& .main__info-text-property{
+			padding-bottom:103px;
+			margin-bottom:  34px;
+
+			& p{
+				display: block;
+			    letter-spacing: 1.9px;
+                line-height: 1.5;
+                margin-bottom:22px;
+			}
+			& ul {
+
+			}
+
+			& li {
+				width:  auto;
+			}
+		}
+	}
+	p{
+		line-height:    21.2px;
+		margin-bottom:  18px;
+	}
+	/* this's block then have the info-text - end*/
+
+	/* this's the our client - start */
+	.info-our-client{
+		& .main__title{
+			padding:   6px 0 0 80px;
+			margin-bottom: 40px;
+
+		}
+		& div.main__info-slider.main__client{
+			height: 74px;
+			margin-bottom:  72px;
+		}
+
+	}
+
+	/* this's the our client - end */
+
+	/* this's form - send letters for me - start */
+	.main__send-letters{
+
+
+		& .main__title{
+		    padding: 6px 0 0 80px;
+		}
+
+		& > div{
+			padding:    3px 0 0 40px;
+		}
+
+		& .main__form-send-letters{
+			display:    flex;
+			flex-wrap: wrap;
+			justify-content: stretch;
+
+			& > div{
+				height: 51px;
+				width:  100%;
+			}
+
+			& .form-control{
+				padding-left:   20px;
+			}
+
+			& .mail__texterea{
+				min-height: 110px;
+				margin-bottom:  0;
+
+			}
+
+			& .mail__button{
+				width:  100%;
+				max-width:  286px;
+				display: inline-block;
+
+			}
+			& .mail__sheckbox{
+				max-width:  389px;
+				display: flex;
+				justify-content:    center;
+				align-self: center;
+				padding: 11px 0 0 10px;
+
+				& .form-check-input[type=checkbox]{
+					height: 20px;
+					width:  22px;
+				}
+				& p{
+
+					margin: 0;
+					height: 40px;
+				}
+
+			}
+		}
+
+	}
+
+	/* this's form - send letters for me - end */
+}
+
+@media screen and (min-width:768px){
+	.info-text__about-us{
+		& .main__info-text-property{
+			background: no-repeat url(/site/resta/img/subtract.png) bottom right;
+		}
+	}
+}
 

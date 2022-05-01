@@ -196,4 +196,13 @@
 
 }
 
+@media screen and (min-width:  768px){
+	/* the TOP SLIDER's style - start */
+		.topSection { height: 879px;
 
+			& .slider{
+				height: 530px;
+			}
+		}
+	/* the TOP SLIDER's style - end */
+}

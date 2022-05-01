@@ -30,18 +30,19 @@ $('.header__EN').click(function(){
 
 
 // --------------SECTION under header----------------------
-  $('.topSection aside.colLeft, .colLeft  aside.colLeft').click( function () {// The call touch - The product's catalog menu
+  $('.topSection aside.colLeft, .colLeft  aside.colLeft')_.click( function () {// The call touch - The product's catalog
+   menu
     pg.addRoverClass($('.colLeft_activity'), $('header .colLeft'), 'colLeft_activity', 'colLeft colLeft_activity');
 
     //addRoverClass(old_selection, delete_class, selectionElement, data_length)
   });
 
 /* This's a function 'openCloseMenuMouse' for the desktop device  */
- $('.topSection .colLeft, .colLeft  aside.colLeft').mouseover( function(){ // The Desktop - The product's catalog menu
+ $('.topSection .colLeft, .colLeft  aside.colLeft')_.mouseover( function(){ // The Desktop - The product's catalog menu
     $(this).addClass('colLeft colLeft_activity');
   });
 
-$('.topSection .colLeft, .colLeft  aside.colLeft').mouseout( function(){
+$('.topSection .colLeft, .colLeft  aside.colLeft')_.mouseout( function(){
     $(this).removeClass('colLeft_activity');
   });
 // --------------HEADER----------------------

@@ -107,7 +107,7 @@
 
 }
 .colLeft.colLeft_activity{
-	top:-168px;
+	/* top:-168px; */
 	width: 100%;
 
 	& nav ul{
@@ -197,7 +197,7 @@
 		& > ul li{
 			display: block;
 			width: 265.32px;
-			height: 36.67px;
+			min-height: 36.67px;
 			background-color: #fff;
 			text-align: center;
 			border-radius: 10px;
@@ -240,3 +240,121 @@
 	}
 }
 /* The ASIDE COLUMN style - end */
+
+@media screen and (min-width: 321px){
+	.colLeft.colLeft_activity{
+		width: 320px;
+
+		& nav{
+			width: 320px;
+		}
+	}
+}
+@media screen and (min-width: 576px){
+
+	.colLeft.colLeft_activity{
+		width:  423px;
+		& nav{
+			width:  423px;
+			&::after{
+				top:    0;
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width:   767px){
+	.colLeft{
+		top:    21px;
+		width:  77px;
+		height:758px;
+
+
+        & nav::before{
+	        width: 77px;
+	        height:758px;
+	        padding:   18% 0 0 25px;
+	        font-size: 24px;
+	        letter-spacing: 2.4px;
+	        text-align: left;
+
+	    }
+	}
+
+	 .colLeft.colLeft_activity{
+	    top:    0;
+
+		& nav {
+			& > ul li{
+				width:  340px;
+				min-height: 54px;
+				left:   36px;
+				display: grid;
+				grid-template-columns: 152px 1fr;
+				grid-templete-rows: 53px;
+
+				& object{
+					grid-column:    1   /   2;
+					grid-row:   1   /  2;
+					display:    block;
+					align-self: center;
+					justify-self: end;
+
+					width: 46px;
+					height: auto;
+					top: 9.1%;
+					left:   10px;
+
+
+
+				}
+				& object.colLeft__navCatalog_hover{
+					top: 9.1%;
+
+				}
+				& a{
+					padding:    9.1% 0 12px 16px;
+					text-align: left;
+					grid-column:    2   /  3;
+					grid-row:   1   /   3;
+
+					text-transform: lowercase;
+				}
+
+				&:hover{
+					&   object{
+
+						display:    none;
+					}
+
+					& object.colLeft__navCatalog_hover{
+
+						display:    initial;
+					}
+				}
+			}
+
+			& > ul li.aroma{
+			    & object{
+			        width: 29px;
+				    height: auto;
+				    top: 9px;
+				    left: -5px;
+			    }
+			}
+		}
+
+        & nav::after{
+	        width: 77px;
+	        height:758px;
+	        padding:   28.7% 0 0 25px;
+	        font-size: 24px;
+	        letter-spacing: 2.4px;
+	        text-align: left;
+
+	    }
+	 }
+
+
+}

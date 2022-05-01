@@ -60,7 +60,7 @@ footer{
 	}
 
 	& nav.header__nav{
-		min-width:  150px;
+		min-width:  130px;
 		min-height: 235px;
 		padding-left:   35px;
 
@@ -154,7 +154,112 @@ footer{
 	}
 }
 
-@media screen and (min-width:576px){}
+@media screen and (min-width:768px){
+	%font_16{
+
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 19px;
+		letter-spacing: 0em;
+		text-align: left;
+
+	}
+	/* footer - start */
+	body > footer{
+		display:    grid;
+		grid-template-columns: 277px  225px 1fr;
+		grid-template-rows: 1fr  64px 55px;
+		flex-shrink: 1;
+		flex-grow:  1;
+
+		& > div{
+			margin: initial;
+
+		}
+		& .header__logo{
+			justify-self: center;
+			margin: 0;
+			height: 150px;
+
+			background-size:    90px 110px;
+			background-position: 10px 20px;
+		}
+		& div.header__contact{
+			grid-column:    3 / 4;
+			grid-row:   1 / 2;
+			justify-self: start;
+			margin: initial;
+			padding-top
+
+			& li
+			{
+				background-position:    18px 0;
+				padding-left:   35px;
+			}
+			li:nth-child(3){
+				background-position:    15px -2px;
+			}
+			& a{
+				@extend %font_16;
+				letter-spacing: 0.7px;
+
+			}
+		}
+
+		& .header__nav{
+			grid-column:    2 / 3;
+			grid-row:   1 / 2;
+			justify-self:   start;
+			margin: initial;
+		}
+
+		& .cocial-network{
+
+			grid-column:    1 / 4;
+			grid-row:   2 / 3;
+
+			width:  137px;
+			padding:    initial;
+			justify-self:   center;
+			align-self: center;
+
+			& a {
+				display: block;
+				height: 100%;
+			}
+			& object{
+				width:  21px;
+				height:  auto;
+
+			}
+		}
+
+		& .autor{
+			grid-column:   1 / 4;
+			grid-row:   3 / 4;
+			justify-items: end;
+
+			width:  670px;
+			margin-left:    90px;
+			text-align: left;
+
+			& p{}
+			& p,
+			 & a {
+				 width: 300px;
+
+				font-size: 14px;
+
+			}
+
+
+		}
+
+
+	}
+
+	/* footer - end */
+}
 
 
 

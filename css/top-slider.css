@@ -168,3 +168,14 @@
   }
   /* TOPsECTION__SLIDER TOPsLIDER style - end */
 }
+@media screen and (min-width: 768px) {
+  /* the TOP SLIDER's style - start */
+  .topSection {
+    height: 879px;
+  }
+  .topSection .slider {
+    height: 530px;
+  }
+
+  /* the TOP SLIDER's style - end */
+}

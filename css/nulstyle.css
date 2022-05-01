@@ -13,10 +13,10 @@ letter-spacing: 0em;
 text-align: left;
 }
 
-p stront{
-font-size: 16px;
+strong{
+font-size: 18px;
 font-weight: 700;
-line-height: 19px;
+line-height: 21.6px;
 letter-spacing: 0em;
 text-align: left;
 }
@@ -25,8 +25,9 @@ li, p{
 font-size: 16px;
 font-weight: 400;
 line-height: 19px;
-letter-spacing: 0em;
+letter-spacing: 1px;
 text-align: left;
+
 }
 
 
