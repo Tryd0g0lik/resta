@@ -1,145 +1,394 @@
-@charset "UTF-8";
-:root {
-  --backg_page:#949396;
-  /* фон страницы*/
-  --color_active:#A41656;
-  /* цвет-active */
-  --color_hover:#5A082D;
-  /* цвет-hover */
-  --color_normal:#8C325B;
-  /* цвет кнопок ссылок*/
-  --color_bg: #C4C4C4;
-  /* фоновый цвет */
-  --primary_color: #ffffff;
-  --color_font:#5D5B61;
-  /* фон шапки */
-  --primary__cursor: pointer;
-  --primary_border:1px #949396 solid;
-}
-
-.font-18 {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  letter-spacing: 0em;
-  text-align: center;
-}
-
-footer .header__contact li a {
-  font-family: Panton;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-.display-Block {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-/* FOOTER style - start */
-footer {
+/* THe FOOTER BLOCK style - start */
+footer .cocial-network, footer .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding-left: 47px;
-  padding-top: 20px;
-  background-color: #C4C4C4;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1;
 }
-footer > div, footer > nav {
+
+footer {
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: initial;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  background-color: var(--color_bg);
+  /* --logo style - start */
+  /* --logo style - end */
+  /* --contact style - start */
+  /* --contact style - end */
+  /* --menu style - start */
+  /* --menu style - end */
+  /* --cocial-network style - start */
+  /* --cocial-network style - end */
+  /* site owner it's a block autor class - start */
+  /* site owner it's a block autor class - end */
+}
+footer > div, footer > nav.header__nav {
   width: 100%;
+  border: 0;
 }
 footer .header__logo {
-  background: no-repeat url("/site/resta/img/svg/Logo_Resta_vertical_color.svg") 2px 3px;
-  margin: initial;
-  height: 100px;
+  height: 74px;
+  background-size: 60px 74px;
+  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
 }
-footer .header__contact {
+footer div.header__contact {
+  padding-top: 27px;
+  max-width: 235px;
+  margin-bottom: 12px;
+}
+footer div.header__contact li {
+  margin: initial;
+  padding-left: 60px;
+  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+}
+footer div.header__contact li a {
+  background: initial;
   padding: initial;
-  margin: initial;
-  padding: 2px 4px 12px;
-}
-footer .header__contact li {
-  margin-bottom: 3px;
-}
-footer .header__contact li a {
+  line-height: 1.2;
   color: var(--color_font);
+  letter-spacing: 0.1px;
 }
-footer .header__contact li:first-child a, footer .header__contact li:nth-child(2) a {
-  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 0 -1px;
+footer div.header__contact li:nth-child(3) {
+  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
 }
-footer .header__contact li:last-child a {
-  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 0 3px;
-}
-footer .header__nav {
-  width: 100%;
-  height: initial;
-  grid-column: initial;
-  grid-row: initial;
-  position: relative;
-  padding-top: 16px;
-  border: initial;
-}
-footer .header__nav::before, footer .header__nav::after {
-  display: none;
-}
-footer .header__nav ul {
-  width: initial;
-  height: initial;
-  top: initial;
-  left: initial;
-  position: relative;
+footer div.header__contact li:nth-child(3) a {
   background: initial;
 }
-footer .header__nav ul li {
+footer nav.header__nav {
+  min-width: 130px;
+  min-height: 235px;
+  padding-left: 35px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+footer nav.header__nav::before, footer nav.header__nav::after {
+  display: none;
+}
+footer nav.header__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 13px;
+  width: 100%;
+  max-width: 275px;
+  height: initial;
+  background: none;
+  margin: initial;
+  position: relative;
+}
+footer nav.header__nav li {
   display: block;
-  margin-bottom: 11px;
 }
-footer .header__nav ul li a {
+footer nav.header__nav a {
   color: var(--color_font);
+  text-transform: lowercase;
 }
-footer .cocial-network {
-  padding-top: 33px;
-}
-footer .cocial-network > div {
-  display: inline-block;
-  width: initial;
-  margin-right: 22px;
-}
-footer .cocial-network > div a {
-  vertical-align: top;
-  width: initial;
-  height: 35px;
+footer div.cocial-network {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 25px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 20px 0 0 48px;
 }
 footer .autor {
-  padding-top: 33px;
+  padding-top: 30px;
 }
-footer .autor > * {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: left;
+footer .autor a, footer .autor p {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
   color: var(--color_font);
 }
-footer .autor a {
-  padding-top: 5px;
-  display: inline-block;
-  border: initial;
-  border-bottom: 1px solid #5D5B61;
-}
 
-/* FOOTER style - and */
+@media screen and (min-width: 350px) {
+  footer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer > div, footer > nav.header__nav {
+    width: initial;
+  }
+  footer > nav.header__nav {
+    padding-left: initial;
+  }
+  footer .autor {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  body > footer div.header__contact a {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  /* footer - start */
+  body > footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 277px 225px 240px;
+    grid-template-columns: 277px 225px 240px;
+    -ms-grid-rows: 1fr 64px 55px;
+    grid-template-rows: 1fr 64px 55px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  body > footer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  body > footer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  body > footer > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  body > footer > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  body > footer > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  body > footer > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  body > footer > *:nth-child(7) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  body > footer > *:nth-child(8) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  body > footer > *:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  body > footer > div {
+    margin: initial;
+  }
+  body > footer .header__logo {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin: 0;
+    height: 150px;
+    background-size: 90px 110px;
+    background-position: 10px 20px;
+  }
+  body > footer div.header__contact {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: initial;
+  }
+  padding-top body > footer div.header__contact li {
+    background-position: 18px 0;
+    padding-left: 35px;
+  }
+  body > footer div.header__contact li:nth-child(3) {
+    background-position: 39px 4px;
+  }
+  body > footer div.header__contact a {
+    letter-spacing: 0.7px;
+  }
+  body > footer .header__nav {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: initial;
+  }
+  body > footer .cocial-network {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    width: 137px;
+    padding: initial;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body > footer .cocial-network a {
+    display: block;
+    height: 100%;
+  }
+  body > footer .cocial-network object {
+    width: 21px;
+    height: auto;
+  }
+  body > footer .autor {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    justify-items: end;
+    width: auto;
+    max-width: 670px;
+    margin-left: 90px;
+    text-align: left;
+  }
+  body > footer .autor p, body > footer .autor a {
+    width: 300px;
+    font-size: 14px;
+  }
+
+  /* footer - end */
+}
+@media screen and (min-width: 1400px) {
+  body > footer {
+    padding: 38px 16.1% 0;
+  }
+}
+@media screen and (min-width: 1700px) {
+  body > footer {
+    padding: 38px 14.3% 0;
+    -ms-grid-columns: 296px 241px 278px 1fr;
+    grid-template-columns: 296px 241px 278px 1fr;
+    -ms-grid-rows: 1fr 55px;
+    grid-template-rows: 1fr 55px;
+  }
+  body > footer > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  body > footer > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  body > footer > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  body > footer > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  body > footer > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  body > footer > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  body > footer > *:nth-child(7) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  body > footer > *:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+  }
+  body > footer .header__logo {
+    background-position-x: 0px;
+  }
+  body > footer div.header__contact {
+    padding-top: 18px;
+  }
+  body > footer div.header__contact li:nth-child(3) {
+    background-position: 39px 4px;
+  }
+  body > footer nav.header__nav ul {
+    row-gap: 11px;
+  }
+  body > footer div.cocial-network {
+    -webkit-column-gap: 35px;
+       -moz-column-gap: 35px;
+            column-gap: 35px;
+  }
+  body > footer .cocial-network {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    align-self: flex-start;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    width: 200px;
+    margin: 20px 0 0 5px;
+  }
+  body > footer .autor {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-column: 1/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    padding-top: 18px;
+    width: 740px;
+    margin-left: 60px;
+  }
+  body > footer .autor p {
+    background: no-repeat url(/site/resta/img/autor.png) 35px 0px;
+    background-size: 18px auto;
+    text-align: left;
+    padding-left: 53px;
+    margin-right: 28.7%;
+  }
+  body > footer .autor a {
+    width: AUTO;
+  }
+}
+/* THe FOOTER BLOCK style - end */

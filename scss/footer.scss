@@ -1,5 +1,11 @@
 /* THe FOOTER BLOCK style - start */
-
+%first_block{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: auto;
+    justify-content: center;
+    z-index:1;
+}
 footer{
 	padding-top:    25px;
 	display: flex;
@@ -132,8 +138,8 @@ footer{
 	}
 
 	/* site owner it's a block autor class - end */
-
 }
+
 @media screen and (min-width:350px){
 
 	footer{
@@ -167,7 +173,7 @@ footer{
 	/* footer - start */
 	body > footer{
 		display:    grid;
-		grid-template-columns: 277px  225px 1fr;
+		grid-template-columns: 277px  225px 240px;
 		grid-template-rows: 1fr  64px 55px;
 		flex-shrink: 1;
 		flex-grow:  1;
@@ -197,7 +203,7 @@ footer{
 				padding-left:   35px;
 			}
 			li:nth-child(3){
-				background-position:    15px -2px;
+				background-position: 39px 4px;
 			}
 			& a{
 				@extend %font_16;
@@ -238,8 +244,8 @@ footer{
 			grid-column:   1 / 4;
 			grid-row:   3 / 4;
 			justify-items: end;
-
-			width:  670px;
+			width:   auto;
+			max-width:  670px;
 			margin-left:    90px;
 			text-align: left;
 
@@ -259,6 +265,75 @@ footer{
 	}
 
 	/* footer - end */
+
+}
+
+@media screen and (min-width:   1400px){
+	body > footer{
+		padding:    38px 16.1% 0;
+	}
+}
+@media screen and (min-width:   1700px){
+	body > footer{
+		padding:    38px 14.3% 0;
+
+		grid-template-columns: 296px 241px 278px 1fr;
+		grid-template-rows: 1fr 55px;
+		& .header__logo{
+			background-position-x:  0px;
+		}
+
+		& div.header__contact{
+			padding-top:    18px;
+
+			& li:nth-child(3){
+				background-position:    39px 4px;
+			}
+		}
+		nav.header__nav ul{
+			row-gap: 11px;
+		}
+		& div.cocial-network{
+			column-gap:    35px;
+
+		}
+
+		& .cocial-network{
+			grid-column:    4 / 5;
+			grid-row:   1 / 2;
+
+			align-self:    flex-start;
+			justify-self:   start;
+
+			width:  200px;
+			margin: 20px 0 0 5px;
+		}
+
+		& .autor{
+			grid-column:    1 / 5;
+			grid-row:   2 / 3;
+
+			padding-top:    18px;
+			width:  740px;
+			margin-left:    60px;
+
+			& p{
+				background: no-repeat url(/site/resta/img/autor.png) 35px 0px;
+			background-size:    18px auto;
+			text-align: left;
+			padding-left:   53px;
+			margin-right: 28.7%;
+			}
+			& a{
+				width:AUTO;
+			}
+
+
+
+		}
+
+	}
+
 }
 
 
