@@ -45,7 +45,7 @@ footer > div, footer > nav.header__nav {
 footer .header__logo {
   height: 74px;
   background-size: 60px 74px;
-  background: no-repeat url(/site/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
+  background: no-repeat url(/resta/img/svg/Logo_Resta_vertical_color.svg) 38px 1px;
 }
 footer div.header__contact {
   padding-top: 27px;
@@ -55,7 +55,7 @@ footer div.header__contact {
 footer div.header__contact li {
   margin: initial;
   padding-left: 60px;
-  background: no-repeat url(/site/resta/img/svg/footer_tell.svg) 40px 0;
+  background: no-repeat url(/resta/img/svg/footer_tell.svg) 40px 0;
 }
 footer div.header__contact li a {
   background: initial;
@@ -65,7 +65,7 @@ footer div.header__contact li a {
   letter-spacing: 0.1px;
 }
 footer div.header__contact li:nth-child(3) {
-  background: no-repeat url(/site/resta/img/svg/footer_email.svg) 40px 5px;
+  background: no-repeat url(/resta/img/svg/footer_email.svg) 40px 5px;
 }
 footer div.header__contact li:nth-child(3) a {
   background: initial;
@@ -381,7 +381,7 @@ footer .autor a, footer .autor p {
     margin-left: 60px;
   }
   body > footer .autor p {
-    background: no-repeat url(/site/resta/img/autor.png) 35px 0px;
+    background: no-repeat url(/resta/img/autor.png) 35px 0px;
     background-size: 18px auto;
     text-align: left;
     padding-left: 53px;

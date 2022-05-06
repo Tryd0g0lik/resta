@@ -67,7 +67,7 @@
   line-height: 22px;
   letter-spacing: 0em;
   color: var(--color_font);
-  background: no-repeat url(/site/resta/img/svg/top_offer/slider_delivery.svg) 17px 5px;
+  background: no-repeat url(/resta/img/svg/top_offer/slider_delivery.svg) 17px 5px;
   height: 40px;
   display: block;
   margin: 0 auto;
@@ -77,14 +77,14 @@
   box-size: border-box;
 }
 .topSection__topOffer > ul > li:nth-child(2) {
-  background: no-repeat url(/site/resta/img/svg/top_offer/slider_furnitur.svg) 22px 5px;
+  background: no-repeat url(/resta/img/svg/top_offer/slider_furnitur.svg) 22px 5px;
   margin-bottom: 27px;
 }
 .topSection__topOffer > ul > li:nth-child(3) {
   height: 50px;
   padding-top: 10px;
   margin-bottom: initial;
-  background: no-repeat url(/site/resta/img/svg/top_offer/slider_colors.svg) 17px 0px;
+  background: no-repeat url(/resta/img/svg/top_offer/slider_colors.svg) 17px 0px;
 }
 
 /* the TOP SLIDER's style - end */

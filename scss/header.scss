@@ -38,7 +38,7 @@ header {
 .header__logo{
 	grid-row: 1/2;
 	grid-column:1/2;
-	background: no-repeat url(/site/resta/img/svg/Logo_Resta_horizontal.svg) 1px 0;
+	background: no-repeat url(/resta/img/svg/Logo_Resta_horizontal.svg) 1px 0;
 	background-size: cover;
 	margin-left:10px;
 
@@ -191,7 +191,7 @@ header {
 			padding-left:28px;
 			font-size: 18px;
 			font-weight: 400;
-			background: no-repeat url(/site/resta/img/svg/header_tell.svg);
+			background: no-repeat url(/resta/img/svg/header_tell.svg);
 			background-position:5px 3px;
 			word-spacing: -5px;
 			letter-spacing: 0.5px;
@@ -199,7 +199,7 @@ header {
 		}
 
 		&:last-of-type a{
-			background: no-repeat url(/site/resta/img/svg/header_email.svg);
+			background: no-repeat url(/resta/img/svg/header_email.svg);
 			background-position: 5px 5px;
 		}
 	}
@@ -267,14 +267,14 @@ header {
 			width: 100%;
 			height: 36px;
 			max-width: 217px;
-			background: no-repeat url(/site/resta/img/svg/header_search.svg) #fff;
+			background: no-repeat url(/resta/img/svg/header_search.svg) #fff;
 			background-position: 6px 6px;
 		}
 
 		button{
 			width: 65px;
 			height: 35px;
-			background: no-repeat url(/site/resta/img/right-search.png) var(--color_normal);
+			background: no-repeat url(/resta/img/right-search.png) var(--color_normal);
 			background-position: 23px 13px;
 			color: var(--color_normal);
 			border-radius: 8px;
@@ -301,7 +301,7 @@ header {
 & > div {
 	width:34px;
 	height:34px;
-	background: no-repeat url(/site/resta/img/svg/accaunt.svg);
+	background: no-repeat url(/resta/img/svg/accaunt.svg);
 	display:inline-block;
 	margin-left:15px;
 	margin-top:15px;
@@ -312,7 +312,7 @@ header {
 		z-index:3;
 	}
 	&:last-child{
-		background: no-repeat url(/site/resta/img/svg/shopping-cart.svg);
+		background: no-repeat url(/resta/img/svg/shopping-cart.svg);
 		background-size: 55px 55px;
 		width: 49px;
 		height: 51px;
@@ -567,12 +567,12 @@ header {
 		}
 
 		& div:nth-child(2){
-			background: no-repeat url(/site/resta/img/svg/accaunt_red.svg);
+			background: no-repeat url(/resta/img/svg/accaunt_red.svg);
 			margin-left:6px;
 		}
 
 		& > div:last-child{
-			background: no-repeat url(/site/resta/img/svg/shopping-cart-red.svg);
+			background: no-repeat url(/resta/img/svg/shopping-cart-red.svg);
 			margin-left:2.6em;
 
 			& a{
@@ -621,7 +621,7 @@ header {
 			& button {
 			    width: 65px;
 			    height: 35px;
-			    background: no-repeat url(/site/resta/img/right-search.png) var(--color_normal);
+			    background: no-repeat url(/resta/img/right-search.png) var(--color_normal);
 			    background-position: 23px 13px;
 			    color: var(--color_normal);
 			    border-radius: 8px;
@@ -733,7 +733,7 @@ header {
 			max-width: 220px;
 
 			& > div:nth-child(2){
-				background: no-repeat url(/site/resta/img/svg/accaunt.svg);
+				background: no-repeat url(/resta/img/svg/accaunt.svg);
 			}
 
 		}

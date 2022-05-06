@@ -199,7 +199,7 @@ section.category {
 			text-align:center;
 
 			padding-top:10px;
-			background: no-repeat url(/site/resta/img/svg/percent.svg);
+			background: no-repeat url(/resta/img/svg/percent.svg);
 			width:38px;
 			height:52px;
 			z-index:5;
@@ -239,7 +239,7 @@ section.category {
 			text-align:left;
 			height:25px;
 			width:120px;
-			background: no-repeat url(/site/resta/img/svg/right.svg) calc(100% - 2px) 7px;
+			background: no-repeat url(/resta/img/svg/right.svg) calc(100% - 2px) 7px;
 			/* background-size: 15px; */
 
 			& a{
@@ -303,7 +303,7 @@ section.category {
 		padding-top: 7.34px;
 		& li{
 			padding-left: 20.18px;
-			background: url('/site/resta/img/svg/li_table.svg') 0 0 no-repeat, url('/site/resta/img/svg/001.svg') right no-repeat;
+			background: url('/resta/img/svg/li_table.svg') 0 0 no-repeat, url('/resta/img/svg/001.svg') right no-repeat;
 			height:18px;
 			margin-bottom:5px;
 
@@ -343,7 +343,7 @@ section.category {
 	}
 	& .catalog__inCart{
 		height:20px;
-		background: no-repeat url(/site/resta/img/svg/003.svg) 149px 0;
+		background: no-repeat url(/resta/img/svg/003.svg) 149px 0;
 
 		& a{
 			@extend %font-link-12;
@@ -364,7 +364,7 @@ section.category {
 		@extend %font_linkUnderCategory;
 		display:inline-block;
 		box-sizing:content-box;
-		background: no-repeat url(/site/resta/img/svg/rght.svg) 200px 0;
+		background: no-repeat url(/resta/img/svg/rght.svg) 200px 0;
 		padding-right:30px;
 		color: var(--color_normal);
 	}
@@ -464,7 +464,7 @@ section.category {
 			& button{
 				width: 120px;
 				height:32px;
-				background:no-repeat url('/site/resta/img/svg/cart.svg') calc(100% - 12px) 8px, var(--color_normal);
+				background:no-repeat url('/resta/img/svg/cart.svg') calc(100% - 12px) 8px, var(--color_normal);
 				color:#fff;
 				text-align:left;
 				padding-left:10px;
@@ -494,7 +494,7 @@ section.category {
 				height:18px;
 				padding-right:15px;
 				color:var(--color_normal);
-				background: url("/site/resta/img/svg/003.svg") 75px 0px no-repeat;
+				background: url("/resta/img/svg/003.svg") 75px 0px no-repeat;
 			}
 		}
 	}
@@ -530,7 +530,7 @@ section.cpetialOffers {
 			color: #fff;
 			width:  38px;
 			height: 52px;
-			background: no-repeat url(/site/resta/img/svg/percent.svg) 0px 0;
+			background: no-repeat url(/resta/img/svg/percent.svg) 0px 0;
 			z-index:    6;
 			right:  7px;
 			top:    -12px;
@@ -541,7 +541,7 @@ section.cpetialOffers {
 
 		& .catalog__inCart{
 			height: initial;
-			background: no-repeat url(/site/resta/img/svg/right.svg) 96px 10px;
+			background: no-repeat url(/resta/img/svg/right.svg) 96px 10px;
 
 		}
 	}
@@ -773,7 +773,7 @@ section.cpetialOffers {
 			left:50px;
 
 			& .carousel-control-prev-icon{
-				background:no-repeat url(/site/resta/img/svg/slider-control-left.svg);
+				background:no-repeat url(/resta/img/svg/slider-control-left.svg);
 			    z-index: 50;
 			    top: 2px /*-35px*/;
 			    left: -15px;
@@ -787,7 +787,7 @@ section.cpetialOffers {
 		    box-sizing: border-box;
 
 			& .carousel-control-next-icon{
-				background:no-repeat url(/site/resta/img/svg/slider-control-right.svg);
+				background:no-repeat url(/resta/img/svg/slider-control-right.svg);
 			    z-index: 50;
 			    right: -10px;
 			    width: 42px;
@@ -1154,22 +1154,22 @@ section.cpetialOffers {
 				position: relative;
 				&::before{
 
-				background: no-repeat url(/site/resta/img/svg/content-list-bg/euro-bag.svg) 14px 13px;
+				background: no-repeat url(/resta/img/svg/content-list-bg/euro-bag.svg) 14px 13px;
 				}
 			}
 			& .info-text__01_bg:nth-child(2){
 				&::before{
-				background: no-repeat url(/site/resta/img/svg/content-list-bg/drive-car.svg) 12px 16px;
+				background: no-repeat url(/resta/img/svg/content-list-bg/drive-car.svg) 12px 16px;
 				}
 			}
 			& .info-text__01_bg:nth-child(3){
 				&::before{
-				background: no-repeat url(/site/resta/img/svg/content-list-bg/vardrobe.svg) 15px 7px;
+				background: no-repeat url(/resta/img/svg/content-list-bg/vardrobe.svg) 15px 7px;
 				}
 			}
 			& .info-text__01_bg:nth-child(4){
 				&::before{
-				background: no-repeat url(/site/resta/img/svg/content-list-bg/veer.svg) 9px 8px;
+				background: no-repeat url(/resta/img/svg/content-list-bg/veer.svg) 9px 8px;
 				}
 			}
 
@@ -1288,7 +1288,7 @@ section.cpetialOffers {
 	}
 	.info-text__bg{
 		display: block;
-		background: no-repeat url(/site/resta/img/subtract.png) bottom left;
+		background: no-repeat url(/resta/img/subtract.png) bottom left;
 		background-color:   none;
 		position:   absolute;
 		width: 100%;
@@ -1534,7 +1534,7 @@ section.cpetialOffers {
 
 				display:    block;
 				width:  203px;
-			    background: url(/site/resta/img/svg/li_table.svg) 0px 2px no-repeat, url(/site/resta/img/svg/001.svg)
+			    background: url(/resta/img/svg/li_table.svg) 0px 2px no-repeat, url(/resta/img/svg/001.svg)
 			    185px 1px no-repeat;
 			    background-size:    20px    auto;
 			    height: 23px;
@@ -1869,7 +1869,7 @@ section.cpetialOffers {
 	}
 	/* --form near footer - end */
 	.main__send-letters_bg{
-		background: no-repeat url(/site/resta/img/send-letters_bg.png) 0 0;
+		background: no-repeat url(/resta/img/send-letters_bg.png) 0 0;
 		background-position:    bottom left;
 
 	    width: 698px;
